@@ -1,0 +1,40 @@
+@media only screen
+and (min-width: 1100px)
+and (max-height: 1366px)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    .intro {
+        height: 100vh;
+    }
+    .navbar-default.navbar-reduce {
+        box-shadow: none;
+    }
+    .banner-title {
+        font-size: 20px;
+    }
+    .banner-description {
+        font-size: 15px;
+    }
+    .intro .intro-subtitle.intro-price {
+        padding-top: 1rem;
+    }
+    .intro .carousel-item-a {
+        height: 110vh;
+    }
+    .banner-img {
+        margin-top: -22%;
+        width: 522px !important;
+    }
+    .pricing-description small {
+        font-size: 13px;
+    }
+    .pricing-card{
+        padding: 10% 1% 10% 3%;
+        min-height: 365px;
+    }
+    .cleaning-heading-text {
+        width: 45%
+    }
+    .list-inline-item:not(:last-child) {
+        margin-right: 1.5rem !important;
+    }
+}
