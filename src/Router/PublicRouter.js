@@ -30,6 +30,14 @@ import ForgotPassword from "../pages/Auth/ForgotPassword";
 import ForgotOTP from "../pages/Auth/ForgotOTP";
 import EnterPassword from "../pages/Auth/EnterPassword";
 import Welcome from "../pages/Welcome/Welcome";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Makingbooking from "../pages/Dashboard/Makingbooking";
+import Standard from "../pages/Dashboard/Standard";
+import Search from "../pages/Dashboard/Search";
+import Urgent from "../pages/Dashboard/Urgent";
+import Searchurgent from "../pages/Dashboard/Searchurgent";
+import Clearfound from "../pages/Dashboard/Clearfound";
+import Chat from "../pages/Dashboard/Chat";
 
 
 function PubilcRoutes() {
@@ -65,6 +73,14 @@ function PubilcRoutes() {
                     <Route path="ForgotOTP" element={<ForgotOTP />} />
                     <Route path="EnterPassword" element={<EnterPassword />} />
                     <Route path="Welcome" element={<Welcome />} />
+                    <Route path="dashboard" element={<Dashboard />} />
+                    <Route path="makingbooking" element={<Makingbooking />} />
+                    <Route path="standard" element={<Standard />} />
+                    <Route path="search" element={<Search />} />
+                    <Route path="urgent" element={<Urgent />} />
+                    <Route path="searchurgent" element={<Searchurgent />} />
+                    <Route path="clearfound" element={<Clearfound />} />
+                    <Route path="chat" element={<Chat />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

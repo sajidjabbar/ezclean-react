@@ -1,0 +1,89 @@
+.making-booking-text h2 {
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.making-booking-text p {
+    font-size: 15px;
+    color: #777777;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.making-two-buttons a {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: #A5A5A5;
+    margin-right: 20px;
+    width: 45%;
+    display: block;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 60px;
+    transition: 2s;
+}
+.making-two-buttons {
+    display: flex;
+    /* padding-bottom: 50px; */
+    padding: 25px 0px;
+}
+
+.pic-text {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.pic-text h5 {
+    padding-top: 10px;
+    font-size: 21px;
+    color: #244638;
+    font-weight: 600;
+}
+
+.making-two-buttons a:hover {
+    background-image: linear-gradient(to right, #1D753F, #68A543);
+}
+
+h5.for-upper-padding {
+    padding-top: 19px;
+}
+
+.making-img {
+    position: relative;
+    right: -156px;
+}
+
+section.faq-sec h4 {
+    font-size: 18px;
+    color: #EE9E03;
+    font-family: 'Poppins';
+}
+
+section.faq-sec {
+    text-align: center;
+    padding: 70px 0px;
+    /* padding-top: 70px; */
+}
+
+section.faq-sec h4 a {
+    color: #EE9E03 !important;
+}
+
+section.bbb-sec {
+    background-color: #FEF9EF;
+    padding: 30px;
+    text-align: center;
+}
+
+section.bbb-sec p {
+    font-size: 18px;
+    color: #297C3F;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin: 0;
+}
+

@@ -1,0 +1,28 @@
+.confirmation h3 {
+    font-size: 32px;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.confirmation p {
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.lets-talk h4 {
+    font-size: 32px;
+    color: #328340;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.lets-talk a {
+    background-color: #4F9542;
+    padding: 6px 50px;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 600;
+}

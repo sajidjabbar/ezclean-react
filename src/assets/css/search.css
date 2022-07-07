@@ -1,0 +1,48 @@
+.name-tag h5 {
+    font-size: 18px;
+    color: #244638;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.name-tag p {
+    font-size: 10px;
+    background-color: #3AA3FF;
+    color: #ffffff;
+    font-family: 'Poppins';
+    margin: 0;
+    border-radius: 20px;
+    padding: 2px 16px;
+}
+
+.search-for-flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.search-view-details a {
+    background-image: linear-gradient(to right, #1D753F, #68A543);
+    font-family: 'Poppins';
+    padding: 10px 70px;
+    border-radius: 70px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.bordr-left {
+    border-left: 2px solid #1D753F;
+}
+
+
+.name-tag {
+    padding-left: 10px;
+}
+
+.three-hundred-area {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+section.search-sec {
+    padding: 70px;
+}
