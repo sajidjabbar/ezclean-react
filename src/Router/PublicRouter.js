@@ -45,7 +45,7 @@ function PubilcRoutes() {
                     <Route path="ProudPartners" element={<ProudPartners />} />
                     <Route path="ChooseUs" element={<ChooseUs />} />
                     <Route path="Footer" element={<Footer />} />
-                    <Route path="/About" element={<About />} />
+                    <Route path="About" element={<About />} />
                     <Route path="Faq" element={<Faq />} />
                     <Route path="BetterBusiness" element={<BetterBusiness />} />
                     <Route path="Services" element={<Services />} />

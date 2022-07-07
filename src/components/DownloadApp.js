@@ -33,4 +33,4 @@ const DownloadApp  = () => {
     );
 };
 
-export default DownloadApp;
+export default DownloadApp
