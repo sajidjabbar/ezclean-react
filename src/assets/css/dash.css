@@ -1,120 +1,206 @@
 .dashboard-sec ul {
-    display: block;
+  display: block;
 }
 
 .my-dv {
-
-    background-image: linear-gradient(to right, #1D753F, #68A543);
+  background-image: linear-gradient(to right, #1d753f, #68a543);
 }
 
 .my-dv h5 {
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin: 0;
-    text-align: initial;
-    padding: 10px;
-    padding-left: 22px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  text-align: initial;
+  padding: 10px;
+  padding-left: 22px;
 }
 
 .dashboard-sec li.nav-item {
-    background-color: #EAF9F6;
+  background-color: #eaf9f6;
 }
 
-.dashboard-sec .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    color: #191919;
-    font-weight: 500;
-    color: #FFFFFF;
-    background-image: linear-gradient(to right, #1D753F, #68A543);
-    background-color: transparent;
+.dashboard-sec .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #191919;
+  font-weight: 500;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #1d753f, #68a543);
+  background-color: transparent;
 }
 
 .dashboard-sec li.nav-item a {
-    padding: 20px 20px;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #191919;
+  padding: 20px 20px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #191919;
 }
 
 .john {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .john-text h3 {
-    font-size: 32px;
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+  font-size: 32px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 .john-text p {
-    font-size: 16px;
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin: 0;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
 }
 
 .profile-head h3 {
-    font-size: 30px;
-    color: #438D41;
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  font-size: 30px;
+  color: #438d41;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-.dashboard-sec  input#exampleInputEmail1 {
-    border: none;
+.dashboard-sec input#exampleInputEmail1 {
+  border: none;
 }
 
 .profile-edit a {
-    border: 1px solid #318240;
-    font-size: 14px;
-    color: #318240;
-    font-family: 'Poppins';
-    font-weight: 600;
-    padding: 10px 40px;
-    border-radius: 60px;
+  border: 1px solid #318240;
+  font-size: 14px;
+  color: #318240;
+  font-family: "Poppins";
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 60px;
 }
 
 .profile-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
 .dashboard-sec span.only-for-flex label {
-    font-size: 13px;
-    color: #438D41;
-    font-weight: 600;
-    white-space: nowrap;
-    margin: 0;
+  font-size: 13px;
+  color: #438d41;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 0;
 }
 .dashboard-sec input#exampleInputEmail1::placeholder {
-    font-size: 16px;
-    color: #000000;
-    font-family: 'Poppins';
-    font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 .dashboard-sec span.only-for-flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 section.dashboard-sec .row {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 section.dashboard-sec {
-    padding: 70px 0px;
+  padding: 70px 0px;
 }
 
+/* edit profile starts here */
+.profile-all .save-profile a {
+  background: linear-gradient(to right, #1d753f, #68a543);
+  color: #fff;
+}
+/* edit profile starts here */
+/* dashbaord tab css starts here */
+.stats-box-row .stats-box-wrapper {
+  background: #e8e8e8;
+  height: 156px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.stats-box-row .stats-box-wrapper h2 {
+  font-family: "Poppins";
+  font-size: 48px;
+  color: #000;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.stats-box-row .stats-box-wrapper h4 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+}
+.stats-box-row .stats-box-wrapper h4 span {
+  color: #000000;
+  font-size: 17px;
+  display: block;
+  font-weight: 400;
+  text-align: center;
+}
+.stats-box-row .stats-box-wrapper:hover {
+  background-image: linear-gradient(to right, #1d753f, #68a543);
+  background-color: transparent;
+}
+.stats-box-row .stats-box-wrapper:hover h2,
+.stats-box-row .stats-box-wrapper:hover h4,
+.stats-box-row .stats-box-wrapper:hover h4 span {
+  color: #fff;
+}
+.job-history {
+  padding: 50px 0px;
+}
+.job-history h3 {
+  color: #438d41;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 23px;
+}
+.job-table-wrapper .table td,
+.table th {
+  border-bottom: 0px !important;
+  border-top: 0px !important;
+}
+.job-table-wrapper .table tr {
+  border: 0px;
+}
+.job-table-wrapper th {
+  font-family: "Poppins";
+  font-size: 21px;
+  font-weight: 600;
+  color: #000000;
+  border-right: 2px solid #c2c2c2;
+}
+.job-table-wrapper td {
+  font-size: 17px;
+  font-weight: 400;
+  border-right: 2px solid #c2c2c2;
+}
+.job-table-wrapper th:last-child {
+  border-right: 0px;
+}
+.job-table-wrapper td:last-child {
+  border-right: 0px;
+}
+.job-history .job-table-wrapper {
+  border-bottom: 1px solid #c2c2c2;
+}
+/* dashbaord tab css starts here */
