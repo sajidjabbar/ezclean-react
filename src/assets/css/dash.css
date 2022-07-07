@@ -1,0 +1,120 @@
+.dashboard-sec ul {
+    display: block;
+}
+
+.my-dv {
+
+    background-image: linear-gradient(to right, #1D753F, #68A543);
+}
+
+.my-dv h5 {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    text-align: initial;
+    padding: 10px;
+    padding-left: 22px;
+}
+
+.dashboard-sec li.nav-item {
+    background-color: #EAF9F6;
+}
+
+.dashboard-sec .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #191919;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #1D753F, #68A543);
+    background-color: transparent;
+}
+
+.dashboard-sec li.nav-item a {
+    padding: 20px 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #191919;
+}
+
+.john {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.john-text h3 {
+    font-size: 32px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.john-text p {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.profile-head h3 {
+    font-size: 30px;
+    color: #438D41;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.dashboard-sec  input#exampleInputEmail1 {
+    border: none;
+}
+
+.profile-edit a {
+    border: 1px solid #318240;
+    font-size: 14px;
+    color: #318240;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 60px;
+}
+
+.profile-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.dashboard-sec span.only-for-flex label {
+    font-size: 13px;
+    color: #438D41;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0;
+}
+.dashboard-sec input#exampleInputEmail1::placeholder {
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.dashboard-sec span.only-for-flex {
+    display: flex;
+    align-items: center;
+}
+section.dashboard-sec .row {
+    display: flex;
+    align-items: center;
+}
+
+section.dashboard-sec {
+    padding: 70px 0px;
+}
+
