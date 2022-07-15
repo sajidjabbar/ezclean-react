@@ -19,7 +19,7 @@ const LoginPage  = () => {
                                 </div>
                             </div>
                             <div className="col-md-12">
-                                <form className="mt-5">
+                                <form action="dashboard" className="mt-5">
                                     <div className="row">
                                         <div className="col-md-6 ml-auto mr-auto">
                                             <div className="col-md-12">
@@ -40,7 +40,7 @@ const LoginPage  = () => {
                                                 </div>
                                             </div>
                                             {/*<a className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto w-50 mr-auto d-flex" href="javascript:void(0);">Login</a>*/}
-                                            <Link className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto w-50 mr-auto d-flex" to={"/Welcome"}>Login</Link>
+                                            <Link className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto w-50 mr-auto d-flex" to={"/dashboard"}>Login</Link>
                                         </div>
                                     </div>
                                 </form>
