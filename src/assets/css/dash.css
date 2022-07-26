@@ -204,3 +204,182 @@ section.dashboard-sec {
   border-bottom: 1px solid #c2c2c2;
 }
 /* dashbaord tab css starts here */
+.star-wrapper ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+}
+
+.star-wrapper ul li {
+  margin: 0px 3px;
+}
+
+.star-wrapper ul li i {
+  color: #fee63a;
+}
+.cleaner-wrapper h4 {
+  color: #438d41;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 23px;
+}
+.cleaner-wrapper td {
+  border: 0px;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.cleaner-table-wrapper .name-box-wrapper span.name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000000;
+}
+.cleaner-wrapper .img-and-name img {
+  width: 34px;
+}
+.cleaner-table-wrapper th.name {
+  width: 19%;
+}
+.cleaner-table-wrapper tr td {
+  vertical-align: middle;
+}
+.cleaner-table-wrapper .dot-wrapper {
+  width: 12px;
+  height: 12px;
+  background: #488c62;
+  border-radius: 50%;
+  position: relative;
+}
+.cleaner-table-wrapper .dot-wrapper::after {
+  content: "";
+  width: 1px;
+  height: 53px;
+  background-color: #000;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+}
+.cleaner-table-wrapper td.dot-column {
+  vertical-align: middle;
+}
+.cleaner-table-wrapper tr:last-child .dot-wrapper::after {
+  display: none;
+}
+.booking-wrapper ul#myTab li a.nav-link.active {
+  color: #328240;
+  text-decoration: underline;
+  font-weight: 600 !important;
+}
+.booking-wrapper ul#myTab li a.nav-link {
+  color: #828282;
+  font-weight: 400 !important;
+  font-size: 16px;
+}
+.booking-wrapper ul#myTab {
+  display: flex;
+  border: 0px;
+}
+.booking-wrapper ul#myTab li.nav-link {
+  border: 0px;
+}
+.booking-wrapper ul#myTab li a.nav-link {
+  background: #fff;
+  border: 0px;
+}
+.booking-table-wrapper .cleaner-wrapper {
+  display: flex;
+  align-items: center;
+}
+.booking-table-wrapper span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.booking-table-wrapper .cleaner-wrapper h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.booking-table-wrapper .cleaner-wrapper img {
+  width: 36px;
+}
+.booking-table-wrapper th span {
+  font-weight: 600 !important;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+.booking-table-wrapper td {
+  border: 0px;
+}
+.booking-table-wrapper th {
+  border-right: 3px solid #c2c2c2;
+  text-align: center;
+}
+.booking-table-wrapper th:last-child {
+  border-right: 0px;
+}
+.booking-table-wrapper tr td {
+  border-right: 3px solid #c2c2c2;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+}
+.booking-table-wrapper tr td:last-child {
+  border-right: 0px;
+}
+.booking-table-wrapper span.Accepted {
+  background-image: linear-gradient(
+    to bottom,
+    #ee9e03,
+    #f2a821,
+    #f6b234,
+    #fbbb45,
+    #ffc554
+  );
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 43px;
+  width: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.booking-table-wrapper span.Rejected {
+  background-color: #929292;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 43px;
+  width: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #e3e3e3;
+}
+
+.booking-table-wrapper span.Completed {
+  background-image: linear-gradient(
+    to bottom,
+    #1d753f,
+    #308141,
+    #438d42,
+    #559943,
+    #68a543
+  );
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 43px;
+  width: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.booking-table-wrapper {
+  margin-top: 35px;
+}

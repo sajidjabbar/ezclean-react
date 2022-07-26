@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
 import { Link } from "react-router-dom";
+import { cleaner, cleaner2, cleaner3 } from "../../constant";
 
 const Dashboard = () => {
   const [editprofile, seteditprofile] = useState(false);
@@ -35,10 +36,14 @@ const Dashboard = () => {
                 </div> */}
 
                 <div className="dashboard-sec">
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
+                  <ul
+                    className="nav nav-pills mb-3"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li className="nav-item">
                       <a
-                        class="nav-link active"
+                        className="nav-link active"
                         id="pills-profile-tab"
                         data-toggle="pill"
                         href="#pills-profile"
@@ -50,10 +55,10 @@ const Dashboard = () => {
                       </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <Link
                         to="/Makingbooking"
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-home-tab"
                         data-toggle="pill"
                         href="#pills-home"
@@ -64,9 +69,9 @@ const Dashboard = () => {
                         Make Booking
                       </Link>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-dashboard-tab"
                         data-toggle="pill"
                         href="#pills-dashboard"
@@ -77,9 +82,9 @@ const Dashboard = () => {
                         Dashboard
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-contact-tab"
                         data-toggle="pill"
                         href="#pills-contact"
@@ -91,9 +96,9 @@ const Dashboard = () => {
                       </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-invite-tab"
                         data-toggle="pill"
                         href="#pills-invite"
@@ -105,9 +110,9 @@ const Dashboard = () => {
                       </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-Loyalty-tab"
                         data-toggle="pill"
                         href="#pills-Loyalty"
@@ -119,9 +124,9 @@ const Dashboard = () => {
                       </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-Wallet-tab"
                         data-toggle="pill"
                         href="#pills-Wallet"
@@ -133,9 +138,9 @@ const Dashboard = () => {
                       </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         id="pills-Notifications-tab"
                         data-toggle="pill"
                         href="#pills-Notifications"
@@ -155,9 +160,9 @@ const Dashboard = () => {
               <div className="row">
                 <div className="col-md-12">
                   <div className="tabs-things">
-                    <div class="tab-content" id="pills-tabContent">
+                    <div className="tab-content" id="pills-tabContent">
                       <div
-                        class="tab-pane fade show active"
+                        className="tab-pane fade show active"
                         id="pills-profile"
                         role="tabpanel"
                         aria-labelledby="pills-profile-tab"
@@ -177,7 +182,7 @@ const Dashboard = () => {
                               <form>
                                 <div className="row">
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -185,7 +190,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="John"
@@ -195,7 +200,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -203,7 +208,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="123, BLV 234, Lorem ipsum, dolor sit int"
@@ -213,7 +218,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -221,7 +226,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="Doe"
@@ -231,7 +236,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -239,7 +244,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="Lorem ipsum"
@@ -249,7 +254,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -257,7 +262,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="janedoe@email.com"
@@ -267,7 +272,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -275,7 +280,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="Lorem ipsum"
@@ -285,7 +290,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -293,7 +298,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="**** **** **** ****"
@@ -304,7 +309,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -312,7 +317,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="+1 234 567 890"
@@ -333,7 +338,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <span className="only-for-flex">
                                         {" "}
                                         <label for="exampleInputEmail1">
@@ -341,7 +346,7 @@ const Dashboard = () => {
                                         </label>
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputEmail1"
                                           aria-describedby="emailHelp"
                                           placeholder="********"
@@ -365,7 +370,7 @@ const Dashboard = () => {
                               <form>
                                 <div className="row">
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="First Name"
                                         className="form-control"
@@ -374,7 +379,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Address"
                                         className="form-control"
@@ -383,7 +388,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Last Name"
                                         className="form-control"
@@ -392,7 +397,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="City"
                                         className="form-control"
@@ -401,7 +406,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Email Address"
                                         className="form-control"
@@ -410,7 +415,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="State"
                                         className="form-control"
@@ -419,7 +424,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Card Number"
                                         className="form-control"
@@ -428,7 +433,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Phone"
                                         className="form-control"
@@ -437,7 +442,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="New Password"
                                         className="form-control"
@@ -446,7 +451,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Confirm Password"
                                         className="form-control"
@@ -466,7 +471,7 @@ const Dashboard = () => {
                                   </div>
 
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Password"
                                         className="form-control"
@@ -474,7 +479,7 @@ const Dashboard = () => {
                                     </div>
                                   </div>
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Change Password"
                                         className="form-control"
@@ -482,7 +487,7 @@ const Dashboard = () => {
                                     </div>
                                   </div>
                                   <div className="col-md-6">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                       <input
                                         placeholder="Confirm Password"
                                         className="form-control"
@@ -497,7 +502,7 @@ const Dashboard = () => {
                         </div>
                       </div>
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-dashboard"
                         role="tabpanel"
                         aria-labelledby="pills-dashboard-tab"
@@ -547,8 +552,8 @@ const Dashboard = () => {
                             </div>
                             <div className="col-lg-12">
                               <div className="job-table-wrapper">
-                                <div class="table-responsive">
-                                  <table class="table">
+                                <div className="table-responsive">
+                                  <table className="table">
                                     <thead>
                                       <tr>
                                         <th scope="col">Job Type</th>
@@ -598,44 +603,179 @@ const Dashboard = () => {
                             </div>
                             <div className="col-lg-12">
                               <div className="cleaner-table-wrapper">
-                                <div class="table-responsive">
-                                  <table class="table">
+                                <div className="table-responsive">
+                                  <table className="table">
                                     <thead>
                                       <tr>
-                                        <th scope="col" className="line" ></th>
+                                        <th scope="col" className="line"></th>
                                         <th scope="col" className="name"></th>
-                                        <th scope="col" className="description"></th>
+                                        <th
+                                          scope="col"
+                                          className="description"
+                                        ></th>
                                         <th scope="col" className="rating"></th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td>Regular Cleaning</td>
+                                        <td className="dot-column">
+                                          <div className="dot-wrapper"></div>
+                                        </td>
                                         <td className="name-box-wrapper">
                                           <div className="img-and-name">
-                                            <img src="" />
+                                            <img src={cleaner} />
+                                            <span className="name">
+                                              {" "}
+                                              John Doe
+                                            </span>
                                           </div>
                                         </td>
-                                        <td>Lorem Ipsum</td>
-                                        <td>$300</td>
+                                        <td>
+                                          It is a long established fact that a
+                                          reader will be distracted by the
+                                          readable
+                                        </td>
+                                        <td>
+                                          <div className="star-wrapper">
+                                            <ul>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star-o"></i>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td>Regular Cleaning</td>
-                                        <td>John Doe</td>
-                                        <td>Lorem Ipsum</td>
-                                        <td>$300</td>
+                                        <td className="dot-column">
+                                          <div className="dot-wrapper"></div>
+                                        </td>
+                                        <td className="name-box-wrapper">
+                                          <div className="img-and-name">
+                                            <img src={cleaner2} />
+                                            <span className="name">
+                                              {" "}
+                                              Manfred James
+                                            </span>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          It is a long established fact that a
+                                          reader will be distracted by the
+                                          readable
+                                        </td>
+                                        <td>
+                                          <div className="star-wrapper">
+                                            <ul>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star-o"></i>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td>Regular Cleaning</td>
-                                        <td>John Doe</td>
-                                        <td>Lorem Ipsum</td>
-                                        <td>$300</td>
+                                        <td className="dot-column">
+                                          <div className="dot-wrapper"></div>
+                                        </td>
+                                        <td className="name-box-wrapper">
+                                          <div className="img-and-name">
+                                            <img src={cleaner3} />
+                                            <span className="name">
+                                              {" "}
+                                              Marcus Brown
+                                            </span>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          It is a long established fact that a
+                                          reader will be distracted by the
+                                          readable
+                                        </td>
+                                        <td>
+                                          <div className="star-wrapper">
+                                            <ul>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star-o"></i>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td>Regular Cleaning</td>
-                                        <td>John Doe</td>
-                                        <td>Lorem Ipsum</td>
-                                        <td>$300</td>
+                                        <td className="dot-column">
+                                          <div className="dot-wrapper"></div>
+                                        </td>
+                                        <td className="name-box-wrapper">
+                                          <div className="img-and-name">
+                                            <img src={cleaner} />
+                                            <span className="name">
+                                              {" "}
+                                              Jacob Neil
+                                            </span>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          It is a long established fact that a
+                                          reader will be distracted by the
+                                          readable
+                                        </td>
+                                        <td>
+                                          <div className="star-wrapper">
+                                            <ul>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star"></i>
+                                              </li>
+                                              <li>
+                                                <i className="fa fa-star-o"></i>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -646,13 +786,368 @@ const Dashboard = () => {
                         </div>
                       </div>
                       <div
-                        class="tab-pane fade"
-                        id="pills-home"
+                        className="tab-pane fade"
+                        id="pills-contact"
                         role="tabpanel"
-                        aria-labelledby="pills-home-tab"
-                      ></div>
+                        aria-labelledby="pills-contact-tab"
+                      >
+                        <div className="booking-wrapper">
+                          <div className="tab-wrapper">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link active"
+                                  id="home-tab"
+                                  data-toggle="tab"
+                                  href="#home"
+                                  role="tab"
+                                  aria-controls="home"
+                                  aria-selected="true"
+                                >
+                                  Upcoming Bookings
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  id="contact-tab"
+                                  data-toggle="tab"
+                                  href="#contact"
+                                  role="tab"
+                                  aria-controls="contact"
+                                  aria-selected="false"
+                                >
+                                  Previous Bookings
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="tab-content-wrapper">
+                            <div class="tab-content" id="myTabContent">
+                              <div
+                                class="tab-pane fade show active"
+                                id="home"
+                                role="tabpanel"
+                                aria-labelledby="home-tab"
+                              >
+                                <div className="booking-table-wrapper">
+                                  <div className="table-responsive">
+                                    <table className="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th className="JobType">
+                                            <span>Job Type</span>
+                                          </th>
+                                          <th className="CleanerName">
+                                            <span>Cleaner Name</span>
+                                          </th>
+                                          <th className="TotalAmont">
+                                            <span>Total Amont</span>
+                                          </th>
+                                          <th className="Action">
+                                            <span>Action</span>
+                                          </th>
+                                          <th className="Status">
+                                            <span>Status</span>
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Accepted">
+                                              Accepted
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner2}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Accepted">
+                                              Accepted
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner3}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Rejected">
+                                              Rejected
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner2}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Accepted">
+                                              Accepted
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner3}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Rejected">
+                                              Rejected
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="contact"
+                                role="tabpanel"
+                                aria-labelledby="contact-tab"
+                              >
+                                <div className="booking-table-wrapper">
+                                  <div className="table-responsive">
+                                    <table className="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th className="JobType">
+                                            <span>Job Type</span>
+                                          </th>
+                                          <th className="CleanerName">
+                                            <span>Cleaner Name</span>
+                                          </th>
+                                          <th className="TotalAmont">
+                                            <span>Total Amont</span>
+                                          </th>
+                                          <th className="Action">
+                                            <span>Action</span>
+                                          </th>
+                                          <th className="Status">
+                                            <span>Status</span>
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Completed">
+                                            Completed
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner2}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Completed">
+                                            Completed
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner3}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Completed">
+                                            Completed
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner2}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Completed">
+                                            Completed
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td className="typeName">
+                                            <span>Regular Cleaning</span>
+                                          </td>
+                                          <td className="CleanerName">
+                                            <div className="cleaner-wrapper">
+                                              <img
+                                                src={cleaner3}
+                                                className="img-fluid"
+                                              />
+                                              <h5>John Doe</h5>
+                                            </div>
+                                          </td>
+                                          <td className="AmountName">
+                                            <span>$300</span>
+                                          </td>
+                                          <td className="ActionName">
+                                            <a href="#">View Detail</a>
+                                          </td>
+                                          <td className="StatusName">
+                                            <span className="Rejected">
+                                              Rejected
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-profile"
                         role="tabpanel"
                         aria-labelledby="pills-profile-tab"
@@ -660,7 +1155,7 @@ const Dashboard = () => {
                         C
                       </div>
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-contact"
                         role="tabpanel"
                         aria-labelledby="pills-contact-tab"
@@ -669,7 +1164,7 @@ const Dashboard = () => {
                       </div>
 
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-invite"
                         role="tabpanel"
                         aria-labelledby="pills-invite-tab"
@@ -678,7 +1173,7 @@ const Dashboard = () => {
                       </div>
 
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-Loyalty"
                         role="tabpanel"
                         aria-labelledby="pills-Loyalty-tab"
@@ -687,7 +1182,7 @@ const Dashboard = () => {
                       </div>
 
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-Wallet"
                         role="tabpanel"
                         aria-labelledby="pills-Wallet-tab"
@@ -696,7 +1191,7 @@ const Dashboard = () => {
                       </div>
 
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-Notifications"
                         role="tabpanel"
                         aria-labelledby="pills-Notifications-tab"
