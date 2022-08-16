@@ -1,145 +1,143 @@
 .clear-found-head h2 {
-    font-size: 40px;
-    color: #000000;
-    font-family: 'Poppins';
-    font-weight: 600;
-    margin: 0;
+	font-size: 40px;
+	color: #000000;
+	font-family: "Poppins";
+	font-weight: 600;
+	margin: 0;
 }
 
 .john-stars ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;
 }
 
 .john-martin {
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
+	display: flex;
+	align-items: center;
+	padding-top: 40px;
 }
 .john-text h3 {
-    font-size: 38px;
-    color: #328340;
-    font-family: 'Poppins';
-    font-weight: 600;
+	font-size: 29px;
+	color: #328340;
+	font-family: "Poppins";
+	font-weight: 600;
 }
 
 .john-stars p {
-    font-size: 14px;
-    color: #244638;
-    font-weight: 400;
+	font-size: 14px;
+	color: #244638;
+	font-weight: 400;
 }
 
 .hire-btn a {
-    background-image: linear-gradient(to right, #1D753F, #68A543);
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 14px;
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 500;
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	padding: 10px 30px;
+	border-radius: 50px;
+	font-size: 14px;
+	color: #ffffff;
+	font-family: "Poppins";
+	font-weight: 500;
 }
 
 .hire-btn {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .john-stars ul li a i {
-    color: #FEE63A;
+	color: #fee63a;
 }
 
 .john-text {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 .john-stars span {
-    font-size: 16px;
-    color: #000000;
-    font-family: 'Poppins';
-    font-weight: 500;
-    padding-left: 20px;
+	font-size: 16px;
+	color: #000000;
+	font-family: "Poppins";
+	font-weight: 500;
+	padding-left: 20px;
 }
 
 .john-para p {
-    font-size: 13px;
-    color: #777777;
-    font-family: 'Poppins';
-    font-weight: 400;
-    padding-top: 60px;
+	font-size: 13px;
+	color: #777777;
+	font-family: "Poppins";
+	font-weight: 400;
+	padding-top: 60px;
 }
 
 .for-grey-color {
-    color: #DBDBDB !important;
+	color: #dbdbdb !important;
 }
 
 .john-stars ul li a i {
-    padding-right: 8px;
+	padding-right: 8px;
 }
 
 section.clear-found-sec {
-    padding: 70px;
+	padding: 70px;
 }
 
-
 .chat-with-cleaner a {
-    font-size: 17px;
-    color: #1E763F;
-    font-family: 'Poppins';
-    font-weight: 600;
+	font-size: 17px;
+	color: #1e763f;
+	font-family: "Poppins";
+	font-weight: 600;
 }
 
 .acced-proceed a {
-    font-size: 17px;
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 600;
+	font-size: 17px;
+	color: #ffffff;
+	font-family: "Poppins";
+	font-weight: 600;
 }
 
 .reject a {
-    font-size: 17px;
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 600;
-    
+	font-size: 17px;
+	color: #ffffff;
+	font-family: "Poppins";
+	font-weight: 600;
 }
 
 .acced-proceed {
-    margin: 30px 0px;
+	margin: 30px 0px;
 }
 
 section.clear-found-sec .row {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .all-text-center {
-    text-align: center;
+	text-align: center;
 }
 
 .chat-with-cleaner {
-    border: 1px solid #338340;
-    /* padding: 10px 70px; */
-    border-radius: 80px;
-    width: 70%;
-    padding: 10px;
-    margin: 20px auto;
+	border: 1px solid #338340;
+	/* padding: 10px 70px; */
+	border-radius: 80px;
+	width: 70%;
+	padding: 10px;
+	margin: 20px auto;
 }
 
 .acced-proceed {
-    border: 1px solid #338340;
-    border-radius: 80px;
-    background-image: linear-gradient(to right, #1D753F, #68A543);
-    width: 70%;
-    padding: 10px;
-    margin: 20px auto;
+	border: 1px solid #338340;
+	border-radius: 80px;
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	width: 70%;
+	padding: 10px;
+	margin: 20px auto;
 }
 
 .reject {
-    border: 1px solid #DF190A;
-    background-color: #DF190A;
-    /* padding: 10px 70px; */
-    border-radius: 80px;
-    width: 70%;
-    padding: 10px;
-    margin: 20px auto;
+	border: 1px solid #df190a;
+	background-color: #df190a;
+	/* padding: 10px 70px; */
+	border-radius: 80px;
+	width: 70%;
+	padding: 10px;
+	margin: 20px auto;
 }

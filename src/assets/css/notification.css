@@ -1,0 +1,73 @@
+.notification-sec {
+	padding: 70px 0px;
+}
+.notification-sec .notifications-wrapper .notification-list-wrapper {
+	margin-top: 30px;
+	padding: 20px;
+	border: 1px solid #c2c2c2;
+	border-radius: 12px;
+}
+.notification-sec .notifications-wrapper .notifications-heading-wrapper {
+	text-align: center;
+}
+.notification-sec .notifications-wrapper .notifications-heading-wrapper h3 {
+	color: #438d41;
+	font-size: 30px;
+	font-family: "Poppins";
+	font-weight: 600;
+}
+.notification-sec .notification-list-wrapper .single-notification-wrapper {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #c2c2c2;
+	align-items: center;
+	padding: 16px 0px;
+}
+.notification-sec .notification-list-wrapper .profile-wrapper {
+	display: flex;
+	align-items: center;
+	flex: 0 0 30%;
+}
+.notification-list-wrapper .profile-content-wrapper h6 {
+	color: #b5b5b5;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0px;
+}
+.notification-list-wrapper .profile-content-wrapper h3 {
+	color: #244638;
+	font-size: 20px;
+	font-weight: 400;
+}
+.single-notification-wrapper .profile-wrapper .profile-content-wrapper {
+	margin-left: 12px;
+}
+.single-notification-wrapper .msg-wrappper h4 {
+	color: #244638;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	margin: 0px;
+}
+.single-notification-wrapper .msg-wrappper {
+	flex: 0 0 50%;
+}
+
+.single-notification-wrapper .notofication-btn-wrapper a {
+	color: #b5b5b5;
+	font-size: 16px;
+	font-weight: 600;
+}
+.notification-sec .single-notification-wrapper .notofication-btn-wrapper {
+	flex: 0 0 20%;
+	text-align: end;
+}
+.single-notification-wrapper .profile-img-wrapper img {
+	height: 56px;
+	width: 56px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.notification-sec .single-notification-wrapper:last-child {
+	border: 0px;
+}

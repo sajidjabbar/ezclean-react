@@ -1,0 +1,112 @@
+.customer-sec {
+	padding: 100px 0px;
+}
+.customer-sec .search-wrapper input {
+	height: 53px;
+}
+.customer-sec .search-wrapper input::placeholder {
+	color: #000000;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 400;
+}
+.customer-sec .profile-img-btn-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 18px 0px;
+}
+.profile-img-btn-wrapper .profile-img-wrapper {
+	display: flex;
+	align-items: center;
+}
+.profile-img-btn-wrapper .profile-img-wrapper h2 {
+	margin-left: 23px;
+	margin-bottom: 0px;
+	font-size: 36px;
+	font-weight: 600;
+}
+.profile-img-btn-wrapper .profile-img-wrapper img {
+	height: 75px;
+	width: 75px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.customer-sec .profile-img-btn-wrapper .profile-btn-wrapper .btn {
+	padding: 10px 38px;
+	margin: 0px 0px 0px 11px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.customer-sec .customer-banner-wrapper {
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	padding: 55px 70px;
+	margin-top: 40px;
+	position: relative;
+}
+.customer-sec .customer-banner-wrapper h3 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.customer-sec .only-price-wrapper {
+	display: inline-flex;
+	background: white;
+	height: 156px;
+	border-radius: 50%;
+	width: 156px;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	right: 13%;
+	border: 1px solid #707070;
+}
+.customer-sec .only-price-wrapper h4 {
+	margin: 0px;
+	color: #000000;
+	font-size: 24px;
+	font-weight: 600;
+}
+.customer-sec .only-price-wrapper h2 {
+	margin: 0px;
+	color: #000000;
+	font-size: 50px;
+	font-weight: 600;
+}
+.customer-sec .help-content-wrapper a.btn {
+	height: 46px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+}
+.customer-sec .help-content-wrapper h4 {
+	color: #000000;
+	font-size: 30px;
+	font-weight: 600;
+}
+.help-content-wrapper p {
+	font-size: 16px;
+	color: #777777;
+}
+.customer-sec .help-content-wrapper a.btn:hover {
+	border: 2px solid #267b3f;
+	background: transparent;
+	color: #267b3f;
+	font-size: 14px;
+	font-weight: 600;
+}
+.customer-sec .cleaner-wrapper {
+	text-align: center;
+}
+.customer-sec .cleaner-wrapper h4 {
+	color: #244638;
+	font-size: 28px;
+	font-weight: 600;
+	margin-top: 23px;
+}

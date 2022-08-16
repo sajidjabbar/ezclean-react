@@ -1,0 +1,83 @@
+.hired {
+	padding: 100px 0px;
+}
+.hired-wrapper .employee-card-wrapper {
+	display: flex;
+	align-items: center;
+	border: 1px solid #707070;
+	border-radius: 12px;
+	padding: 13px;
+}
+.hired-wrapper .employee-card-wrapper .employee-img-wrapper {
+	flex: 0 0 23%;
+}
+.hired-wrapper .employee-card-wrapper .employee-content-wrapper {
+	flex: 0 0 71%;
+	padding-left: 15px;
+}
+.hired-wrapper .employee-card-wrapper .employee-img-wrapper figure {
+	margin: 0px;
+}
+.hired-wrapper .employee-card-wrapper .employee-content-wrapper span {
+	background: #3aa3ff;
+	color: #fff;
+	font-size: 10px;
+	padding: 1px 13px;
+	border-radius: 3px;
+}
+.hired-wrapper .employee-card-wrapper .employee-img-wrapper img {
+	height: 160px;
+	width: 160px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.hired .hired-heading-wrapper {
+	text-align: center;
+}
+
+.hired .hired-heading-wrapper h4 {
+	color: #000;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 600;
+}
+.hired .hired-heading-wrapper p {
+	color: #777777;
+}
+.hired .employee-card-wrapper .rating-wrapper ul {
+	padding: 0px;
+	list-style: none;
+	display: flex;
+}
+.hired .employee-card-wrapper .rating-wrapper ul li i {
+	color: #fee63a;
+	margin: 0px 3px 0px 0px;
+}
+.hired .employee-card-wrapper .rating-wrapper ul li i.gery {
+	color: #dbdbdb;
+}
+.hired-wrapper .employee-content-wrapper h3 {
+	color: #328340;
+	font-family: "Poppins";
+	font-weight: 700;
+	font-size: 34px;
+}
+.hired-wrapper .rating-wrapper li span {
+	color: #000000 !important;
+	background: transparent !important;
+	font-size: 16px !important;
+	font-weight: 500;
+}
+.hired-wrapper .employee-card-wrapper .employee-content-wrapper p {
+	color: #244638;
+	font-size: 16px;
+	font-weight: 400;
+}
+.hired .hired-btn-wrappper {
+	text-align: center;
+	margin-top: 25px;
+}
+.hired-btn-wrappper a.btn {
+	font-weight: 600;
+	font-size: 17px;
+}

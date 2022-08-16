@@ -1,0 +1,186 @@
+.cleaning-sec {
+	padding: 100px 0px;
+	position: relative;
+}
+.cleaning-sec .job-payment-wrapper .payment-heading-btn-wrapper button.btn {
+	color: #1d753f;
+	font-family: "Poppins";
+	font-size: 17px;
+	border: 2px solid;
+	padding: 3px 28px;
+	height: 44px;
+	border-radius: 30px;
+	font-weight: 600;
+}
+.cleaning-sec .job-payment-wrapper .payment-heading-btn-wrapper h2 {
+	color: #000000;
+	font-family: "Poppins";
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+.cleaning-sec .job-payment-wrapper .payment-heading-btn-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.cleaning-sec .job-payment-wrapper p {
+	color: #777777;
+	font-size: 16px;
+	font-weight: 400;
+}
+.charges-and-standards-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0px;
+	align-items: center;
+}
+.charges-and-standards-wrapper .charges-wrapper::after {
+	content: "";
+	display: block;
+	height: 135px;
+	width: 135px;
+	background: #fee63a;
+	border-radius: 50%;
+	position: absolute;
+	top: -28%;
+	left: -17%;
+	z-index: -1;
+}
+.charges-and-standards-wrapper .charges-wrapper {
+	position: relative;
+}
+.charges-and-standards-wrapper .charges-wrapper h6 {
+	color: #244638;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0px;
+}
+.charges-and-standards-wrapper .charges-wrapper h2 {
+	color: #244638;
+	font-size: 48px;
+	font-weight: 700;
+}
+.cleaning-sec .starndard-wrapper h2 {
+	color: #000000;
+	font-size: 40px;
+	font-family: "Poppins";
+	font-weight: 700;
+	margin: 0px;
+}
+.cleaning-sec .charges-and-standards-wrapper .starndard-wrapper h4 {
+	color: #244638;
+	font-size: 24px;
+	font-weight: 600;
+}
+.cleaning-sec .charges-and-standards-wrapper .starndard-wrapper h6 {
+	color: #244638;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 600;
+}
+.cleaning-sec .packages-list-wrapper ul {
+	padding: 0px;
+	list-style: none;
+	margin: 0px;
+}
+.cleaning-sec .packages-list-wrapper ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0px;
+}
+.cleaning-sec .packages-list-wrapper ul li span.Done {
+	flex: 0 0 13%;
+	color: #1d753f;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.cleaning-sec .packages-list-wrapper ul li span.text {
+	flex: 0 0 87%;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+}
+.packages-include-wrapper .packages-list-wrapper {
+	margin-top: 29px;
+}
+.cleaning-sec .package-heading-wrapper {
+	padding-top: 30px;
+}
+.cleaning-sec .packages-include-wrapper h5 {
+	color: #000000;
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 700;
+}
+.rate-area {
+	/* float: left; */
+	border-style: none;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+.cleaning-sec .review-wrapper {
+	margin-top: 23px;
+}
+.cleaning-sec .review-wrapper label.la {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+}
+.rate-area:not(:checked) > input {
+	position: absolute;
+	top: -9999px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.rate-area:not(:checked) > label {
+	float: right;
+	width: 0.8em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 180%;
+	color: lightgrey;
+	margin: 0px 10px 0px 0px;
+}
+
+.rate-area:not(:checked) > label:before {
+	content: "★";
+}
+
+.rate-area > input:checked ~ label {
+	color: gold;
+}
+
+.rate-area:not(:checked) > label:hover,
+.rate-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+
+.rate-area > input:checked + label:hover,
+.rate-area > input:checked + label:hover ~ label,
+.rate-area > input:checked ~ label:hover,
+.rate-area > input:checked ~ label:hover ~ label,
+.rate-area > label:hover ~ input:checked ~ label {
+	color: gold;
+}
+.cleaning-sec::after {
+	content: url("../img/Edition.png");
+	position: absolute;
+	top: 0%;
+	right: 0px;
+}
+.cleaning-sec .review-wrapper button.btn {
+	font-size: 16px;
+	font-weight: 600;
+}
+.cleaning-sec .review-wrapper textarea.form-control {
+	border: 1px solid #d5d5d5;
+	border-radius: 14px;
+}
+.cleaning-sec .packages-include-wrapper {
+	margin: 21px 0px;
+}

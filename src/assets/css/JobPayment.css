@@ -1,0 +1,124 @@
+.job_payment {
+	padding: 100px 0px;
+}
+.job_payment .job-payment-wrapper .payment-heading-btn-wrapper button.btn {
+	color: #1d753f;
+	font-family: "Poppins";
+	font-size: 17px;
+	border: 2px solid;
+	padding: 3px 28px;
+	height: 44px;
+	border-radius: 30px;
+	font-weight: 600;
+}
+.job_payment .job-payment-wrapper .payment-heading-btn-wrapper h2 {
+	color: #000000;
+	font-family: "Poppins";
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+.job_payment .job-payment-wrapper .payment-heading-btn-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.job_payment .job-payment-wrapper p {
+	color: #777777;
+	font-size: 16px;
+	font-weight: 400;
+}
+.charges-and-standards-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0px;
+	align-items: center;
+}
+.charges-and-standards-wrapper .charges-wrapper::after {
+	content: "";
+	display: block;
+	height: 135px;
+	width: 135px;
+	background: #fee63a;
+	border-radius: 50%;
+	position: absolute;
+	top: -28%;
+	left: -17%;
+	z-index: -1;
+}
+.charges-and-standards-wrapper .charges-wrapper {
+	position: relative;
+}
+.charges-and-standards-wrapper .charges-wrapper h6 {
+	color: #244638;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0px;
+}
+.charges-and-standards-wrapper .charges-wrapper h2 {
+	color: #244638;
+	font-size: 48px;
+	font-weight: 700;
+}
+.job_payment .starndard-wrapper h2 {
+	color: #000000;
+	font-size: 40px;
+	font-family: "Poppins";
+	font-weight: 700;
+	margin: 0px;
+}
+.job_payment .charges-and-standards-wrapper .starndard-wrapper h4 {
+	color: #244638;
+	font-size: 24px;
+	font-weight: 600;
+}
+.job_payment .charges-and-standards-wrapper .starndard-wrapper h6 {
+	color: #244638;
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 600;
+}
+.job_payment .job-payment-wrapper {
+	margin-bottom: 40px;
+}
+.job-form-wrapper label[for="Name"] {
+	color: #244638;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+.job-form-wrapper input {
+	height: 50px;
+	border: 1px solid #8e8e93;
+	border-radius: 8px;
+}
+.job_payment input::placeholder {
+	color: #a5a5a5;
+	font-size: 16px;
+}
+.job_payment label {
+	color: #244638;
+	font-weight: 500;
+	font-size: 17px;
+}
+.job-form-wrapper label[for="Expiry"] {
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+.job-form-wrapper .CardNumber input {
+	text-align: center;
+}
+.CardNumber label {
+	margin-top: 15px;
+}
+.job_payment .ExpiryDate {
+	margin-top: 32px;
+}
+.job_payment input {
+	height: 46px;
+	border: 1px solid #8e8e93;
+	border-radius: 8px;
+}
+.job_payment .CVV {
+	margin-top: 25px;
+}

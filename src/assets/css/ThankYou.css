@@ -1,0 +1,22 @@
+.thankyou-sec {
+	padding: 100px 0px;
+}
+.thankyou-sec .thank-you-card-wrapper {
+	padding: 60px 30px;
+	text-align: center;
+	box-shadow: 0px 3px 6px 3px #70707030;
+	border-radius: 12px;
+}
+.thankyou-sec .thank-you-card-wrapper h2 {
+	color: #000000;
+	font-size: 40px;
+	font-weight: 600;
+}
+.thankyou-sec .thank-you-card-wrapper h4 {
+	color: #000000;
+	font-size: 30px;
+	font-weight: 600;
+}
+.thankyou-sec .thank-you-card-wrapper h4 span {
+	color: #ee9e03;
+}

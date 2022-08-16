@@ -1,0 +1,64 @@
+.invite-sec {
+	padding: 80px 0px;
+	position: relative;
+}
+.invite-sec .invite-content-wrapper h2 {
+	font-family: "Poppins";
+	font-size: 36px;
+	font-weight: 600;
+}
+.invite-sec .invite-content-wrapper h2 span {
+	color: #2b7e3f;
+}
+.invite-sec .invite-content-wrapper p {
+	color: #777777;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.invite-sec .invite-coonde-wrapper {
+	margin-top: 33px;
+}
+
+.invite-sec .invite-coonde-wrapper button.btn {
+	border-radius: 50px;
+	background: linear-gradient(to right, #1d753f, #68a543);
+	border: green;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 44px 10px 44px;
+	margin-top: 22px;
+}
+.invite-sec .img-wrapper::after {
+	content: "";
+	height: 159px;
+	width: 642px;
+	display: block;
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	position: absolute;
+	top: 7%;
+	right: -58%;
+	z-index: -1;
+}
+.tagline-sec .contact p {
+	color: #ee9e03;
+	font-weight: 400;
+	text-align: center;
+}
+.tagline-sec .contact p a {
+	text-decoration: underline;
+	color: #ee9e03;
+	font-weight: 500;
+}
+.tagline-sec .better {
+	background: #fef9ef;
+	padding: 20px 0px;
+	text-align: center;
+	margin-top: 30px;
+}
+.tagline-sec .better p {
+	color: #1d753f;
+	font-weight: 500;
+	font-size: 18px;
+}

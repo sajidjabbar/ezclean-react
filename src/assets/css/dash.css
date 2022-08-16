@@ -1,385 +1,564 @@
 .dashboard-sec ul {
-  display: block;
+	display: block;
 }
 
 .my-dv {
-  background-image: linear-gradient(to right, #1d753f, #68a543);
+	background-image: linear-gradient(to right, #1d753f, #68a543);
 }
 
 .my-dv h5 {
-  font-size: 14px;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  margin: 0;
-  text-align: initial;
-  padding: 10px;
-  padding-left: 22px;
+	font-size: 14px;
+	color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	margin: 0;
+	text-align: initial;
+	padding: 10px;
+	padding-left: 22px;
 }
 
 .dashboard-sec li.nav-item {
-  background-color: #eaf9f6;
+	background-color: #eaf9f6;
 }
 
 .dashboard-sec .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: #191919;
-  font-weight: 500;
-  color: #ffffff;
-  background-image: linear-gradient(to right, #1d753f, #68a543);
-  background-color: transparent;
+	font-size: 14px;
+	font-family: "Poppins", sans-serif;
+	color: #191919;
+	font-weight: 500;
+	color: #ffffff;
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	background-color: transparent;
 }
 
 .dashboard-sec li.nav-item a {
-  padding: 20px 20px;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #191919;
+	padding: 20px 20px;
+	font-size: 14px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	color: #191919;
+	margin: 3px 0px;
 }
 
 .john {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 50px;
 }
 
 .john-text h3 {
-  font-size: 32px;
-  color: #000000;
-  font-family: "Poppins", sans-serif;
-  margin: 0;
+	font-size: 32px;
+	color: #000000;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
 }
 
 .john-text p {
-  font-size: 16px;
-  color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  margin: 0;
+	font-size: 16px;
+	color: #000000;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	margin: 0;
 }
 
 .profile-head h3 {
-  font-size: 30px;
-  color: #438d41;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+	font-size: 30px;
+	color: #438d41;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
 }
 
 .dashboard-sec input#exampleInputEmail1 {
-  border: none;
+	border: none;
 }
 
 .profile-edit a {
-  border: 1px solid #318240;
-  font-size: 14px;
-  color: #318240;
-  font-family: "Poppins";
-  font-weight: 600;
-  padding: 10px 40px;
-  border-radius: 60px;
+	border: 1px solid #318240;
+	font-size: 14px;
+	color: #318240;
+	font-family: "Poppins";
+	font-weight: 600;
+	padding: 10px 40px;
+	border-radius: 60px;
 }
 
 .profile-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 30px;
 }
 
 .dashboard-sec span.only-for-flex label {
-  font-size: 13px;
-  color: #438d41;
-  font-weight: 600;
-  white-space: nowrap;
-  margin: 0;
+	font-size: 13px;
+	color: #438d41;
+	font-weight: 600;
+	white-space: nowrap;
+	margin: 0;
 }
 .dashboard-sec input#exampleInputEmail1::placeholder {
-  font-size: 16px;
-  color: #000000;
-  font-family: "Poppins";
-  font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+	font-family: "Poppins";
+	font-weight: 400;
 }
 
 .dashboard-sec span.only-for-flex {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 section.dashboard-sec .row {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 section.dashboard-sec {
-  padding: 70px 0px;
+	padding: 70px 0px;
 }
 
 /* edit profile starts here */
 .profile-all .save-profile a {
-  background: linear-gradient(to right, #1d753f, #68a543);
-  color: #fff;
+	background: linear-gradient(to right, #1d753f, #68a543);
+	color: #fff;
 }
 /* edit profile starts here */
 /* dashbaord tab css starts here */
 .stats-box-row .stats-box-wrapper {
-  background: #e8e8e8;
-  height: 156px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
+	background: #e8e8e8;
+	height: 156px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
 }
 
 .stats-box-row .stats-box-wrapper h2 {
-  font-family: "Poppins";
-  font-size: 48px;
-  color: #000;
-  font-weight: 600;
-  margin: 0px;
+	font-family: "Poppins";
+	font-size: 48px;
+	color: #000;
+	font-weight: 600;
+	margin: 0px;
 }
 
 .stats-box-row .stats-box-wrapper h4 {
-  color: #000000;
-  font-size: 24px;
-  font-weight: 400;
+	color: #000000;
+	font-size: 24px;
+	font-weight: 400;
 }
 .stats-box-row .stats-box-wrapper h4 span {
-  color: #000000;
-  font-size: 17px;
-  display: block;
-  font-weight: 400;
-  text-align: center;
+	color: #000000;
+	font-size: 17px;
+	display: block;
+	font-weight: 400;
+	text-align: center;
 }
 .stats-box-row .stats-box-wrapper:hover {
-  background-image: linear-gradient(to right, #1d753f, #68a543);
-  background-color: transparent;
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	background-color: transparent;
 }
 .stats-box-row .stats-box-wrapper:hover h2,
 .stats-box-row .stats-box-wrapper:hover h4,
 .stats-box-row .stats-box-wrapper:hover h4 span {
-  color: #fff;
+	color: #fff;
 }
 .job-history {
-  padding: 50px 0px;
+	padding: 50px 0px;
 }
 .job-history h3 {
-  color: #438d41;
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 23px;
+	color: #438d41;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 23px;
 }
 .job-table-wrapper .table td,
 .table th {
-  border-bottom: 0px !important;
-  border-top: 0px !important;
+	border-bottom: 0px !important;
+	border-top: 0px !important;
 }
 .job-table-wrapper .table tr {
-  border: 0px;
+	border: 0px;
 }
 .job-table-wrapper th {
-  font-family: "Poppins";
-  font-size: 21px;
-  font-weight: 600;
-  color: #000000;
-  border-right: 2px solid #c2c2c2;
+	font-family: "Poppins";
+	font-size: 21px;
+	font-weight: 600;
+	color: #000000;
+	border-right: 2px solid #c2c2c2;
 }
 .job-table-wrapper td {
-  font-size: 17px;
-  font-weight: 400;
-  border-right: 2px solid #c2c2c2;
+	font-size: 17px;
+	font-weight: 400;
+	border-right: 2px solid #c2c2c2;
 }
 .job-table-wrapper th:last-child {
-  border-right: 0px;
+	border-right: 0px;
 }
 .job-table-wrapper td:last-child {
-  border-right: 0px;
+	border-right: 0px;
 }
 .job-history .job-table-wrapper {
-  border-bottom: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
 }
 /* dashbaord tab css starts here */
 .star-wrapper ul {
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  list-style: none;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	list-style: none;
 }
 
 .star-wrapper ul li {
-  margin: 0px 3px;
+	margin: 0px 3px;
 }
 
 .star-wrapper ul li i {
-  color: #fee63a;
+	color: #fee63a;
 }
 .cleaner-wrapper h4 {
-  color: #438d41;
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 23px;
+	color: #438d41;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 23px;
 }
 .cleaner-wrapper td {
-  border: 0px;
-  padding: 8px;
-  font-size: 13px;
-  font-weight: 500;
+	border: 0px;
+	padding: 8px;
+	font-size: 13px;
+	font-weight: 500;
 }
 .cleaner-table-wrapper .name-box-wrapper span.name {
-  font-size: 13px;
-  font-weight: 500;
-  color: #000000;
+	font-size: 13px;
+	font-weight: 500;
+	color: #000000;
 }
 .cleaner-wrapper .img-and-name img {
-  width: 34px;
+	width: 34px;
 }
 .cleaner-table-wrapper th.name {
-  width: 19%;
+	width: 19%;
 }
 .cleaner-table-wrapper tr td {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 .cleaner-table-wrapper .dot-wrapper {
-  width: 12px;
-  height: 12px;
-  background: #488c62;
-  border-radius: 50%;
-  position: relative;
+	width: 12px;
+	height: 12px;
+	background: #488c62;
+	border-radius: 50%;
+	position: relative;
 }
 .cleaner-table-wrapper .dot-wrapper::after {
-  content: "";
-  width: 1px;
-  height: 53px;
-  background-color: #000;
-  position: absolute;
-  top: 12px;
-  left: 50%;
+	content: "";
+	width: 1px;
+	height: 53px;
+	background-color: #000;
+	position: absolute;
+	top: 12px;
+	left: 50%;
 }
 .cleaner-table-wrapper td.dot-column {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 .cleaner-table-wrapper tr:last-child .dot-wrapper::after {
-  display: none;
+	display: none;
 }
 .booking-wrapper ul#myTab li a.nav-link.active {
-  color: #328240;
-  text-decoration: underline;
-  font-weight: 600 !important;
+	color: #328240;
+	text-decoration: underline;
+	font-weight: 600 !important;
 }
 .booking-wrapper ul#myTab li a.nav-link {
-  color: #828282;
-  font-weight: 400 !important;
-  font-size: 16px;
+	color: #828282;
+	font-weight: 400 !important;
+	font-size: 16px;
 }
 .booking-wrapper ul#myTab {
-  display: flex;
-  border: 0px;
+	display: flex;
+	border: 0px;
 }
 .booking-wrapper ul#myTab li.nav-link {
-  border: 0px;
+	border: 0px;
 }
 .booking-wrapper ul#myTab li a.nav-link {
-  background: #fff;
-  border: 0px;
+	background: #fff;
+	border: 0px;
 }
 .booking-table-wrapper .cleaner-wrapper {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 .booking-table-wrapper span {
-  font-size: 16px;
-  font-weight: 400;
+	font-size: 16px;
+	font-weight: 400;
 }
 .booking-table-wrapper .cleaner-wrapper h5 {
-  font-weight: 400;
-  font-size: 16px;
+	font-weight: 400;
+	font-size: 16px;
 }
 .booking-table-wrapper .cleaner-wrapper img {
-  width: 36px;
+	width: 36px;
 }
 .booking-table-wrapper th span {
-  font-weight: 600 !important;
-  font-size: 16px;
-  font-family: "Poppins";
+	font-weight: 600 !important;
+	font-size: 16px;
+	font-family: "Poppins";
 }
 .booking-table-wrapper td {
-  border: 0px;
+	border: 0px;
 }
 .booking-table-wrapper th {
-  border-right: 3px solid #c2c2c2;
-  text-align: center;
+	border-right: 3px solid #c2c2c2;
+	text-align: center;
 }
 .booking-table-wrapper th:last-child {
-  border-right: 0px;
+	border-right: 0px;
 }
 .booking-table-wrapper tr td {
-  border-right: 3px solid #c2c2c2;
-  text-align: center;
-  vertical-align: middle;
-  padding: 8px;
+	border-right: 3px solid #c2c2c2;
+	text-align: center;
+	vertical-align: middle;
+	padding: 8px;
 }
 .booking-table-wrapper tr td:last-child {
-  border-right: 0px;
+	border-right: 0px;
 }
 .booking-table-wrapper span.Accepted {
-  background-image: linear-gradient(
-    to bottom,
-    #ee9e03,
-    #f2a821,
-    #f6b234,
-    #fbbb45,
-    #ffc554
-  );
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  height: 43px;
-  width: 146px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
+	background-image: linear-gradient(
+		to bottom,
+		#ee9e03,
+		#f2a821,
+		#f6b234,
+		#fbbb45,
+		#ffc554
+	);
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	height: 43px;
+	width: 146px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
 }
 .booking-table-wrapper span.Rejected {
-  background-color: #929292;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  height: 43px;
-  width: 146px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
+	background-color: #929292;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	height: 43px;
+	width: 146px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
 }
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #e3e3e3;
+	background-color: #e3e3e3;
 }
 
 .booking-table-wrapper span.Completed {
-  background-image: linear-gradient(
-    to bottom,
-    #1d753f,
-    #308141,
-    #438d42,
-    #559943,
-    #68a543
-  );
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  height: 43px;
-  width: 146px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
+	background-image: linear-gradient(
+		to bottom,
+		#1d753f,
+		#308141,
+		#438d42,
+		#559943,
+		#68a543
+	);
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	height: 43px;
+	width: 146px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
 }
 .booking-table-wrapper {
-  margin-top: 35px;
+	margin-top: 35px;
+}
+/* booking css starts here */
+.booking-details-wrapper .booking-heading-wrapper h4 {
+	color: #438d41;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 34px;
+}
+.booking-details-wrapper .tag-and-accep-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+	align-items: center;
+}
+.booking-details-wrapper .tag-and-accep-wrapper span.job {
+	background: #f1f1f1;
+	color: #348440;
+	font-family: "Poppins";
+	font-size: 17px;
+	font-weight: 600;
+	padding: 7px 23px;
+}
+.booking-details-wrapper .tag-and-accep-wrapper span.Accepted {
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 14px;
+	font-weight: 600;
+	padding: 7px 23px;
+	line-height: 1.5;
+}
+.booking-details-wrapper .tag-and-accep-wrapper span.job {
+	background: #f1f1f1;
+	color: #348440;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	padding: 7px 23px;
+}
+.booking-details-wrapper .booker-details-wrapper ul {
+	padding: 0px;
+	list-style: none;
+	column-count: 2;
+}
+.booking-details-wrapper .booker-details-wrapper ul li {
+	display: flex;
+	line-height: 2.5;
+	align-items: center;
+}
+.booking-details-wrapper .booker-details-wrapper ul li span.property {
+	color: #1d753f;
+	font-size: 17px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+.booking-details-wrapper .booker-details-wrapper ul li span.value {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+}
+.packages-wrapper .packages-heading-wrapper h4 {
+	color: #438d41;
+	font-size: 30px;
+	font-weight: 600;
+}
+.packages-wrapper .packages-list-wrapper ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 27px;
+}
+.packages-wrapper .packages-list-wrapper ul li {
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 2;
+}
+.packages-wrapper .packages-list-wrapper ul li span.property {
+	flex: 0 0 14%;
+	color: #1d753f;
+	font-size: 17px;
+	font-weight: 600;
+}
+.packages-wrapper .packages-list-wrapper ul li span.value {
+	flex: 0 0 86%;
+	color: #000;
+	font-size: 17px;
+	font-weight: 400;
+}
+.booker-details-wrapper {
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+/* booking css ends here */
+/* wallet wrapper starts here */
+
+.wallet-wrapper .wallet-heading-wrapper h4 {
+	font-family: "Poppins";
+	color: #438d41;
+	font-size: 30px;
+	font-weight: 600;
+}
+.wallet-wrapper .wallet-heading-wrapper {
+	margin-bottom: 26px;
+}
+.wallet-wrapper .wallet-content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	background: #297c3f;
+	padding: 33px;
+	border-radius: 10px;
+	margin-bottom: 31px;
+	align-items: center;
+}
+.wallet-wrapper .wallet-content-wrapper button.btn {
+	color: #297c3f;
+	background: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 9px 20px;
+	border-radius: 41px;
+}
+.wallet-wrapper .wallet-content-wrapper .amount-wrapper h2 {
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: 600;
+}
+.wallet-wrapper .wallet-content-wrapper .amount-wrapper h5 {
+	color: #ffffff;
+	font-size: 22px;
+	font-weight: 400;
+}
+.transferrred-wrapper {
+	border: 1px solid #c2c2c2;
+	padding: 20px 40px;
+	border-radius: 10px;
+}
+#pills-Wallet .transferrred-wrapper .single-transfer-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 19px 0px;
+	border-bottom: 1px solid #c2c2c2;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#pills-Wallet .transferrred-wrapper .single-transfer-wrapper:last-child {
+	border-bottom: 0px;
+}
+#pills-Wallet .transferrred-wrapper .single-transfer-wrapper .name-wrapper h5 {
+	color: #244638;
+	font-size: 26px;
+	font-weight: 500;
+}
+#pills-Wallet
+	.transferrred-wrapper
+	.single-transfer-wrapper
+	.name-wrapper
+	span {
+	color: #9398a5;
+	font-size: 19px;
+	font-weight: 300;
+}
+#pills-Wallet .single-transfer-wrapper .balance-wrapper {
+	text-align: end;
+}
+#pills-Wallet .single-transfer-wrapper .balance-wrapper h5 {
+	color: #b5b5b5;
+	font-size: 28px;
+	font-weight: 500;
+}
+#pills-Wallet
+	.transferrred-wrapper
+	.single-transfer-wrapper
+	.balance-wrapper
+	h6 {
+	color: #9398a5;
+	font-size: 19px;
+	font-weight: 300;
 }
