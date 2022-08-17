@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
+import "../../assets/css/cleaner-dashboard.css";
 import { Link } from "react-router-dom";
 import { cleaner, cleaner2, cleaner3 } from "../../constant";
+import "react-calendar/dist/Calendar.css";
 import $ from "jquery";
+import Calendar from "react-calendar";
 
-const Dashboard = () => {
+const CleanerDashboard = () => {
+	const [value, onChange] = useState(new Date());
 	const [editprofile, seteditprofile] = useState(false);
 	const showedit = () => {
 		seteditprofile(true);
@@ -13,10 +17,19 @@ const Dashboard = () => {
 	const hideedit = () => {
 		seteditprofile(false);
 	};
+	const booking_page = () => {
+		window.location.href = "/BookingDetails";
+	};
 	useEffect(() => {
 		$(".booking-details-wrapper").hide();
+		$(".Job-com").hide();
 		$("div#home td.ActionName a").click(function () {
 			$(".booking-details-wrapper").show();
+			$(".Job-com").hide();
+			$(".booking-wrapper").hide();
+		});
+		$("#pills-contact div#contact td.ActionName a").click(function () {
+			$(".Job-com").show();
 			$(".booking-wrapper").hide();
 		});
 	}, []);
@@ -32,13 +45,9 @@ const Dashboard = () => {
 									<img className="img-fluid" src={user}></img>
 									<div className="john-text">
 										<h3>John Doe</h3>
-										<p>Customer Profile</p>
+										<p>Cleaner Profile</p>
 									</div>
 								</div>
-
-								{/* <div className="my-dv">
-                  <h5>My Profile</h5>
-                </div> */}
 
 								<div className="dashboard-sec">
 									<ul
@@ -58,21 +67,6 @@ const Dashboard = () => {
 											>
 												My Profile
 											</a>
-										</li>
-
-										<li className="nav-item">
-											<Link
-												to="/Makingbooking"
-												className="nav-link"
-												id="pills-home-tab"
-												data-toggle="pill"
-												href="#pills-home"
-												role="tab"
-												aria-controls="pills-home"
-												aria-selected="true"
-											>
-												Make Booking
-											</Link>
 										</li>
 										<li className="nav-item">
 											<a
@@ -97,47 +91,38 @@ const Dashboard = () => {
 												aria-controls="pills-contact"
 												aria-selected="false"
 											>
-												Bookings
+												Jobs
 											</a>
 										</li>
-
-										<li className="nav-item">
-											<a className="nav-link" href="/InviteFriend">
-												Invite Friend
-											</a>
-										</li>
-
 										<li className="nav-item">
 											<a
 												className="nav-link"
-												id="pills-Loyalty-tab"
+												id="pills-Earnings-tab"
 												data-toggle="pill"
-												href="#pills-Loyalty"
+												href="#pills-Earnings"
 												role="tab"
-												aria-controls="pills-Loyalty"
+												aria-controls="pills-Earnings"
 												aria-selected="false"
 											>
-												Loyalty Points
+												Earnings
 											</a>
 										</li>
-
-										<li className="nav-item">
-											<a
-												className="nav-link"
-												id="pills-Wallet-tab"
-												data-toggle="pill"
-												href="#pills-Wallet"
-												role="tab"
-												aria-controls="pills-Wallet"
-												aria-selected="false"
-											>
-												Wallet
-											</a>
-										</li>
-
 										<li className="nav-item">
 											<a className="nav-link" href="/Notification">
 												Notifications
+											</a>
+										</li>
+										<li className="nav-item">
+											<a
+												className="nav-link"
+												id="pills-Rewards-tab"
+												data-toggle="pill"
+												href="#pills-Rewards"
+												role="tab"
+												aria-controls="pills-Rewards"
+												aria-selected="false"
+											>
+												Rewards
 											</a>
 										</li>
 									</ul>
@@ -279,7 +264,7 @@ const Dashboard = () => {
 																	</div>
 
 																	<div className="col-md-6">
-																		<div className="form-group">
+																		<div className="form-group Card	">
 																			<span className="only-for-flex">
 																				{" "}
 																				<label for="exampleInputEmail1">
@@ -290,8 +275,9 @@ const Dashboard = () => {
 																					className="form-control"
 																					id="exampleInputEmail1"
 																					aria-describedby="emailHelp"
-																					placeholder="**** **** **** ****"
+																					placeholder="**** **** **** 4465"
 																				/>
+																				<a href="#">update</a>
 																				{/* <Link  to="/">update</Link> */}
 																			</span>
 																		</div>
@@ -351,9 +337,9 @@ const Dashboard = () => {
 															<div className="profile-head">
 																<h3>My Profile</h3>
 																<div className="profile-edit save-profile">
-																	<Link onClick={hideedit} to="">
+																	{/* <Link onClick={hideedit} to="">
 																		Save
-																	</Link>
+																	</Link> */}
 																</div>
 															</div>
 															<form>
@@ -451,11 +437,11 @@ const Dashboard = () => {
 																	<div className="col-md-12">
 																		<div className="profile-head">
 																			<h3>Security</h3>
-																			<div className="profile-edit save-profile">
+																			{/* <div className="profile-edit save-profile">
 																				<Link onClick={hideedit} to="">
 																					save
 																				</Link>
-																			</div>
+																			</div> */}
 																		</div>
 																	</div>
 
@@ -481,6 +467,13 @@ const Dashboard = () => {
 																				placeholder="Confirm Password"
 																				className="form-control"
 																			/>
+																		</div>
+																	</div>
+																	<div className="col-md-12 mt-4">
+																		<div className="profile-edit save-profile">
+																			<Link onClick={hideedit} to="">
+																				save
+																			</Link>
 																		</div>
 																	</div>
 																</div>
@@ -521,66 +514,21 @@ const Dashboard = () => {
 														<div className="col-lg-4">
 															<div className="stats-box-wrapper">
 																<div className="stats-name-wrapper">
-																	<h4>
-																		Current Balance <span>Wallet</span>
-																	</h4>
+																	<h4>Total Payments</h4>
 																</div>
 																<div className="stats-count-wrapper">
-																	<h2>$ 420</h2>
+																	<h2>$ 4800</h2>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												<div className="job-history">
-													<div className="row">
-														<div className="col-lg-12">
-															<div className="content-wrapper">
-																<h3>Job History</h3>
-															</div>
-														</div>
-														<div className="col-lg-12">
-															<div className="job-table-wrapper">
-																<div className="table-responsive">
-																	<table className="table">
-																		<thead>
-																			<tr>
-																				<th scope="col">Job Type</th>
-																				<th scope="col">Client Name</th>
-																				<th scope="col">Location</th>
-																				<th scope="col">Total Amont</th>
-																			</tr>
-																		</thead>
-																		<tbody>
-																			<tr>
-																				<td>Regular Cleaning</td>
-																				<td>John Doe</td>
-																				<td>Lorem Ipsum</td>
-																				<td>$300</td>
-																			</tr>
-																			<tr>
-																				<td>Regular Cleaning</td>
-																				<td>John Doe</td>
-																				<td>Lorem Ipsum</td>
-																				<td>$300</td>
-																			</tr>
-																			<tr>
-																				<td>Regular Cleaning</td>
-																				<td>John Doe</td>
-																				<td>Lorem Ipsum</td>
-																				<td>$300</td>
-																			</tr>
-																			<tr>
-																				<td>Regular Cleaning</td>
-																				<td>John Doe</td>
-																				<td>Lorem Ipsum</td>
-																				<td>$300</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</div>
-															</div>
-														</div>
+												<div className="calendar-wrapper">
+													<div className="calendar-heading-wrapper">
+														<h5>Mark off days</h5>
+													</div>
+													<div className="cal-wrapper">
+														<Calendar onChange={onChange} value={value} />
 													</div>
 												</div>
 												<div className="cleaner-wrapper">
@@ -653,8 +601,11 @@ const Dashboard = () => {
 																				<td className="name-box-wrapper">
 																					<div className="img-and-name">
 																						<img src={cleaner2} />
+
 																						<span className="name">
-																							{" "}
+																							<span className="month">
+																								Employee of the month
+																							</span>
 																							Manfred James
 																						</span>
 																					</div>
@@ -793,7 +744,7 @@ const Dashboard = () => {
 																	aria-controls="home"
 																	aria-selected="true"
 																>
-																	Upcoming Bookings
+																	Upcoming Jobs
 																</a>
 															</li>
 															<li class="nav-item">
@@ -806,7 +757,7 @@ const Dashboard = () => {
 																	aria-controls="contact"
 																	aria-selected="false"
 																>
-																	Previous Bookings
+																	Previous Jobs
 																</a>
 															</li>
 														</ul>
@@ -819,7 +770,7 @@ const Dashboard = () => {
 																role="tabpanel"
 																aria-labelledby="home-tab"
 															>
-																<div className="booking-table-wrapper">
+																<div className="booking-table-wrapper job-table">
 																	<div className="table-responsive">
 																		<table className="table table-striped">
 																			<thead>
@@ -864,56 +815,12 @@ const Dashboard = () => {
 																						</a>
 																					</td>
 																					<td className="StatusName">
-																						<span className="Accepted">
+																						<span
+																							onClick={booking_page}
+																							className="Accepted"
+																						>
 																							Accepted
 																						</span>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td className="typeName">
-																						<span>Regular Cleaning</span>
-																					</td>
-																					<td className="CleanerName">
-																						<div className="cleaner-wrapper">
-																							<img
-																								src={cleaner2}
-																								className="img-fluid"
-																							/>
-																							<h5>John Doe</h5>
-																						</div>
-																					</td>
-																					<td className="AmountName">
-																						<span>$300</span>
-																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
-																					<td className="StatusName">
-																						<span className="Accepted">
-																							Accepted
-																						</span>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td className="typeName">
-																						<span>Regular Cleaning</span>
-																					</td>
-																					<td className="CleanerName">
-																						<div className="cleaner-wrapper">
-																							<img
-																								src={cleaner3}
-																								className="img-fluid"
-																							/>
-																							<h5>John Doe</h5>
-																						</div>
-																					</td>
-																					<td className="AmountName">
-																						<span>$300</span>
-																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
-																					<td className="StatusName">
 																						<span className="Rejected">
 																							Rejected
 																						</span>
@@ -942,6 +849,9 @@ const Dashboard = () => {
 																						<span className="Accepted">
 																							Accepted
 																						</span>
+																						<span className="Rejected">
+																							Rejected
+																						</span>
 																					</td>
 																				</tr>
 																				<tr>
@@ -964,6 +874,65 @@ const Dashboard = () => {
 																						<a href="#">View Detail</a>
 																					</td>
 																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																						<span className="Rejected">
+																							Rejected
+																						</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="typeName">
+																						<span>Regular Cleaning</span>
+																					</td>
+																					<td className="CleanerName">
+																						<div className="cleaner-wrapper">
+																							<img
+																								src={cleaner2}
+																								className="img-fluid"
+																							/>
+																							<h5>John Doe</h5>
+																						</div>
+																					</td>
+																					<td className="AmountName">
+																						<span>$300</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
+																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																						<span className="Rejected">
+																							Rejected
+																						</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="typeName">
+																						<span>Regular Cleaning</span>
+																					</td>
+																					<td className="CleanerName">
+																						<div className="cleaner-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																							/>
+																							<h5>John Doe</h5>
+																						</div>
+																					</td>
+																					<td className="AmountName">
+																						<span>$300</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
+																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
 																						<span className="Rejected">
 																							Rejected
 																						</span>
@@ -1144,7 +1113,7 @@ const Dashboard = () => {
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
-														<span className="Accepted">Accepted Job</span>
+														{/* <span className="Accepted">Accepted Job</span> */}
 													</div>
 													<div className="booker-details-wrapper">
 														<ul>
@@ -1213,16 +1182,691 @@ const Dashboard = () => {
 																</li>
 															</ul>
 														</div>
+														<div className="package-btn-wrapper">
+															<button className="btn btn-primary ez-clean-btn-rounded mt-3">
+																Start Job
+															</button>
+															<button className="btn btn-primary rejec ez-clean-btn-rounded mt-3">
+																Reject Job
+															</button>
+														</div>
+													</div>
+												</div>
+												<div className="Job-com booking-details-wrapper">
+													<div className="booking-heading-wrapper">
+														<h4>Booking Details</h4>
+													</div>
+													<div className="tag-and-accep-wrapper">
+														<span className="job">Job# AD12</span>
+														{/* <span className="Accepted">Accepted Job</span> */}
+													</div>
+													<div className="booker-details-wrapper">
+														<ul>
+															<li>
+																<span className="property">Client Name :</span>
+																<span className="value">Mark James</span>
+															</li>
+															<li>
+																<span className="property">Phone :</span>
+																<span className="value">+1 234 567 890</span>
+															</li>
+															<li>
+																<span className="property">Address :</span>
+																<span className="value">
+																	1234, 5th Street, Lorem ipsum, city, state
+																</span>
+															</li>
+															<li>
+																<span className="property">Date :</span>
+																<span className="value">12 Jan, 2022</span>
+															</li>
+															<li>
+																<span className="property">Time : </span>
+																<span className="value">11:00 am</span>
+															</li>
+														</ul>
+													</div>
+													<div className="packages-wrapper">
+														<div className="packages-heading-wrapper">
+															<h4>Package Includes</h4>
+														</div>
+														<div className="packages-list-wrapper">
+															<ul>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Remove belongings from your cabinets and
+																		drawers
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Use a wet paper towel to wipe cabinets out
+																		and clean the outside
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Use an all-purpose cleaner to disinfect the
+																		countertops
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Clean the sink basin, faucet and handles
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Use an oven cleaner to remove interior grime
+																	</span>
+																</li>
+															</ul>
+														</div>
+														<div className="package-btn-wrapper">
+															<button className="btn btn-primary ez-clean-btn-rounded mt-3">
+																Job Completed
+															</button>
+														</div>
 													</div>
 												</div>
 											</div>
 											<div
 												className="tab-pane fade"
-												id="pills-profile"
+												id="pills-Earnings"
 												role="tabpanel"
-												aria-labelledby="pills-profile-tab"
+												aria-labelledby="pills-Earnings-tab"
 											>
-												C
+												<div className="earning-wrapper">
+													<div className="earning-heading-and-tabs-wrapper">
+														<div className="heading-wrapper">
+															<h4>My Earnings</h4>
+														</div>
+														<div className="earnings-tab-wrapper">
+															<ul
+																class="nav nav-tabs"
+																id="myTab"
+																role="tablist"
+															>
+																<li class="nav-item">
+																	<a
+																		class="nav-link active"
+																		id="home-tab"
+																		data-toggle="tab"
+																		href="#home"
+																		role="tab"
+																		aria-controls="home"
+																		aria-selected="true"
+																	>
+																		All
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a
+																		class="nav-link"
+																		id="profile-tab"
+																		data-toggle="tab"
+																		href="#profile"
+																		role="tab"
+																		aria-controls="profile"
+																		aria-selected="false"
+																	>
+																		Active
+																	</a>
+																</li>
+																<li class="nav-item">
+																	<a
+																		class="nav-link"
+																		id="contact-tab"
+																		data-toggle="tab"
+																		href="#contact"
+																		role="tab"
+																		aria-controls="contact"
+																		aria-selected="false"
+																	>
+																		Previous
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div className="tabs-content-wrapper">
+														<div class="tab-content" id="myTabContent">
+															<div
+																class="tab-pane fade show active"
+																id="home"
+																role="tabpanel"
+																aria-labelledby="home-tab"
+															>
+																<div className="earing-table-wrapper">
+																	<div class="table-responsive">
+																		<table class="table">
+																			<thead>
+																				<tr>
+																					<th className="s">S.No</th>
+																					<th className="job-col">Job Type</th>
+																					<th className="Client-col">
+																						Client Name
+																					</th>
+																					<th className="Location-col">
+																						Location
+																					</th>
+																					<th className="Status-col">Status</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td className="sign-no">AD12</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">DV22</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">SS33</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner2}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">DS12</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">AD13</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																<div className="total-earning-wrappers">
+																	<div className="row">
+																		<div className="col-lg-5">
+																			<div className="total-erner-wrapper">
+																				<h4>Total Earning</h4>
+																				<span>$ 25,000</span>
+																			</div>
+																			<div className="total-erner-wrapper">
+																				<h4>Total Withdrawal</h4>
+																				<span>$ 12,500</span>
+																			</div>
+																			<div className="total-erner-wrapper">
+																				<h4>Outstanding</h4>
+																				<span>$ 10,000</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																class="tab-pane fade"
+																id="profile"
+																role="tabpanel"
+																aria-labelledby="profile-tab"
+															>
+																<div className="earing-table-wrapper">
+																	<div class="table-responsive">
+																		<table class="table">
+																			<thead>
+																				<tr>
+																					<th className="s">S.No</th>
+																					<th className="job-col">Job Type</th>
+																					<th className="Client-col">
+																						Client Name
+																					</th>
+																					<th className="Location-col">
+																						Location
+																					</th>
+																					<th className="Status-col">Status</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td className="sign-no">AD12</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">DV22</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">SS33</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner2}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">DS12</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">AD13</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																<div className="total-earning-wrappers">
+																	<div className="row">
+																		<div className="col-lg-5">
+																			<div className="total-erner-wrapper">
+																				<h4>Total Earning</h4>
+																				<span>$ 25,000</span>
+																			</div>
+																			<div className="total-erner-wrapper">
+																				<h4>Total Withdrawal</h4>
+																				<span>$ 12,500</span>
+																			</div>
+																			<div className="total-erner-wrapper">
+																				<h4>Outstanding</h4>
+																				<span>$ 10,000</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div
+																class="tab-pane fade"
+																id="contact"
+																role="tabpanel"
+																aria-labelledby="contact-tab"
+															>
+																<div className="earing-table-wrapper">
+																	<div class="table-responsive">
+																		<table class="table">
+																			<thead>
+																				<tr>
+																					<th className="s">S.No</th>
+																					<th className="job-col">Job Type</th>
+																					<th className="Client-col">
+																						Client Name
+																					</th>
+																					<th className="Location-col">
+																						Location
+																					</th>
+																					<th className="Status-col">Status</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td className="sign-no">AD12</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">DV22</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">SS33</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner2}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">DS12</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="sign-no">AD13</td>
+																					<td className="job-type">
+																						<div className="type-wrapper">
+																							<img
+																								src={cleaner}
+																								className="img-fluid"
+																								alt=""
+																							/>
+																							<h6>Regular Cleaning</h6>
+																						</div>
+																					</td>
+																					<td className="client-name">
+																						<span className="name">
+																							John Doe
+																						</span>
+																					</td>
+																					<td className="Location">
+																						<span className="location-name">
+																							Lorem Ipsum
+																						</span>
+																					</td>
+																					<td className="Price-value">
+																						<span className="price-">$300</span>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+																</div>
+																<div className="total-earning-wrappers">
+																	<div className="row">
+																		<div className="col-lg-5">
+																			<div className="total-erner-wrapper">
+																				<h4>Total Earning</h4>
+																				<span>$ 25,000</span>
+																			</div>
+																			<div className="total-erner-wrapper">
+																				<h4>Total Withdrawal</h4>
+																				<span>$ 12,500</span>
+																			</div>
+																			<div className="total-erner-wrapper">
+																				<h4>Outstanding</h4>
+																				<span>$ 10,000</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 											<div
 												className="tab-pane fade"
@@ -1439,4 +2083,4 @@ const Dashboard = () => {
 	);
 };
 
-export default Dashboard;
+export default CleanerDashboard;

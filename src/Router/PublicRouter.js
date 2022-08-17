@@ -46,6 +46,8 @@ import ThankYou from "../pages/Dashboard/ThankYou";
 import CleaningDetails from "../pages/Dashboard/CleaningDetails";
 import UrgentDetail from "../pages/Dashboard/UrgentDetail";
 import CustomerProfile from "../pages/Dashboard/CustomerProfile";
+import CleanerDashboard from "../pages/Cleaner-Dashboard/CleanerDashboard";
+import BookingDetails from "../pages/Cleaner-Dashboard/BookingDetails";
 
 function PubilcRoutes() {
 	return (
@@ -81,6 +83,8 @@ function PubilcRoutes() {
 					<Route path="EnterPassword" element={<EnterPassword />} />
 					<Route path="Welcome" element={<Welcome />} />
 					<Route path="dashboard" element={<Dashboard />} />
+					<Route path="CleanerDashboard" element={<CleanerDashboard />} />
+
 					<Route path="makingbooking" element={<Makingbooking />} />
 					<Route path="standard" element={<Standard />} />
 					<Route path="search" element={<Search />} />
@@ -96,6 +100,7 @@ function PubilcRoutes() {
 					<Route path="CleaningDetails" element={<CleaningDetails />} />
 					<Route path="UrgentDetails" element={<UrgentDetail />} />
 					<Route path="CustomerProfile" element={<CustomerProfile />} />
+					<Route path="BookingDetails" element={<BookingDetails />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

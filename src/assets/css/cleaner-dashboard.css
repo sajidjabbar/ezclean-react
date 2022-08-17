@@ -1,0 +1,219 @@
+.profile-all .Card .form-control {
+	padding: 0px;
+	padding-left: 10px;
+	width: 163px;
+}
+.profile-all .Card a {
+	color: #589b42;
+	text-decoration: underline;
+}
+/* calendar wrapper */
+#pills-dashboard .calendar-wrapper {
+	margin-top: 50px;
+}
+#pills-dashboard .calendar-wrapper .calendar-heading-wrapper h5 {
+	color: #090909;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#pills-dashboard .calendar-wrapper .react-calendar {
+	border: 0px;
+	background: #f5f5f5;
+	padding: 15px;
+	border-radius: 10px;
+	margin-top: 24px;
+	width: 100%;
+}
+.calendar-wrapper .react-calendar__month-view__weekdays abbr {
+	color: #000000;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: "Poppins";
+}
+#pills-dashboard .cal-wrapper .react-calendar__tile {
+	color: #1e2022;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: "Poppins";
+}
+#pills-dashboard .cal-wrapper .react-calendar__tile--active {
+	background: #ffc1c1;
+	color: #fff;
+}
+.react-calendar__navigation__label
+	span.react-calendar__navigation__label__labelText--from {
+	color: #1e2022;
+	font-size: 19px;
+	font-family: "Poppins";
+	font-weight: 600;
+}
+#pills-dashboard .cal-wrapper button.react-calendar__navigation__arrow {
+	background: linear-gradient(to right, #1d753f, #68a543);
+	margin: 0px 10px 0px 0px;
+	border-radius: 56%;
+	color: #fff;
+	font-size: 28px;
+}
+#pills-dashboard .cleaner-table-wrapper td.name-box-wrapper span.month {
+	background: #3aa3ff;
+	font-size: 8px;
+	display: inline-block;
+	padding: 2px 4px;
+	color: #fff;
+	border-radius: 3px;
+}
+#pills-dashboard .cleaner-table-wrapper td.name-box-wrapper .img-and-name {
+	display: flex;
+	align-items: center;
+}
+#pills-dashboard .cleaner-wrapper {
+	margin-top: 33px;
+}
+.job-table tr td:last-child {
+	border-right: 0px;
+	display: flex;
+}
+.job-table span.Accepted {
+	background-image: linear-gradient(to bottom, #1d753f, #68a543);
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	height: 43px;
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
+}
+.job-table span.Rejected {
+	background-color: #929292;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	height: 43px;
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
+}
+#pills-contact .packages-wrapper .package-btn-wrapper button.btn {
+	font-weight: 600;
+	margin-right: 10px;
+	font-size: 15px;
+}
+#pills-contact .packages-wrapper .package-btn-wrapper button.btn.rejec {
+	background: #929292;
+}
+/* calendar wrapper */
+/* earnings tab starts here */
+#pills-Earnings .earning-heading-and-tabs-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 33px;
+}
+#pills-Earnings .earning-heading-and-tabs-wrapper .earnings-tab-wrapper {
+	flex: 0 0 33%;
+}
+#pills-Earnings .earning-heading-and-tabs-wrapper .earnings-tab-wrapper ul {
+	display: flex;
+	justify-content: space-around;
+	border: 0px;
+}
+#pills-Earnings .earning-heading-and-tabs-wrapper .earnings-tab-wrapper ul li {
+	background: transparent;
+}
+#pills-Earnings
+	.earning-heading-and-tabs-wrapper
+	.earnings-tab-wrapper
+	ul
+	li
+	a {
+	background: transparent;
+	border: 0px;
+	color: #828282;
+	font-family: "Poppins";
+	font-size: 17px;
+}
+#pills-Earnings
+	.earning-heading-and-tabs-wrapper
+	.earnings-tab-wrapper
+	ul
+	li
+	a.active {
+	text-decoration: underline;
+	color: #328240;
+}
+#pills-Earnings .earning-heading-and-tabs-wrapper .heading-wrapper h4 {
+	color: #438d41;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0px;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper td {
+	padding: 9px 0px;
+	text-align: center;
+	vertical-align: middle;
+	color: #000000;
+	font-size: 16px;
+	border: 0px;
+	border-right: 3px solid #c2c2c2;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper td:last-child {
+	border: 0px;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper th {
+	border-right: 3px solid #c2c2c2;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper th:last-child {
+	border: 0px;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper td .type-wrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper td .type-wrapper h6 {
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.earning-wrapper .earing-table-wrapper th {
+	text-align: center;
+}
+#pills-Earnings .earning-wrapper .earing-table-wrapper td .type-wrapper img {
+	height: 29px;
+	width: 29px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.earning-wrapper .earing-table-wrapper tbody tr:nth-child(odd) {
+	background: #e3e3e3;
+}
+.earning-wrapper .earing-table-wrapper tbody tr:nth-child(even) {
+	background: #f2f2f2;
+}
+div#home .total-earning-wrappers {
+	margin-top: 30px;
+	border-left: 2px solid #c2c2c2;
+	padding-left: 14px;
+}
+div#home .total-earning-wrappers .total-erner-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 16px 0px;
+}
+div#home .total-earning-wrappers .total-erner-wrapper h4 {
+	color: #000000;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0px;
+}
+div#home .total-earning-wrappers .total-erner-wrapper span {
+	color: #979797;
+	font-size: 20px;
+}
+/* earnings tab ends here */
