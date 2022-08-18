@@ -8,3 +8,9 @@
 	right: -4%;
 	transform: scale(0.7);
 }
+.Booking-sec .package-btn-wrapper .btn {
+	font-weight: 600;
+	font-size: 17px;
+	padding: 12px 47px;
+	margin-top: 10px;
+}

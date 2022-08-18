@@ -3,7 +3,7 @@ import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
 import "../../assets/css/cleaner-dashboard.css";
 import { Link } from "react-router-dom";
-import { cleaner, cleaner2, cleaner3 } from "../../constant";
+import { cleaner, cleaner2, cleaner3, cleaner4 } from "../../constant";
 import "react-calendar/dist/Calendar.css";
 import $ from "jquery";
 import Calendar from "react-calendar";
@@ -1870,205 +1870,216 @@ const CleanerDashboard = () => {
 											</div>
 											<div
 												className="tab-pane fade"
-												id="pills-contact"
+												id="pills-Rewards"
 												role="tabpanel"
-												aria-labelledby="pills-contact-tab"
+												aria-labelledby="pills-Rewards-tab"
 											>
-												D
-											</div>
-
-											<div
-												className="tab-pane fade"
-												id="pills-invite"
-												role="tabpanel"
-												aria-labelledby="pills-invite-tab"
-											>
-												E
-											</div>
-
-											<div
-												className="tab-pane fade"
-												id="pills-Loyalty"
-												role="tabpanel"
-												aria-labelledby="pills-Loyalty-tab"
-											>
-												<div className="row">
-													<div className="col-lg-9">
-														<div className="loyal-wrapper">
-															<div className="loyal-heading-wrapper">
-																<h2>Loyalty Points</h2>
-															</div>
-															<div className="loyalty-table-wrapper">
-																<div className="table-responsive">
-																	<table className="table">
-																		<thead>
-																			<tr>
-																				<th className="job">Job Type</th>
-																				<th className="Points">Points</th>
-																				<th className="Reward">
-																					Reward Status
-																				</th>
-																			</tr>
-																		</thead>
-																		<tbody>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Regular Cleaning
-																				</td>
-																				<td className="price">$2000</td>
-																				<td className="app">
-																					<span className="btn Approved">
-																						Approved
-																					</span>
-																				</td>
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Urgent Cleaning
-																				</td>
-																				<td className="price">$2000</td>
-																				<td className="app">
-																					<span className="btn Approved">
-																						Approved
-																					</span>
-																				</td>
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Regular Cleaning
-																				</td>
-																				<td className="price">$2000</td>
-																				<td className="app">
-																					<span className="btn pending">
-																						Pending
-																					</span>
-																				</td>
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Regular Cleaning
-																				</td>
-																				<td className="price">$2000</td>
-																				<td className="app">
-																					<span className="btn Approved">
-																						Approved
-																					</span>
-																				</td>
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Urgent Cleaning
-																				</td>
-																				<td className="price">$2000</td>
-																				<td className="app">
-																					<span className="btn pending">
-																						Pending
-																					</span>
-																				</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</div>
-															</div>
-															<div className="total-redeem-wraappper">
-																<div className="total-points-wrapper">
-																	<h6>Total Points</h6>
-																	<h6>6000</h6>
-																</div>
-																<div className="redeem-points-wrapper">
-																	<button className="btn btn-primary ez-clean-btn-rounded">
-																		Redeem Points
-																	</button>
-																</div>
-															</div>
-														</div>
+												<div className="rewards-wrapper">
+													<div className="rewards-heading-wrapper">
+														<h5>Rewards</h5>
 													</div>
-												</div>
-											</div>
-
-											<div
-												className="tab-pane fade"
-												id="pills-Wallet"
-												role="tabpanel"
-												aria-labelledby="pills-Wallet-tab"
-											>
-												<div className="wallet-wrapper">
-													<div className="wallet-heading-wrapper">
-														<h4>Wallet</h4>
-													</div>
-													<div className="wallet-content-wrapper">
-														<div className="amount-wrapper">
-															<h2>$420.00</h2>
-															<h5>Current Wallet Balance</h5>
+													<div className="employee-rating-wrapper">
+														<div className="img-wrapper">
+															<figure>
+																<img src={cleaner4} alt="" />
+															</figure>
 														</div>
-														<div className="add-money-wrapper">
+														<div className="employee-name-rating-wrapper">
+															<h6>John Doe</h6>
+															<ul>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+															</ul>
+														</div>
+														<div className="employee-month-wrapper">
 															<button className="btn">
-																Add Money to Wallet
+																Employee of the Month
 															</button>
 														</div>
 													</div>
 												</div>
-												<div className="transferrred-wrapper">
-													<div className="single-transfer-wrapper">
-														<div className="name-wrapper">
-															<h5>Transferred to James Knot</h5>
-															<span>Balance $420</span>
-														</div>
-														<div className="balance-wrapper">
-															<h5>$100</h5>
-															<h6>12 April 22 | 10:30am</h6>
-														</div>
-													</div>
-													<div className="single-transfer-wrapper">
-														<div className="name-wrapper">
-															<h5>Transferred to James Knot</h5>
-															<span>Balance $420</span>
-														</div>
-														<div className="balance-wrapper">
-															<h5>$100</h5>
-															<h6>12 April 22 | 10:30am</h6>
-														</div>
-													</div>
-													<div className="single-transfer-wrapper">
-														<div className="name-wrapper">
-															<h5>Transferred to James Knot</h5>
-															<span>Balance $420</span>
-														</div>
-														<div className="balance-wrapper">
-															<h5>$100</h5>
-															<h6>12 April 22 | 10:30am</h6>
-														</div>
-													</div>
-													<div className="single-transfer-wrapper">
-														<div className="name-wrapper">
-															<h5>Transferred to James Knot</h5>
-															<span>Balance $420</span>
-														</div>
-														<div className="balance-wrapper">
-															<h5>$100</h5>
-															<h6>12 April 22 | 10:30am</h6>
-														</div>
-													</div>
-													<div className="single-transfer-wrapper">
-														<div className="name-wrapper">
-															<h5>Transferred to James Knot</h5>
-															<span>Balance $420</span>
-														</div>
-														<div className="balance-wrapper">
-															<h5>$100</h5>
-															<h6>12 April 22 | 10:30am</h6>
+												<div className="reward-table-wrapper">
+													<div className="row">
+														<div className="col-lg-9">
+															<div className="table-responsive">
+																<table className="table">
+																	<thead>
+																		<tr>
+																			<th className="S-col">S.No</th>
+																			<th className="Job-col">Job Type</th>
+																			<th className="Rating-col">Rating</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td className="no">AD12</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner} alt="" />
+																					<h6>John Doe</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">DV22</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner3} alt="" />
+																					<h6>Mark Oswlad</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star grey"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">SS33</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner2} alt="" />
+																					<h6>John Doe</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">DV22</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner3} alt="" />
+																					<h6>Mark Oswlad</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star grey"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">SS33</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner2} alt="" />
+																					<h6>John Doe</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-
-											<div
-												className="tab-pane fade"
-												id="pills-Notifications"
-												role="tabpanel"
-												aria-labelledby="pills-Notifications-tab"
-											>
-												H
 											</div>
 										</div>
 									</div>

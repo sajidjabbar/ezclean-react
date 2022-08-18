@@ -48,6 +48,8 @@ import UrgentDetail from "../pages/Dashboard/UrgentDetail";
 import CustomerProfile from "../pages/Dashboard/CustomerProfile";
 import CleanerDashboard from "../pages/Cleaner-Dashboard/CleanerDashboard";
 import BookingDetails from "../pages/Cleaner-Dashboard/BookingDetails";
+import CompleteJob from "../pages/Cleaner-Dashboard/completeJob";
+import Successfully from "../pages/Cleaner-Dashboard/Successfully";
 
 function PubilcRoutes() {
 	return (
@@ -84,7 +86,6 @@ function PubilcRoutes() {
 					<Route path="Welcome" element={<Welcome />} />
 					<Route path="dashboard" element={<Dashboard />} />
 					<Route path="CleanerDashboard" element={<CleanerDashboard />} />
-
 					<Route path="makingbooking" element={<Makingbooking />} />
 					<Route path="standard" element={<Standard />} />
 					<Route path="search" element={<Search />} />
@@ -101,6 +102,8 @@ function PubilcRoutes() {
 					<Route path="UrgentDetails" element={<UrgentDetail />} />
 					<Route path="CustomerProfile" element={<CustomerProfile />} />
 					<Route path="BookingDetails" element={<BookingDetails />} />
+					<Route path="CompleteJob" element={<CompleteJob />} />
+					<Route path="Successfully" element={<Successfully />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

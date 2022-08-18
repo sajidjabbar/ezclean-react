@@ -2,9 +2,9 @@ import React from "react";
 import "../../assets/css/Booking.css";
 import BetterBusiness from "../../components/BetterBusiness";
 
-const BookingDetails = () => {
-	const completeJob = () => {
-		window.location.href = "/CompleteJob";
+const CompleteJob = () => {
+	const Susses_page = () => {
+		window.location.href = "/Successfully";
 	};
 	return (
 		<>
@@ -89,10 +89,10 @@ const BookingDetails = () => {
 									</div>
 									<div className="package-btn-wrapper">
 										<button
-											onClick={completeJob}
+											onClick={Susses_page}
 											className="btn btn-primary ez-clean-btn-rounded mt-3"
 										>
-											Start Job
+											Complete Job
 										</button>
 									</div>
 								</div>
@@ -109,4 +109,4 @@ const BookingDetails = () => {
 	);
 };
 
-export default BookingDetails;
+export default CompleteJob;

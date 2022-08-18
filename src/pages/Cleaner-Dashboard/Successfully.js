@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/css/ThankYou.css";
 import BetterBusiness from "../../components/BetterBusiness";
 
-const ThankYou = () => {
+const Successfully = () => {
 	return (
 		<>
 			{/* Thanks you starts here */}
@@ -12,9 +12,9 @@ const ThankYou = () => {
 						<div className="col-lg-3"></div>
 						<div className="col-lg-6">
 							<div className="thank-you-card-wrapper">
-								<h2>Thank You!</h2>
+								<h2>You've Successfully </h2>
 								<h4>
-									For Using <span>Ez Clean</span>
+									Completed <span>the Job</span>
 								</h4>
 							</div>
 						</div>
@@ -30,4 +30,4 @@ const ThankYou = () => {
 	);
 };
 
-export default ThankYou;
+export default Successfully;

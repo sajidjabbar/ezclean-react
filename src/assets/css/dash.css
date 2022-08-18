@@ -1,7 +1,9 @@
 .dashboard-sec ul {
 	display: block;
 }
-
+.john-text h3 {
+	color: #000000;
+}
 .my-dv {
 	background-image: linear-gradient(to right, #1d753f, #68a543);
 }
@@ -50,7 +52,7 @@
 
 .john-text h3 {
 	font-size: 32px;
-	color: #000000;
+	color: #000000 !important;
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 }
@@ -657,4 +659,129 @@ section.dashboard-sec {
 }
 
 /* Loyalty ends here */
-/* */
+/* reward wrapper */
+.rewards-wrapper .employee-rating-wrapper {
+	display: flex;
+	align-items: center;
+	border: 1px solid #707070;
+	width: 484px;
+	justify-content: space-between;
+	border-radius: 5px;
+	padding: 15px 20px;
+}
+.rewards-wrapper .employee-rating-wrapper ul {
+	padding: 0px;
+	list-style: none;
+	display: flex;
+	margin: 0px;
+}
+.rewards-wrapper .employee-rating-wrapper ul li {
+	margin: 2px;
+}
+.rewards-wrapper .employee-rating-wrapper figure {
+	margin: 0px;
+}
+.rewards-wrapper .employee-rating-wrapper figure img {
+	height: 64px;
+	width: 64px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0px 0px 9px 3px #eaeaea;
+}
+.rewards-wrapper .employee-rating-wrapper h6 {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px;
+}
+.rewards-wrapper .employee-rating-wrapper button.btn {
+	background: #3aa3ff;
+	font-size: 17px;
+	color: #fff;
+	font-family: "Poppins";
+	font-weight: 600;
+	padding: 10px 22px;
+	border-radius: 5px;
+}
+.rewards-wrapper .employee-rating-wrapper ul li i {
+	color: #fee63a;
+}
+.rewards-wrapper .rewards-heading-wrapper h5 {
+	color: #438d41;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 600;
+}
+.rewards-wrapper .rewards-heading-wrapper {
+	margin-bottom: 30px;
+}
+#pills-Rewards .reward-table-wrapper {
+	margin-top: 43px;
+}
+#pills-Rewards .reward-table-wrapper ul {
+	padding: 0px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+#pills-Rewards .reward-table-wrapper th {
+	text-align: center;
+	border-right: 3px solid #d4d4d4;
+}
+#pills-Rewards .reward-table-wrapper th:last-child {
+	border-right: 0px;
+}
+#pills-Rewards .reward-table-wrapper td {
+	padding: 2px;
+	vertical-align: middle;
+	border-right: 3px solid #d4d4d4;
+}
+#pills-Rewards .reward-table-wrapper td:last-child {
+	border-right: 0px;
+}
+#pills-Rewards .reward-table-wrapper td .i-and-name-wrapper {
+	display: flex;
+	align-items: center;
+	margin-left: 24px;
+}
+#pills-Rewards .reward-table-wrapper td .i-and-name-wrapper img {
+	width: 29px;
+	height: 29px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+#pills-Rewards .reward-table-wrapper td .i-and-name-wrapper h6 {
+	margin: 0px;
+	margin-left: 14px;
+	font-size: 16px;
+	font-family: "Poppins";
+}
+#pills-Rewards .reward-table-wrapper th.S-col {
+	width: 30%;
+}
+#pills-Rewards .reward-table-wrapper th.Job-col {
+	width: 40%;
+}
+#pills-Rewards .reward-table-wrapper th.Rating-col {
+	width: 30%;
+	text-align: center;
+}
+#pills-Rewards .reward-table-wrapper ul li {
+	margin: 0px 2px;
+}
+#pills-Rewards .reward-table-wrapper ul li i {
+	color: #fee63a;
+}
+#pills-Rewards .reward-table-wrapper ul li i.grey {
+	color: #dbdbdb;
+}
+#pills-Rewards .reward-table-wrapper td:first-child {
+	text-align: center;
+}
+#pills-Rewards .reward-table-wrapper tbody tr:nth-child(odd) {
+	background: #e3e3e3;
+}
+#pills-Rewards .reward-table-wrapper tbody tr:nth-child(even) {
+	background: #f2f2f2;
+}
+/* reward wrapper */
