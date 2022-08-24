@@ -9,14 +9,17 @@ import ChooseUs from "../../components/ChooseUs";
 import Footer from "../../components/Footer";
 import Faq from "../../components/Faq";
 import BetterBusiness from "../../components/BetterBusiness";
-import betterBussiness from "../../components/BetterBusiness";
+// import betterBussiness from "../../components/BetterBusiness";
 import Slider from "react-slick";
+import blogdetailimg from '../../assets/img/blog-detail-img.png';
+import blog3 from '../../assets/img/blog3.png';
+import blog2 from '../../assets/img/blog2.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
   return (
-    <>
+    <div className="Home_Page_Content">
       <Slider>
         <div className="intro intro-carousel">
           <div id="carousel" className="owl-carousel owl-theme">
@@ -41,7 +44,7 @@ const Home = () => {
                         <p className="intro-subtitle intro-price">
                           <a
                             href="javascript:void(0);"
-                            className="btn btn-primary ez-clean-btn"
+                            className="btn btn-primary ez-clean-btn no_brdr_home"
                           >
                             Book Now
                           </a>
@@ -118,9 +121,9 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="pricing-card card mb-4 box-shadow">
-                  <h4 className="my-0 font-weight-bold text-center">Regular</h4>
-                  <small className="text-center">Starting at</small>
+                <div className="pricing-card card mb-4 box-shadow mr-3">
+                  <h4 className="my-0 font-weight-bold text-center font-wght-zaam-head-qa">Regular</h4>
+                  <small className="text-center mt-1">Starting at</small>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title text-center">
                       $60
@@ -139,11 +142,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card pricing-card mb-4 box-shadow">
-                  <h4 className="my-0 font-weight-normal text-center">
+                <div className="card pricing-card mb-4 box-shadow mr-3">
+                  <h4 className="my-0 font-weight-normal text-center font-wght-zaam-head-qa">
                     Deep Clean
                   </h4>
-                  <small className="text-center">Starting at</small>
+                  <small className="text-center  mt-1">Starting at</small>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title text-center">
                       $90
@@ -162,9 +165,9 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card pricing-card mb-4 box-shadow text-center">
-                  <h4 className="my-0 font-weight-normal">Move Out/In Clean</h4>
-                  <small>Starting at</small>
+                <div className="card pricing-card mb-4 box-shadow text-center mr-1">
+                  <h4 className="my-0 font-weight-normal font-wght-zaam-head-qa">Move Out/In Clean</h4>
+                  <small className="text-center  mt-1" >Starting at</small>
                   <div className="card-body">
                     <h1 className="card-title pricing-card-title">$189</h1>
                   </div>
@@ -249,7 +252,7 @@ const Home = () => {
         {/*Choose Us*/}
 
         {/*Testimonial*/}
-        <section className="pt-5 pb-5">
+        <section className="pt-5 pb-5 pb-home-tesitmmm">
           <div className="container">
             <div className="col-md-12">
               <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -274,7 +277,7 @@ const Home = () => {
                     <div className="carousel-item active">
                       <div className="bg"></div>
                       <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-4">
                           <div className="carousel-caption">
                             <div className="row">
                               <div className="col-sm-9 col-8">
@@ -292,7 +295,26 @@ const Home = () => {
                             </small>
                           </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-4">
+                          <div className="carousel-caption">
+                            <div className="row">
+                              <div className="col-sm-9 col-8">
+                                <div className="testimonial-separator">
+                                  <hr />
+                                </div>
+                                <small className="testimonial-text">
+                                  "These folks were excellent. They were very
+                                  quick in responding, easy to work with, and
+                                  they arrived on time."
+                                </small>
+                              </div>
+                            </div>
+                            <small className="smallest float-right font-weight-bold mute testimonial-author">
+                              David
+                            </small>
+                          </div>
+                        </div>
+                        <div className="col-md-4">
                           <div className="carousel-caption">
                             <div className="row">
                               <div className="col-sm-9 col-8">
@@ -316,7 +338,7 @@ const Home = () => {
                     <div className="carousel-item">
                       <div className="bg"></div>
                       <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-4">
                           <div className="carousel-caption">
                             <div className="row">
                               <div className="col-sm-9 col-8">
@@ -325,7 +347,7 @@ const Home = () => {
                                 </div>
                                 <small className="testimonial-text">
                                   "We called them when we needed an apartment
-                                  cleaned after we had moved out.{" "}
+                                  cleaned after we had moved out."{" "}
                                 </small>
                               </div>
                             </div>
@@ -334,7 +356,7 @@ const Home = () => {
                             </small>
                           </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-4">
                           <div className="carousel-caption">
                             <div className="row">
                               <div className="col-sm-9 col-8">
@@ -344,7 +366,26 @@ const Home = () => {
                                 <small className="testimonial-text">
                                   "These folks were excellent. They were very
                                   quick in responding, easy to work with, and
-                                  they arrived on time.
+                                  they arrived on time."
+                                </small>
+                              </div>
+                            </div>
+                            <small className="smallest float-right font-weight-bold mute testimonial-author">
+                              David
+                            </small>
+                          </div>
+                        </div>
+                        <div className="col-md-4">
+                          <div className="carousel-caption">
+                            <div className="row">
+                              <div className="col-sm-9 col-8">
+                                <div className="testimonial-separator">
+                                  <hr />
+                                </div>
+                                <small className="testimonial-text">
+                                  "These folks were excellent. They were very
+                                  quick in responding, easy to work with, and
+                                  they arrived on time."
                                 </small>
                               </div>
                             </div>
@@ -406,7 +447,7 @@ const Home = () => {
                   We've got your back, being open 7 days a week allows
                 </small>
                 <a
-                  className="btn btn-primary ez-clean-btn mt-3"
+                  className="btn btn-primary ez-clean-btn mt-3 no_brdr_home brdr-rounded"
                   href="javascript:void(0);"
                 >
                   Book Now
@@ -431,7 +472,7 @@ const Home = () => {
                             <div className="col-sm-12 col-12">
                               <img
                                 className="home-clean-img"
-                                src={require("../..//assets/img/community1.png")}
+                                src={blogdetailimg}
                                 alt="slider"
                               />
                             </div>
@@ -444,7 +485,7 @@ const Home = () => {
                             <div className="col-sm-12 col-12">
                               <img
                                 className="home-clean-img"
-                                src={require("../../assets/img/community2.png")}
+                                src={blog3}
                                 alt="slider"
                               />
                             </div>
@@ -457,7 +498,7 @@ const Home = () => {
                             <div className="col-sm-12 col-12">
                               <img
                                 className="home-clean-img"
-                                src="../ezclean/assets/img/community2.png"
+                                src={blog2}
                                 alt="slider"
                               />
                             </div>
@@ -475,7 +516,7 @@ const Home = () => {
                             <div className="col-sm-12 col-12">
                               <img
                                 className="home-clean-img"
-                                src="../ezclean/assets/img/community2.png"
+                                src={blogdetailimg}
                                 alt="slider"
                               />
                             </div>
@@ -488,7 +529,7 @@ const Home = () => {
                             <div className="col-sm-12 col-12">
                               <img
                                 className="home-clean-img"
-                                src="../ezclean/assets/img/community2.png"
+                                src={blog3}
                                 alt="slider"
                               />
                             </div>
@@ -501,7 +542,7 @@ const Home = () => {
                             <div className="col-sm-12 col-12">
                               <img
                                 className="home-clean-img"
-                                src="../ezclean/assets/img/community2.png"
+                                src={blog2}
                                 alt="slider"
                               />
                             </div>
@@ -547,11 +588,11 @@ const Home = () => {
         <Faq />
         {/*FAQ */}
         {/*Business Bureau*/}
-        <BetterBusiness />
+        {/* <BetterBusiness /> */}
         {/*Business Bureau*/}
       </main>
       {/*End #main*/}
-    </>
+    </div>
   );
 };
 

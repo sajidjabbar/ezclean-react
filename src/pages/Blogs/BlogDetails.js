@@ -5,7 +5,7 @@ import blogImg from "../../assets/img/blog-detail-img.png";
 
 const BlogDetails  = () => {
     return (
-        <>
+        <div className="Blog_Details">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -21,7 +21,7 @@ const BlogDetails  = () => {
                                     <img className="img-fluid mt-4" src={blogImg} alt="blog-image"/>
                                     <div className="blog-details-text text-left d-flex">
                                         <h6 className="font-weight-bold">We believe cleaning should be a luxury every family can afford.</h6>
-                                        <span className="ml-5 blog-date text-right">Apr 08, 2022</span>
+                                        <span className="blog_detail_right">Apr 08, 2022</span>
                                     </div>
                                 </div>
                             </div>
@@ -30,9 +30,9 @@ const BlogDetails  = () => {
                                     <div className="col-md-12">
                                         <div className="blog-detail text-center">
                                             <img className="img-fluid mt-4" src={mainImage} alt="blog-image"/>
-                                            <div className="blog-details-text text-left d-flex">
-                                                <h6 className="font-weight-bold">We believe cleaning should be a luxury every family can afford.</h6>
-                                                <span className="ml-5 blog-date text-right">Apr 08, 2022</span>
+                                            <div className="blog-details-sidebar text-left">
+                                                <h6 className="font-weight-bold">We believe cleaning should be a </h6>
+                                                <span className="ml-5 blog-date text-left right_zabardasti1">Apr 08, 2022</span>
                                             </div>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@ const BlogDetails  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

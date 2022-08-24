@@ -8,13 +8,13 @@ import BetterBusiness from "../../components/BetterBusiness";
 
 const About  = () => {
     return (
-        <>
+        <div className="About_Page">
             <main id="main">
                 {/*About Us First Section*/}
                 <section className="section-services mt-4 mb-4">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-5">
+                            <div className="col-md-5 pr-5">
                                 <h3><span className="ez-yellow-color">Highest standard cleaning,</span> with the best price
                                     possible.</h3>
                                 <p className="about-text">We believe cleaning should be a luxury every family can afford. For the
@@ -50,7 +50,7 @@ const About  = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-5">
-                                <small>About Our Company</small>
+                                <small className="abt_sml_yllw">About Our Company</small>
                                 <h3>Community, Culture, <span className="ez-yellow-color"> Cleaning. </span></h3>
                                 <p className="about-text">Our three core values match our one mission, delivering the best cleaning
                                     experience, trained and trusted cleaners, and environmentally friendly cleaning products to
@@ -88,7 +88,7 @@ const About  = () => {
                                 </h3>
                                 <small className="d-block mt-3 cleaning-heading-text">We've got your back, being open 7 days a week
                                     allows</small>
-                                <a className="btn btn-primary ez-clean-btn mt-3" href="javascript:void(0);">Book Now</a>
+                                <a className="btn btn-primary ez-clean-btn bt-about-clrchn mt-3 " href="javascript:void(0);">Book Now</a>
                             </div>
                         </div>
 
@@ -188,7 +188,7 @@ const About  = () => {
                 <BetterBusiness />
                 {/*Partners*/}
             </main>
-        </>
+        </div>
     );
 };
 

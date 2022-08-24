@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import bell from "../assets/img/bell.png";
 import About from "../pages/About/About";
@@ -10,6 +10,10 @@ import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Auth/Login";
 
 const Header = () => {
+
+	let location = useLocation();
+	console.log(location);
+
 	return (
 		<nav className="navbar navbar-default navbar-trans navbar-expand-lg">
 			<div className="container">
@@ -32,37 +36,37 @@ const Header = () => {
 					<ul className="navbar-nav">
 						<li className="nav-item">
 							{/*<a className="nav-link active" href="#">Home</a>*/}
-							<Link className="nav-link active" to={"/"}>
+							<Link className={location.pathname === "/" ? "nav-link active" : "nav-link"} to={"/"}>
 								Home
 							</Link>
 						</li>
 						<li className="nav-item">
 							{/*<a className="nav-link" href={<About />}>About</a>*/}
-							<Link className="nav-link" to={"/About"}>
+							<Link className={location.pathname === "/About" ? "nav-link active" : "nav-link"} to={"/About"}>
 								About
 							</Link>
 						</li>
 						<li className="nav-item">
 							{/*<a className="nav-link" >Services</a>*/}
-							<Link className="nav-link" to={"/Services"}>
+							<Link  className={location.pathname === "/Services" ? "nav-link active" : "nav-link"}  to={"/Services"}>
 								Services
 							</Link>
 						</li>
 						<li className="nav-item">
 							{/*<a className="nav-link" >Blog</a>*/}
-							<Link className="nav-link" to={"/Blogs"}>
+							<Link className={location.pathname === "/Blogs" ? "nav-link active" : "nav-link"}  to={"/Blogs"}>
 								Blogs
 							</Link>
 						</li>
 						<li className="nav-item">
 							{/*<a className="nav-link" >FAQ</a>*/}
-							<Link className="nav-link" to={"/faq"}>
+							<Link className={location.pathname === "/faq" ? "nav-link active" : "nav-link"} to={"/faq"}>
 								FAQ
 							</Link>
 						</li>
 						<li className="nav-item">
 							{/*<a className="nav-link" >Contact</a>*/}
-							<Link className="nav-link" to={"/Contact"}>
+							<Link className={location.pathname === "/Contact" ? "nav-link active" : "nav-link"} to={"/Contact"}>
 								Contact
 							</Link>
 						</li>

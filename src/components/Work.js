@@ -8,7 +8,7 @@ const Work  = () => {
         <>
             <section className="section-services mt-4">
                 <div className="container">
-                    <div className="row">
+                    <div className="row px-5">
                         <div className="col-md-12">
                             <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                                 <h3 className="pricing-title font-weight-bold">How it <span
@@ -20,7 +20,7 @@ const Work  = () => {
                             <div className="work-card">
                                 <img className={"work-img"} src={Step1}/>
                             </div>
-                            <h3 className="ez-yellow-color font-weight-bold mt-5 text-center">Step 01</h3>
+                            <h3 className="ez-yellow-color font-weight-bold mt-5 text-center clr-ylw-imp">Step 01</h3>
                             <p className="work-text mt-3 text-center">Select the size of</p>
                         </div>
                         <div className="col">
@@ -30,7 +30,7 @@ const Work  = () => {
                             <div className="work-card">
                                 <img className="work-img" src={Step2}/>
                             </div>
-                            <h3 className="ez-yellow-color font-weight-bold mt-5 text-center">Step 02</h3>
+                            <h3 className="ez-yellow-color font-weight-bold mt-5 text-center clr-ylw-imp">Step 02</h3>
                             <p className="work-text mt-3 text-center">Select the level of clean-</p>
                         </div>
                         <div className="col">
@@ -40,7 +40,7 @@ const Work  = () => {
                             <div className="work-card">
                                 <img className="work-img" src={Step3}/>
                             </div>
-                            <h3 className="ez-yellow-color font-weight-bold mt-5 text-center">Step 03</h3>
+                            <h3 className="ez-yellow-color font-weight-bold mt-5 text-center clr-ylw-imp">Step 03</h3>
                             <p className="work-text mt-3 text-center">Schedule your preferred day</p>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ const Featured = () => {
 {/*Featured In*/}
 <section className="section-services">
     <div className="container">
-        <div className="row">
+        <div className="row px-5">
             <div className="col-md-12">
                 <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                     <h3 className="pricing-title font-weight-bold"><span
