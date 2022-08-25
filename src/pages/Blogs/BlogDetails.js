@@ -37,11 +37,11 @@ const BlogDetails  = () => {
                                         </div>
                                     </div>
                                     <div className="col-md-12">
-                                        <div className="blog-detail text-center">
+                                    <div className="blog-detail text-center">
                                             <img className="img-fluid mt-4" src={mainImage} alt="blog-image"/>
-                                            <div className="blog-details-text text-left d-flex">
-                                                <h6 className="font-weight-bold">We believe cleaning should be a luxury every family can afford.</h6>
-                                                <span className="ml-5 blog-date text-right">Apr 08, 2022</span>
+                                            <div className="blog-details-sidebar text-left">
+                                                <h6 className="font-weight-bold">We believe cleaning should be a </h6>
+                                                <span className="ml-5 blog-date text-left right_zabardasti1">Apr 08, 2022</span>
                                             </div>
                                         </div>
                                     </div>
@@ -58,15 +58,15 @@ const BlogDetails  = () => {
                                 <form>
                                     <h6>Leave a comment</h6>
                                     <label>Name *</label>
-                                    <div className="col-md-12">
+                                    <div className="col-md-12 pl-0">
                                         <input className="w-100 form-control" type="text" placeholder="Your Name"/>
                                     </div>
                                     <label className="mt-3">Email *</label>
-                                    <div className="col-md-12">
+                                    <div className="col-md-12 pl-0">
                                         <input className="w-100 form-control" type="Email" placeholder="Your Email"/>
                                     </div>
                                     <label className="mt-3">Your comment</label>
-                                    <div className="col-md-12">
+                                    <div className="col-md-12 pl-0">
                                         <textarea className="w-100 form-control" rows="4" cols="50" placeholder="Your Comment"></textarea>
                                     </div>
                                     <button className="btn btn-primary ez-clean-btn-rounded mt-3" href="javascript:void(0);">Post</button>

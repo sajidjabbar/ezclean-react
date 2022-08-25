@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const EnterPassword  = () => {
     return (
-        <>
+        <div className="Auth EnterPasswrd">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -19,7 +19,7 @@ const EnterPassword  = () => {
                                 </div>
                             </div>
                             <div className="col-md-12">
-                                <form className="mt-5">
+                                <form className="mt-2">
                                     <div className="row">
                                         <div className="col-md-6 ml-auto mr-auto">
                                             <div className="col-md-12 mt-3">
@@ -28,7 +28,7 @@ const EnterPassword  = () => {
                                             <div className="col-md-12 mt-3">
                                                 <input className="form-control" type="email" placeholder="Confirm Password"/>
                                             </div>
-                                            <button className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto mr-auto d-flex" href="javascript:void(0);">Submit</button>
+                                            <button className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto mr-auto d-flex bt-submt" href="javascript:void(0);">Submit</button>
                                             {/*<Link className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto mr-auto d-flex w-50" to={"/ForgotOTP"}>Submit</Link>*/}
                                         </div>
                                     </div>
@@ -43,7 +43,7 @@ const EnterPassword  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

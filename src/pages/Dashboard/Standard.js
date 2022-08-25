@@ -9,7 +9,7 @@ import BetterBusiness from "../../components/BetterBusiness";
 
 const Standard = () => {
   return (
-    <>
+    <div className="Standards">
       {/* Standard section */}
       <section className="standard-sec">
         <div className="container">
@@ -42,7 +42,7 @@ const Standard = () => {
                 <div className="col-md-4">
                   <div className="pic-text for-pic-hover">
                     <img className="img-fluid" src={make2}></img>
-                    <h5>
+                    <h5 className="mt-2">
                       Deep <br />
                       Cleaning
                     </h5>
@@ -52,7 +52,7 @@ const Standard = () => {
                 <div className="col-md-4">
                   <div className="pic-text for-pic-hover">
                     <img className="img-fluid" src={make3}></img>
-                    <h5>
+                    <h5 className="mt-4">
                       Move <br />
                       Cleaning
                     </h5>
@@ -61,8 +61,9 @@ const Standard = () => {
               </div>
 
               <div className="row for-padding-up">
-                <div className="col-md-4">
+                <div className="col-md-4 pos-rel">
                   <label className="selectlabel">Venue </label>
+                  <i className="fa fa-angle-down arrow_set_pos"></i>
                   <div className="select-all">
                     <select name="cars" id="cars">
                       <option value="volvo">Select</option>
@@ -150,6 +151,10 @@ const Standard = () => {
                   name="vehicle1"
                   value="Bike"
                 />
+                {/* <div class="form-group">
+                  <label for="html">Dust Plan</label>
+                  <input type="checkbox" id="html" />
+                </div> */}
               </div>
             </div>
             <div className="col-md-2">
@@ -236,7 +241,7 @@ const Standard = () => {
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Apartment / House #</label>
+                  <label for="exampleInputEmail1">Building Name</label>
                   <input
                     type="email"
                     class="form-control"
@@ -247,7 +252,7 @@ const Standard = () => {
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
+                  <label for="exampleInputEmail1">Appartment / House #</label>
                   <input
                     type="email"
                     class="form-control"
@@ -331,7 +336,7 @@ const Standard = () => {
       {/* End of Address detail section  */}
 
       <BetterBusiness />
-    </>
+    </div>
   );
 };
 

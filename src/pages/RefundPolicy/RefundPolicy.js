@@ -4,7 +4,7 @@ import BetterBusiness from "../../components/BetterBusiness";
 
 const RefundPolicy  = () => {
     return (
-        <>
+        <div className="Policy_Page">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -30,7 +30,7 @@ const RefundPolicy  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

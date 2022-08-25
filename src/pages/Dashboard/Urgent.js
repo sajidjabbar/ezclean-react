@@ -6,11 +6,11 @@ import standard from "../../assets/img/standard.png";
 import { Link } from "react-router-dom";
 import BetterBusiness from "../../components/BetterBusiness";
 
-const Urgent =()=>{
-    return(
-        <>
+const Urgent = () => {
+  return (
+    <div className="Standards">
 
-        {/* Standard section */}
+      {/* Standard section */}
       <section className="standard-sec">
         <div className="container">
           <div className="row">
@@ -42,7 +42,7 @@ const Urgent =()=>{
                 <div className="col-md-4">
                   <div className="pic-text for-pic-hover">
                     <img className="img-fluid" src={make2}></img>
-                    <h5>
+                    <h5 className="mt-2">
                       Deep <br />
                       Cleaning
                     </h5>
@@ -52,7 +52,7 @@ const Urgent =()=>{
                 <div className="col-md-4">
                   <div className="pic-text for-pic-hover">
                     <img className="img-fluid" src={make3}></img>
-                    <h5>
+                    <h5 className="mt-4">
                       Move <br />
                       Cleaning
                     </h5>
@@ -61,8 +61,9 @@ const Urgent =()=>{
               </div>
 
               <div className="row for-padding-up">
-                <div className="col-md-4">
+                <div className="col-md-4 pos-rel">
                   <label className="selectlabel">Venue </label>
+                  <i className="fa fa-angle-down arrow_set_pos"></i>
                   <div className="select-all">
                     <select name="cars" id="cars">
                       <option value="volvo">Select</option>
@@ -329,11 +330,9 @@ const Urgent =()=>{
         </div>
       </section>
       {/* End of Address detail section  */}
-
       <BetterBusiness />
-        
-        </>
-    )
+    </div>
+  )
 }
 
 export default Urgent;

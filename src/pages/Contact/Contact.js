@@ -5,7 +5,7 @@ import blogImg from "../../assets/img/blog-detail-img.png";
 
 const Contact  = () => {
     return (
-        <>
+        <div className="ContactUs_Page">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -35,7 +35,7 @@ const Contact  = () => {
                                             <div className="col-md-12 mt-3">
                                                 <textarea className="form-control" row="4" cols="50" type="text" placeholder="Brief"/>
                                             </div>
-                                            <button className="btn btn-primary ez-clean-btn-rounded mt-3 ml-auto d-flex" href="javascript:void(0);">Submit</button>
+                                            <button className="btn btn-primary ez-clean-btn-rounded mt-3 ml-auto d-flex bt-clr-lghtgrn" href="javascript:void(0);">Submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -49,7 +49,7 @@ const Contact  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

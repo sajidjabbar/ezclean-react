@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const RegisterCleaner = () => {
 	return (
-		<>
+		<div className="Auth Reg_Cleaner">
 			<main id="main">
 				{/*Blog First Section*/}
 				<section className="section-services mt-5 mb-4">
@@ -23,7 +23,7 @@ const RegisterCleaner = () => {
 								</div>
 							</div>
 							<div className="col-md-12">
-								<form action="/CleanerDashboard" className="mt-5">
+								<form action="/CleanerDashboard" className="mt-4">
 									<div className="row">
 										<div className="col-md-6 ml-auto mr-auto">
 											<div className="col-md-12">
@@ -87,7 +87,7 @@ const RegisterCleaner = () => {
 				<BetterBusiness />
 				{/*Business Bureau*/}
 			</main>
-		</>
+		</div>
 	);
 };
 

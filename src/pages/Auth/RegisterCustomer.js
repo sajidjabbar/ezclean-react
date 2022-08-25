@@ -7,7 +7,7 @@ import "../../assets/css/auth.css";
 
 const RegisterCustomer = () => {
 	return (
-		<>
+		<div className="Auth Reg_Cleaner">
 			<main id="main">
 				{/*Blog First Section*/}
 				<section className="section-services mt-5 mb-4">
@@ -24,7 +24,7 @@ const RegisterCustomer = () => {
 								</div>
 							</div>
 							<div className="col-md-12">
-								<form className="mt-5" action="/LoginPage">
+								<form className="mt-4" action="/LoginPage">
 									<div className="row">
 										<div className="col-md-6 ml-auto mr-auto">
 											<div className="col-md-12">
@@ -95,7 +95,7 @@ const RegisterCustomer = () => {
 				<BetterBusiness />
 				{/*Business Bureau*/}
 			</main>
-		</>
+		</div>
 	);
 };
 

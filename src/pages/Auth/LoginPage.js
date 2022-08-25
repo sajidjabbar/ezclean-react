@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const LoginPage  = () => {
     return (
-        <>
+        <div className="Auth Reg_Cleaner Login">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -15,11 +15,11 @@ const LoginPage  = () => {
                             <div className="col-md-12">
                                 <div className="text-center">
                                     <h3>Login </h3>
-                                    <p className="w-50 mt-3 ml-auto mr-auto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    <p className="w-50 mt-3 ml-auto mr-auto px-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                 </div>
                             </div>
                             <div className="col-md-12">
-                                <form action="dashboard" className="mt-5">
+                                <form action="dashboard" className="mt-4">
                                     <div className="row">
                                         <div className="col-md-6 ml-auto mr-auto">
                                             <div className="col-md-12">
@@ -54,7 +54,7 @@ const LoginPage  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

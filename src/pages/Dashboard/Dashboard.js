@@ -21,7 +21,7 @@ const Dashboard = () => {
 		});
 	}, []);
 	return (
-		<>
+		<div className="Dashboard_Page">
 			{/* Dashboard  section  */}
 			<section className="dashboard-sec">
 				<div className="container">
@@ -285,13 +285,14 @@ const Dashboard = () => {
 																				<label for="exampleInputEmail1">
 																					Card Number :
 																				</label>
-																				<input
+																				{/* <input
 																					type="text"
 																					className="form-control"
 																					id="exampleInputEmail1"
 																					aria-describedby="emailHelp"
 																					placeholder="**** **** **** ****"
-																				/>
+																				/> */}
+																					<p className="mb-0 ml-3 mt-2 text-black">**** **** **** **** <span className="update_dashboard">update</span></p>
 																				{/* <Link  to="/">update</Link> */}
 																			</span>
 																		</div>
@@ -333,13 +334,14 @@ const Dashboard = () => {
 																				<label for="exampleInputEmail1">
 																					Password
 																				</label>
-																				<input
+																				{/* <input
 																					type="text"
 																					className="form-control"
 																					id="exampleInputEmail1"
 																					aria-describedby="emailHelp"
 																					placeholder="********"
-																				/>
+																				/> */}
+																				<p className="mb-0 ml-5 mt-2 text-black">************</p>
 																			</span>
 																		</div>
 																	</div>
@@ -351,7 +353,7 @@ const Dashboard = () => {
 															<div className="profile-head">
 																<h3>My Profile</h3>
 																<div className="profile-edit save-profile">
-																	<Link onClick={hideedit} to="">
+																	<Link className="bt-chngee" onClick={hideedit} to="">
 																		Save
 																	</Link>
 																</div>
@@ -414,6 +416,7 @@ const Dashboard = () => {
 
 																	<div className="col-md-6">
 																		<div className="form-group">
+																		{/* <p className="mb-0 ml-5 mt-2 text-black">**** **** **** ****</p> */}
 																			<input
 																				placeholder="Card Number"
 																				className="form-control"
@@ -452,7 +455,7 @@ const Dashboard = () => {
 																		<div className="profile-head">
 																			<h3>Security</h3>
 																			<div className="profile-edit save-profile">
-																				<Link onClick={hideedit} to="">
+																				<Link className="bt-chngee" onClick={hideedit} to="">
 																					save
 																				</Link>
 																			</div>
@@ -1435,7 +1438,7 @@ const Dashboard = () => {
 				</div>
 			</section>
 			{/* End of Dashboard section  */}
-		</>
+		</div>
 	);
 };
 

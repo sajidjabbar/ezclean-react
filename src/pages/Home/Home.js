@@ -83,7 +83,7 @@ const Home = () => {
                         <p className="intro-subtitle intro-price">
                           <a
                             href="javascript:void(0);"
-                            className="btn btn-primary ez-clean-btn"
+                            className="btn btn-primary ez-clean-btn no_brdr_home"
                           >
                             Book Now
                           </a>

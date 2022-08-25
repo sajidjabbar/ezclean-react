@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Searchurgent = () => {
 	return (
-		<>
+		<div className="Search_Cleaners1">
 			<section className="search-sec">
 				<div className="container">
 					<div className="row">
@@ -28,6 +28,9 @@ const Searchurgent = () => {
 							</div>
 
 							<div className="row align-items-center">
+							<div className="col-md-12">
+									<h3 className="Available_cleaners mb-4">Available cleaners</h3>
+								</div>
 								<div className="col-md-6">
 									<div className="search-for-flex">
 										<img className="img-fluid" src={david}></img>
@@ -145,7 +148,7 @@ const Searchurgent = () => {
 					</div>
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 

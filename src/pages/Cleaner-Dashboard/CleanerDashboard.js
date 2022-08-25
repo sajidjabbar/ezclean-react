@@ -1876,7 +1876,7 @@ const CleanerDashboard = () => {
 											>
 												<div className="rewards-wrapper">
 													<div className="rewards-heading-wrapper">
-														<h5>Rewards</h5>
+														<h5 className="mt-2">Rewards</h5>
 													</div>
 													<div className="employee-rating-wrapper">
 														<div className="img-wrapper">

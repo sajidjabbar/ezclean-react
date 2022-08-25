@@ -5,7 +5,7 @@ import loginImg from "../../assets/img/login.png";
 
 const Login  = () => {
     return (
-        <>
+        <div className="Auth">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -34,7 +34,7 @@ const Login  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const ForgotPassword  = () => {
     return (
-        <>
+        <div className="Auth ForgotPass">
             <main id="main">
                 {/*Blog First Section*/}
                 <section className="section-services mt-5 mb-4">
@@ -19,7 +19,7 @@ const ForgotPassword  = () => {
                                 </div>
                             </div>
                             <div className="col-md-12">
-                                <form className="mt-5">
+                                <form className="">
                                     <div className="row">
                                         <div className="col-md-6 ml-auto mr-auto">
                                             <div className="col-md-12 mt-3">
@@ -40,7 +40,7 @@ const ForgotPassword  = () => {
                 <BetterBusiness/>
                 {/*Business Bureau*/}
             </main>
-        </>
+        </div>
     );
 };
 

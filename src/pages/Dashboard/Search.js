@@ -11,7 +11,7 @@ import BetterBusiness from "../../components/BetterBusiness";
 
 const Search = () => {
 	return (
-		<>
+		<div className="Search_Cleaners1">
 			{/* Seacrh section  */}
 			<section className="search-sec">
 				<div className="container">
@@ -31,6 +31,9 @@ const Search = () => {
 							</div>
 
 							<div className="row align-items-center">
+								<div className="col-md-12">
+									<h3 className="Available_cleaners mb-4">Available cleaners</h3>
+								</div>
 								<div className="col-md-6">
 									<div className="search-for-flex">
 										<img className="img-fluid" src={david}></img>
@@ -152,7 +155,7 @@ const Search = () => {
 			{/* End of Search section  */}
 
 			<BetterBusiness />
-		</>
+		</div>
 	);
 };
 
