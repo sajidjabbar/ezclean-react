@@ -34,7 +34,7 @@ const CleanerDashboard = () => {
 		});
 	}, []);
 	return (
-		<>
+		<div className="Cleanerz_Dashhh">
 			{/* Dashboard  section  */}
 			<section className="dashboard-sec">
 				<div className="container">
@@ -146,7 +146,7 @@ const CleanerDashboard = () => {
 													{!editprofile ? (
 														<div className="profile-fields-wrapper">
 															<div className="profile-head">
-																<h3>My Profile</h3>
+																<h3 className="mt-2">My Profile</h3>
 																<div className="profile-edit">
 																	<Link onClick={showedit} to="">
 																		Edit
@@ -1109,7 +1109,7 @@ const CleanerDashboard = () => {
 												</div>
 												<div className="booking-details-wrapper">
 													<div className="booking-heading-wrapper">
-														<h4>Booking Details</h4>
+														<h4 className="mt-2">Booking Details</h4>
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
@@ -1118,16 +1118,16 @@ const CleanerDashboard = () => {
 													<div className="booker-details-wrapper">
 														<ul>
 															<li>
-																<span className="property">Client Name :</span>
-																<span className="value">Mark James</span>
+																<span className="property ">Client Name :</span>
+																<span className="value ml-juga">Mark James</span>
 															</li>
 															<li>
 																<span className="property">Phone :</span>
-																<span className="value">+1 234 567 890</span>
+																<span className="value ml-juga1">+1 234 567 890</span>
 															</li>
 															<li>
 																<span className="property">Address :</span>
-																<span className="value">
+																<span className="value ml-juga2">
 																	1234, 5th Street, Lorem ipsum, city, state
 																</span>
 															</li>
@@ -1194,7 +1194,7 @@ const CleanerDashboard = () => {
 												</div>
 												<div className="Job-com booking-details-wrapper">
 													<div className="booking-heading-wrapper">
-														<h4>Booking Details</h4>
+														<h4 >Booking Details</h4>
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
@@ -1284,7 +1284,7 @@ const CleanerDashboard = () => {
 												<div className="earning-wrapper">
 													<div className="earning-heading-and-tabs-wrapper">
 														<div className="heading-wrapper">
-															<h4>My Earnings</h4>
+															<h4 className="mt-2">My Earnings</h4>
 														</div>
 														<div className="earnings-tab-wrapper">
 															<ul
@@ -2090,7 +2090,7 @@ const CleanerDashboard = () => {
 				</div>
 			</section>
 			{/* End of Dashboard section  */}
-		</>
+		</div>
 	);
 };
 

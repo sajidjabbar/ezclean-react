@@ -5,7 +5,7 @@ import "../../assets/css/notification.css";
 
 const Notification = () => {
 	return (
-		<>
+		<div className="notification_Page">
 			{/* Notification starts here */}
 			<section className="notification-sec">
 				<div className="container">
@@ -147,7 +147,7 @@ const Notification = () => {
 			{/* tagline sec starts here */}
 			<BetterBusiness />
 			{/* tagline sec ends here */}
-		</>
+		</div>
 	);
 };
 

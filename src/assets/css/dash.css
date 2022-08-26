@@ -130,7 +130,7 @@ section.dashboard-sec {
 /* dashbaord tab css starts here */
 .stats-box-row .stats-box-wrapper {
 	background: #e8e8e8;
-	height: 156px;
+	height: 130px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
@@ -314,19 +314,21 @@ section.dashboard-sec {
 }
 .booking-table-wrapper th {
 	border-right: 3px solid #c2c2c2;
-	text-align: center;
+	text-align: left;
+	padding-left: 1.6rem;
 }
 .booking-table-wrapper th:last-child {
-	border-right: 0px;
+	border-right: 0px solid !important;
 }
 .booking-table-wrapper tr td {
 	border-right: 3px solid #c2c2c2;
 	text-align: center;
 	vertical-align: middle;
 	padding: 8px;
+	padding-left: 1.3rem;
 }
 .booking-table-wrapper tr td:last-child {
-	border-right: 0px;
+	border-right: 0px solid !important;
 }
 .booking-table-wrapper span.Accepted {
 	background-image: linear-gradient(

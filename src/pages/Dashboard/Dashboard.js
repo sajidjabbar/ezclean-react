@@ -136,7 +136,7 @@ const Dashboard = () => {
 										</li>
 
 										<li className="nav-item">
-											<a className="nav-link" href="/Notification">
+											<a className="nav-link" href="/Notification-customer">
 												Notifications
 											</a>
 										</li>
@@ -1141,9 +1141,9 @@ const Dashboard = () => {
 														</div>
 													</div>
 												</div>
-												<div className="booking-details-wrapper">
+												<div className="booking-details-wrapper pr-5 mr-5 mt-4 pampam">
 													<div className="booking-heading-wrapper">
-														<h4>Booking Details</h4>
+														<h4>Booking Detailszz</h4>
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
@@ -1165,12 +1165,12 @@ const Dashboard = () => {
 																	1234, 5th Street, Lorem ipsum, city, state
 																</span>
 															</li>
-															<li>
-																<span className="property">Date :</span>
-																<span className="value">12 Jan, 2022</span>
+															<li className="justify-right">
+																<span className="property rght-force1">Date :</span>
+																<span className="value rght-force">12 Jan, 2022</span>
 															</li>
-															<li>
-																<span className="property">Time : </span>
+															<li className="justify-right">
+																<span className="property prop-mr-cuss">Time : </span>
 																<span className="value">11:00 am</span>
 															</li>
 														</ul>
@@ -1255,7 +1255,7 @@ const Dashboard = () => {
 													<div className="col-lg-9">
 														<div className="loyal-wrapper">
 															<div className="loyal-heading-wrapper">
-																<h2>Loyalty Points</h2>
+																<h2 className="mt-2">Loyalty Points</h2>
 															</div>
 															<div className="loyalty-table-wrapper">
 																<div className="table-responsive">
@@ -1353,7 +1353,7 @@ const Dashboard = () => {
 											>
 												<div className="wallet-wrapper">
 													<div className="wallet-heading-wrapper">
-														<h4>Wallet</h4>
+														<h4 className="mt-2">Wallet</h4>
 													</div>
 													<div className="wallet-content-wrapper">
 														<div className="amount-wrapper">

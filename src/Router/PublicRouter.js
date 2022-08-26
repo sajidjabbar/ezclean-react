@@ -50,6 +50,7 @@ import CleanerDashboard from "../pages/Cleaner-Dashboard/CleanerDashboard";
 import BookingDetails from "../pages/Cleaner-Dashboard/BookingDetails";
 import CompleteJob from "../pages/Cleaner-Dashboard/completeJob";
 import Successfully from "../pages/Cleaner-Dashboard/Successfully";
+import Botification from "../pages/Cleaner-Dashboard/Notification";
 
 function PubilcRoutes() {
 	return (
@@ -95,6 +96,7 @@ function PubilcRoutes() {
 					<Route path="chat" element={<Chat />} />
 					<Route path="InviteFriend" element={<InviteFriend />} />
 					<Route path="notification" element={<Notification />} />
+					<Route path="notification-customer" element={<Botification />} />
 					<Route path="Hired" element={<Hired />} />
 					<Route path="jobPayment" element={<JobPayment />} />
 					<Route path="Thankyou" element={<ThankYou />} />

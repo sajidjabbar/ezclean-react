@@ -3,9 +3,9 @@ import BetterBusiness from "../../components/BetterBusiness";
 import { cleaner, cleaner2, cleaner3, cleaner4 } from "../../constant";
 import "../../assets/css/notification.css";
 
-const Notification = () => {
+const Botification = () => {
 	return (
-		<>
+		<div className="Botification_Page">
 			{/* Notification starts here */}
 			<section className="notification-sec">
 				<div className="container">
@@ -23,7 +23,7 @@ const Notification = () => {
 												<img src={cleaner} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -31,7 +31,12 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 									<div className="single-notification-wrapper">
@@ -40,7 +45,7 @@ const Notification = () => {
 												<img src={cleaner2} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -48,7 +53,12 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 									<div className="single-notification-wrapper">
@@ -57,7 +67,7 @@ const Notification = () => {
 												<img src={cleaner4} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -65,7 +75,13 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											{/* <a href="#">View Details</a> */}
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 									<div className="single-notification-wrapper">
@@ -74,7 +90,7 @@ const Notification = () => {
 												<img src={cleaner3} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -82,7 +98,12 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 									<div className="single-notification-wrapper">
@@ -91,7 +112,7 @@ const Notification = () => {
 												<img src={cleaner2} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -99,7 +120,12 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 									<div className="single-notification-wrapper">
@@ -108,7 +134,7 @@ const Notification = () => {
 												<img src={cleaner4} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -116,7 +142,12 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 									<div className="single-notification-wrapper">
@@ -125,7 +156,7 @@ const Notification = () => {
 												<img src={cleaner3} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Cleaner name</h6>
+												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -133,7 +164,12 @@ const Notification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<a href="#">View Details</a>
+											<div className="green_dot">
+
+											</div>
+											<div>
+												<span className="font-sml-sml">29 july 10:30am |2021</span>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -147,8 +183,8 @@ const Notification = () => {
 			{/* tagline sec starts here */}
 			<BetterBusiness />
 			{/* tagline sec ends here */}
-		</>
+		</div>
 	);
 };
 
-export default Notification;
+export default Botification;

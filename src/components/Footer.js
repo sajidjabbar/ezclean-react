@@ -49,6 +49,7 @@ const Footer = () => {
 												<a onClick={()=>{naviagte('/thankyou')}} class="dropdown-item" href="#">Page 34</a>
 												<a onClick={()=>{naviagte('/CustomerProfile')}} class="dropdown-item" href="#">Page 35</a>
 												<a onClick={()=>{naviagte('/InviteFriend')}} class="dropdown-item" href="#">Page 36</a>
+												<a onClick={()=>{naviagte('/Successfully')}} class="dropdown-item" href="#">Page 52</a>
 											</div>
 										</div>
 									</li>

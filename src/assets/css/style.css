@@ -3205,88 +3205,90 @@ nav.nav-footer ul.list-inline .list-inline-item {
 	padding-left: 50px;
 }
 
-.pos-rel{
+.pos-rel {
 	position: relative;
 }
 
-.Standards .arrow_set_pos{
+.Standards .arrow_set_pos {
 	position: absolute;
-    top: 43px;
-    font-size: 20px;
-    right: 32px;
-    color: white;
-    font-weight: 300;
+	top: 43px;
+	font-size: 20px;
+	right: 32px;
+	color: white;
+	font-weight: 300;
 }
 
-.Standards input[type=checkbox], input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: 5px;
+.Standards input[type=checkbox],
+input[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 5px;
 }
 
-.Standards section.address-detail-sec label{
+.Standards section.address-detail-sec label {
 	font-size: 12px;
-    color: #274638;
+	color: #274638;
 	font-weight: 600;
 }
 
-.Search_Cleaners1 .Available_cleaners{
+.Search_Cleaners1 .Available_cleaners {
 	font-size: 22px;
 	font-weight: 700;
 }
 
-.Search_Cleaners1 .search-view-details a{
+.Search_Cleaners1 .search-view-details a {
 	font-size: 13px;
 	padding: 0.65rem 5.45rem;
 }
 
-.Dashboard_Page .tab-wrapper{
-border: unset!important;
+.Dashboard_Page .tab-wrapper {
+	border: unset !important;
 }
 
-.Dashboard_Page .booking-wrapper ul#myTab li a.nav-link{
-	outline: 2px solid white!important;
+.Dashboard_Page .booking-wrapper ul#myTab li a.nav-link {
+	outline: 2px solid white !important;
 }
 
 .Dashboard_Page .booking-wrapper ul#myTab li a.nav-link.active {
-    /* color: #328240;
+	/* color: #328240;
     text-decoration: underline;
     font-weight: 600 !important; */
-    font-size: 16px !important;
+	font-size: 16px !important;
 }
+
 .Dashboard_Page .booking-wrapper ul#myTab li a.nav-link {
-    /* color: #328240;
+	/* color: #328240;
     text-decoration: underline;
     font-weight: 600 !important; */
-    font-size: 16px !important;
+	font-size: 16px !important;
 }
 
 .Dashboard_Page .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #e3e3e3;
+	background-color: #e3e3e3;
 }
 
 .Dashboard_Page .table-striped tbody tr:nth-of-type(even) {
-    background-color: #e3e3e363;
+	background-color: #e3e3e363;
 }
 
 .Dashboard_Page .table-striped tbody tr:nth(1) {
-    background-color: #fff;
+	background-color: #fff;
 }
 
-.Dashboard_Page .booking-table-wrapper th{
-    text-align: left;
+.Dashboard_Page .booking-table-wrapper th {
+	text-align: left;
 	padding-left: 2rem;
 }
 
-.Dashboard_Page .booking-table-wrapper span{
+.Dashboard_Page .booking-table-wrapper span {
 	font-size: 12px;
 	font-weight: 500;
 }
 
-.Dashboard_Page .booking-table-wrapper .cleaner-wrapper h5{
+.Dashboard_Page .booking-table-wrapper .cleaner-wrapper h5 {
 	font-size: 12px;
 	font-weight: 500;
 }
@@ -3296,52 +3298,191 @@ border: unset!important;
 	margin-right: 0.5rem;
 }
 
-.Dashboard_Page .booking-table-wrapper tr td{
+.Dashboard_Page .booking-table-wrapper tr td {
 	padding-left: 1rem;
 	font-size: 12px;
 	font-weight: 500;
 }
 
-.Dashboard_Page .booking-table-wrapper span.Accepted{
+.Dashboard_Page .booking-table-wrapper span.Accepted {
 	font-size: 12px;
 	height: 33px;
-    width: 116px;
+	width: 116px;
 }
 
-.Dashboard_Page .booking-table-wrapper span.Rejected{
+.Dashboard_Page .booking-table-wrapper span.Rejected {
 	font-size: 12px;
 	height: 33px;
-    width: 116px;
+	width: 116px;
 }
 
 .Dashboard_Page .booking-table-wrapper th {
 	border-right: 2px solid #c2c2c28c;
 }
 
-.Dashboard_Page .booking-table-wrapper tr td{
+.Dashboard_Page .booking-table-wrapper tr td {
 	border-right: 2px solid #c2c2c28c;
 }
 
-.Dashboard_Page .booking-table-wrapper th span{
+.Dashboard_Page .booking-table-wrapper th span {
 	font-size: 15px !important;
 }
 
-.Dashboard_Page .booking-table-wrapper tr td{
-    padding-left: 2rem!important;
+.Dashboard_Page .booking-table-wrapper tr td {
+	padding-left: 2rem !important;
 }
 
-.Dashboard_Page .booking-table-wrapper span.Completed{
-    background-image: linear-gradient( to bottom, #1d753f, #308141, #438d42, #559943, #68a543 );
-    font-size: 12px;
-    font-weight: 600;
-    color: #fff;
-    height: 33px;
-    width: 118px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto;
+.Dashboard_Page .booking-table-wrapper span.Completed {
+	background-image: linear-gradient(to bottom, #1d753f, #308141, #438d42, #559943, #68a543);
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	height: 33px;
+	width: 118px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
 }
+
+.table-striped tbody tr:nth-of-type(even) {
+	background-color: #e3e3e369;
+}
+
+.booking-table-wrapper tr td {
+	border-right: 2px solid #c2c2c273 !important;
+}
+
+.booking-table-wrapper tr td:nth-of-type(last) {
+	border-right: 0px solid #c2c2c273 !important;
+}
+
+.job-table tr td:last-child {
+	border-right: 0px !important;
+}
+
+.job-table tr th:last-child {
+	border-right: 0px !important;
+}
+
+.booking-table-wrapper th {
+	border-right: 2px solid #c2c2c273 !important;
+}
+
+
+.tab-wrapper {
+	border: unset !important;
+}
+
+.booking-wrapper ul#myTab li a.nav-link {
+	outline: 2px solid white !important;
+}
+
+.booking-wrapper ul#myTab li a.nav-link.active {
+	/* color: #328240;
+		text-decoration: underline;
+		font-weight: 600 !important; */
+	font-size: 16px !important;
+}
+
+.booking-wrapper ul#myTab li a.nav-link {
+	/* color: #328240;
+		text-decoration: underline;
+		font-weight: 600 !important; */
+	font-size: 16px !important;
+}
+
+.john-text{
+	padding-left: 0px!important;
+}
+
+.john{
+    justify-content: space-evenly!important;
+}
+
+.justify-right{
+	justify-content: right;
+}
+
+.pampam .booker-details-wrapper ul li span.property{
+	min-width: 115px;
+}
+
+.pampam .rght-force{
+	align-items: right;
+}
+
+.pampam .rght-force1{
+	align-items: right;
+
+}
+
+.prop-mr-cuss{
+	margin-right: 38px!important;
+}
+
+.Botification_Page .notification-list-wrapper .profile-content-wrapper h6{
+    background-color: #46a5fd;
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0.1rem 0.45rem;
+    border-radius: 3px;
+}
+
+.Botification_Page .notification-list-wrapper .profile-content-wrapper h3{
+	font-weight: 600;
+}
+
+.Botification_Page .single-notification-wrapper .msg-wrappper h4{
+	color: #808080c4;
+    font-weight: 500;
+}
+
+.Botification_Page .green_dot{
+	background-color: #1d974cba;
+	/* text-align: right; */
+	margin-left: auto;
+	border-radius: 50%;
+	margin-bottom: 0.3rem;
+	height: 20px;
+	width: 20px;
+}
+
+.Botification_Page .font-sml-sml{
+	font-size: 10.5px;
+	font-weight: 500;
+}
+
+.Cleanerz_Dashhh .dashboard-sec .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	text-align: center;
+}
+.Cleanerz_Dashhh .dashboard-sec .nav-pills .nav-link{
+	text-align: center;
+}
+.Cleanerz_Dashhh .booking-details-wrapper .booker-details-wrapper ul li span.value{
+	font-size: 14px;
+}
+.Cleanerz_Dashhh .booking-details-wrapper .booker-details-wrapper ul li span.property{
+	font-size: 14px;
+}
+.Cleanerz_Dashhh .packages-wrapper .packages-list-wrapper ul li span.property{
+	font-size: 14px;
+}
+.Cleanerz_Dashhh .packages-wrapper .packages-list-wrapper ul li span.value{
+	font-size: 14px;
+}
+.Cleanerz_Dashhh .ml-juga{
+	margin-left: 10px;
+}
+.Cleanerz_Dashhh .ml-juga1{
+	margin-left: 52px;
+}
+.Cleanerz_Dashhh .ml-juga2{
+	margin-left: 40px;
+}
+
 /* standard */
 
 
