@@ -112,7 +112,7 @@ const CleanerDashboard = () => {
 												Notifications
 											</a>
 										</li>
-										<li className="nav-item">
+										{/* <li className="nav-item">
 											<a
 												className="nav-link"
 												id="pills-Rewards-tab"
@@ -124,7 +124,7 @@ const CleanerDashboard = () => {
 											>
 												Rewards
 											</a>
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							</div>
@@ -141,6 +141,43 @@ const CleanerDashboard = () => {
 												role="tabpanel"
 												aria-labelledby="pills-profile-tab"
 											>
+												<div className="rewards-wrapper">
+													{/* <div className="rewards-heading-wrapper">
+														<h5 className="mt-2">Rewards</h5>
+													</div> */}
+													<div className="employee-rating-wrapper">
+														<div className="img-wrapper">
+															<figure>
+																<img src={cleaner4} alt="" />
+															</figure>
+														</div>
+														<div className="employee-name-rating-wrapper">
+															<h6>John Doe</h6>
+															<ul>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+															</ul>
+														</div>
+														<div className="employee-month-wrapper">
+															<button className="btn">
+																Employee of the Month
+															</button>
+														</div>
+													</div>
+												</div>
 												<div className="profile-all">
 													{/* edit profile starts here */}
 													{!editprofile ? (
@@ -263,7 +300,7 @@ const CleanerDashboard = () => {
 																		</div>
 																	</div>
 
-																	<div className="col-md-6">
+																	{/* <div className="col-md-6">
 																		<div className="form-group Card	">
 																			<span className="only-for-flex">
 																				{" "}
@@ -278,10 +315,9 @@ const CleanerDashboard = () => {
 																					placeholder="**** **** **** 4465"
 																				/>
 																				<a href="#">update</a>
-																				{/* <Link  to="/">update</Link> */}
 																			</span>
 																		</div>
-																	</div>
+																	</div> */}
 
 																	<div className="col-md-6">
 																		<div className="form-group">
@@ -532,7 +568,7 @@ const CleanerDashboard = () => {
 													</div>
 												</div>
 												<div className="cleaner-wrapper">
-													<div className="row">
+													{/* <div className="row">
 														<div className="col-lg-12">
 															<div className="content-wrapper">
 																<h4>Other Cleaners</h4>
@@ -722,7 +758,7 @@ const CleanerDashboard = () => {
 																</div>
 															</div>
 														</div>
-													</div>
+													</div> */}
 												</div>
 											</div>
 											<div
@@ -1119,11 +1155,15 @@ const CleanerDashboard = () => {
 														<ul>
 															<li>
 																<span className="property ">Client Name :</span>
-																<span className="value ml-juga">Mark James</span>
+																<span className="value ml-juga">
+																	Mark James
+																</span>
 															</li>
 															<li>
 																<span className="property">Phone :</span>
-																<span className="value ml-juga1">+1 234 567 890</span>
+																<span className="value ml-juga1">
+																	+1 234 567 890
+																</span>
 															</li>
 															<li>
 																<span className="property">Address :</span>
@@ -1194,7 +1234,7 @@ const CleanerDashboard = () => {
 												</div>
 												<div className="Job-com booking-details-wrapper">
 													<div className="booking-heading-wrapper">
-														<h4 >Booking Details</h4>
+														<h4>Booking Details</h4>
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
@@ -1355,7 +1395,7 @@ const CleanerDashboard = () => {
 																					<th className="Location-col">
 																						Location
 																					</th>
-																					<th className="Status-col">Status</th>
+																					<th className="Status-col">Amount</th>
 																				</tr>
 																			</thead>
 																			<tbody>

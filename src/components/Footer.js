@@ -4,7 +4,6 @@ import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import CancellationPolicy from "../pages/CancellationPolicy/CancellationPolicy";
 
 const Footer = () => {
-
 	const naviagte = useNavigate();
 	return (
 		<>
@@ -30,28 +29,134 @@ const Footer = () => {
 										<a href="javascript:void(0);">Manage Booking</a>
 									</li>
 									<li className="list-inline-item">
-										<a href="javascript:void(0);">Office Cleaning</a>
-									</li>
-									<li className="list-inline-item">
 										<div class="dropdown">
-											<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<button
+												class="btn btn-secondary dropdown-toggle"
+												type="button"
+												id="dropdownMenuButton"
+												data-toggle="dropdown"
+												aria-haspopup="true"
+												aria-expanded="false"
+											>
 												Missing Page Link
 											</button>
-											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-												<a onClick={()=>{naviagte('/dashboard')}} class="dropdown-item" href="#">Page 22</a>
-												<a onClick={()=>{naviagte('/searchurgent')}}  class="dropdown-item" href="#">Page 27</a>
-												<a onClick={()=>{naviagte('/clearfound')}} class="dropdown-item" href="#">Page 28</a>
-												<a onClick={()=>{naviagte('/chat')}} class="dropdown-item" href="#">Page 29</a>
-												<a onClick={()=>{naviagte('/Hired')}} class="dropdown-item" href="#">Page 30</a>
-												<a onClick={()=>{naviagte('/CleaningDetails')}} class="dropdown-item" href="#">Page 31</a>
-												<a onClick={()=>{naviagte('/UrgentDetails')}} class="dropdown-item" href="#">Page 32</a>
-												<a onClick={()=>{naviagte('/jobPayment')}} class="dropdown-item" href="#">Page 33</a>
-												<a onClick={()=>{naviagte('/thankyou')}} class="dropdown-item" href="#">Page 34</a>
-												<a onClick={()=>{naviagte('/CustomerProfile')}} class="dropdown-item" href="#">Page 35</a>
-												<a onClick={()=>{naviagte('/InviteFriend')}} class="dropdown-item" href="#">Page 36</a>
-												<a onClick={()=>{naviagte('/Successfully')}} class="dropdown-item" href="#">Page 52</a>
+											<div
+												class="dropdown-menu"
+												aria-labelledby="dropdownMenuButton"
+											>
+												<a
+													onClick={() => {
+														naviagte("/dashboard");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 22
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/searchurgent");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 27
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/clearfound");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 28
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/chat");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 29
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/Hired");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 30
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/CleaningDetails");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 31
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/UrgentDetails");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 32
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/jobPayment");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 33
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/thankyou");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 34
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/CustomerProfile");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 35
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/InviteFriend");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 36
+												</a>
+												<a
+													onClick={() => {
+														naviagte("/Successfully");
+													}}
+													class="dropdown-item"
+													href="#"
+												>
+													Page 52
+												</a>
 											</div>
 										</div>
+									</li>
+									<li className="list-inline-item">
+										<a href="javascript:void(0);">Office Cleaning</a>
 									</li>
 									<li className="list-inline-item">
 										{/*<a href="javascript:void(0);">Privacy Policy</a>*/}
@@ -65,12 +170,12 @@ const Footer = () => {
 											Terms & Conditions
 										</Link>
 									</li>
-									<li className="list-inline-item">
-										{/*<a href="javascript:void(0);">Cancellation Policy</a>*/}
+									{/*<a href="javascript:void(0);">Cancellation Policy</a>*/}
+									{/* <li className="list-inline-item">
 										<Link className="nav-link" to={"/CancellationPolicy"}>
 											Cancellation Policy
 										</Link>
-									</li>
+									</li> */}
 									<li className="list-inline-item">
 										{/*<a href="javascript:void(0);">Cancellation Policy</a>*/}
 										<Link className="nav-link" to={"/RefundPolicy"}>

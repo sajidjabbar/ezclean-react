@@ -408,14 +408,36 @@ section.dashboard-sec {
 	font-weight: 600;
 	padding: 7px 23px;
 }
-.booking-details-wrapper .tag-and-accep-wrapper span.Accepted {
-	background-image: linear-gradient(to right, #1d753f, #68a543);
+.booking-details-wrapper .tag-and-accep-wrapper span.pending {
+	background-image: linear-gradient(to right, #ffba3c, #ce9000);
 	color: #fff;
 	font-family: "Poppins";
 	font-size: 14px;
 	font-weight: 600;
 	padding: 7px 23px;
 	line-height: 1.5;
+}
+.booking-details-wrapper .tag-and-accep-wrapper span.Completed {
+	background-image: linear-gradient(to right, #30ca01, #339f00);
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 14px;
+	font-weight: 600;
+	padding: 7px 23px;
+	line-height: 1.5;
+}
+.booking-details-wrapper .tag-and-accep-wrapper .button-group button {
+	border-radius: 0;
+	background-image: linear-gradient(to right, #30ca01, #339f00);
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 13.5px;
+	font-weight: 600;
+	padding: 6.8px 23px;
+	line-height: 20px;
+	border: 0;
+	margin-right: 10px;
+	margin-top: -1px;
 }
 .booking-details-wrapper .tag-and-accep-wrapper span.job {
 	background: #f1f1f1;
@@ -590,7 +612,7 @@ section.dashboard-sec {
 	font-size: 16px;
 	font-weight: 400;
 	border: 0px;
-	padding: 5px 10px;
+	padding: 12px 10px;
 	border-right: 2px solid #c2c2c2;
 }
 .loyalty-table-wrapper th {
@@ -717,73 +739,109 @@ section.dashboard-sec {
 .rewards-wrapper .rewards-heading-wrapper {
 	margin-bottom: 30px;
 }
-#pills-Rewards .reward-table-wrapper {
+.reward-table-wrapper {
 	margin-top: 43px;
 }
-#pills-Rewards .reward-table-wrapper ul {
+.reward-table-wrapper ul {
 	padding: 0px;
 	list-style: none;
 	display: flex;
 	justify-content: center;
 }
-#pills-Rewards .reward-table-wrapper th {
+.reward-table-wrapper th {
 	text-align: center;
 	border-right: 3px solid #d4d4d4;
 }
-#pills-Rewards .reward-table-wrapper th:last-child {
+.reward-table-wrapper th:last-child {
 	border-right: 0px;
 }
-#pills-Rewards .reward-table-wrapper td {
+.reward-table-wrapper td {
 	padding: 2px;
 	vertical-align: middle;
 	border-right: 3px solid #d4d4d4;
 }
-#pills-Rewards .reward-table-wrapper td:last-child {
+.reward-table-wrapper td:last-child {
 	border-right: 0px;
 }
-#pills-Rewards .reward-table-wrapper td .i-and-name-wrapper {
+.reward-table-wrapper td .i-and-name-wrapper {
 	display: flex;
 	align-items: center;
 	margin-left: 24px;
 }
-#pills-Rewards .reward-table-wrapper td .i-and-name-wrapper img {
+.reward-table-wrapper td .i-and-name-wrapper img {
 	width: 29px;
 	height: 29px;
 	object-fit: cover;
 	border-radius: 50%;
 }
-#pills-Rewards .reward-table-wrapper td .i-and-name-wrapper h6 {
+.reward-table-wrapper td .i-and-name-wrapper h6 {
 	margin: 0px;
 	margin-left: 14px;
 	font-size: 16px;
 	font-family: "Poppins";
 }
-#pills-Rewards .reward-table-wrapper th.S-col {
+.reward-table-wrapper th.S-col {
 	width: 30%;
 }
-#pills-Rewards .reward-table-wrapper th.Job-col {
+.reward-table-wrapper th.Job-col {
 	width: 40%;
 }
-#pills-Rewards .reward-table-wrapper th.Rating-col {
+.reward-table-wrapper th.Rating-col {
 	width: 30%;
 	text-align: center;
 }
-#pills-Rewards .reward-table-wrapper ul li {
+.reward-table-wrapper ul li {
 	margin: 0px 2px;
 }
-#pills-Rewards .reward-table-wrapper ul li i {
+.reward-table-wrapper ul li i {
 	color: #fee63a;
 }
-#pills-Rewards .reward-table-wrapper ul li i.grey {
+.reward-table-wrapper ul li i.grey {
 	color: #dbdbdb;
 }
-#pills-Rewards .reward-table-wrapper td:first-child {
+.reward-table-wrapper td:first-child {
 	text-align: center;
 }
-#pills-Rewards .reward-table-wrapper tbody tr:nth-child(odd) {
+.reward-table-wrapper tbody tr:nth-child(odd) {
 	background: #e3e3e3;
 }
-#pills-Rewards .reward-table-wrapper tbody tr:nth-child(even) {
+.reward-table-wrapper tbody tr:nth-child(even) {
 	background: #f2f2f2;
 }
 /* reward wrapper */
+
+/* Give Rating Modal Css Start Here */
+#GiveRating .modal-content {
+	border-radius: 0;
+	border: 0;
+	padding: 20px 30px;
+}
+#GiveRating .modal-dialog {
+	max-width: 40%;
+}
+#GiveRating .modal-content .form-group label {
+	color: #000;
+	font-size: 13px;
+}
+#GiveRating .modal-content .form-group .form-control {
+	border-radius: 0;
+	resize: none;
+	height: 110px;
+}
+#GiveRating .modal-content .rating-stars {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#GiveRating .modal-content .rating-stars label {
+	margin: 0;
+	font-size: 17px;
+}
+#GiveRating .modal-content .button-group button.btn {
+	width: 100%;
+	background: #eb9c1e;
+	border-radius: 0;
+	color: #fff;
+	padding: 10px 0;
+}
+/* Give Rating Modal Css End Here */

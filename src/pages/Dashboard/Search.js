@@ -32,13 +32,15 @@ const Search = () => {
 
 							<div className="row align-items-center">
 								<div className="col-md-12">
-									<h3 className="Available_cleaners mb-4">Available cleaners</h3>
+									<h3 className="Available_cleaners mb-4">
+										Available cleaners
+									</h3>
 								</div>
 								<div className="col-md-6">
 									<div className="search-for-flex">
 										<img className="img-fluid" src={david}></img>
 										<div className="name-tag">
-											<p>Employee of month</p>
+											<p>Cleaner of month</p>
 											<h5>David Miller</h5>
 										</div>
 									</div>
@@ -56,7 +58,7 @@ const Search = () => {
 									<div className="search-for-flex">
 										<img className="img-fluid" src={kevin}></img>
 										<div className="name-tag">
-											<p>Employee of month</p>
+											<p>Cleaner of month</p>
 											<h5>Kevin Peterson</h5>
 										</div>
 									</div>
@@ -74,7 +76,7 @@ const Search = () => {
 									<div className="search-for-flex">
 										<img className="img-fluid" src={lucus}></img>
 										<div className="name-tag">
-											{/* <p>Employee of month</p> */}
+											{/* <p>Cleaner of month</p> */}
 											<h5>Lucus Himm</h5>
 										</div>
 									</div>
@@ -92,7 +94,7 @@ const Search = () => {
 									<div className="search-for-flex">
 										<img className="img-fluid" src={greg}></img>
 										<div className="name-tag">
-											{/* <p>Employee of month</p> */}
+											{/* <p>Cleaner of month</p> */}
 											<h5>Greg Richard</h5>
 										</div>
 									</div>
@@ -110,7 +112,7 @@ const Search = () => {
 									<div className="search-for-flex">
 										<img className="img-fluid" src={bryan}></img>
 										<div className="name-tag">
-											{/* <p>Employee of month</p> */}
+											{/* <p>Cleaner of month</p> */}
 											<h5>Bryan Fury</h5>
 										</div>
 									</div>

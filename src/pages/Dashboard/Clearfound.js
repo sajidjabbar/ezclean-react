@@ -3,6 +3,13 @@ import "../../assets/css/clearfound.css";
 import { Link } from "react-router-dom";
 import clear from "../../assets/img/clear.png";
 import BetterBusiness from "../../components/BetterBusiness";
+import {
+	ReviewImg1,
+	ReviewImg2,
+	ReviewImg3,
+	ReviewImg4,
+	ReviewImg5,
+} from "../../constant";
 
 const Clearfound = () => {
 	return (
@@ -95,11 +102,11 @@ const Clearfound = () => {
 								<div className="chat-with-cleaner">
 									<Link to="/chat">Chat with cleaner</Link>
 								</div>
-								<div className="acced-proceed">
+								{/* <div className="acced-proceed">
 									<Link to="/Hired">Accept and proceed</Link>
-								</div>
+								</div> */}
 								<div className="reject">
-									<Link to="/searchurgent">Reject and find another</Link>
+									<Link to="/searchurgent">Find other cleaner</Link>
 								</div>
 							</div>
 						</div>
@@ -108,6 +115,213 @@ const Clearfound = () => {
 			</section>
 			{/* End of clear found section  */}
 
+			{/* Reviews Sec Start Here */}
+			<div class="reviews_sec">
+				<div className="container">
+					<div class="heading">
+						<h3>Reviews</h3>
+					</div>
+					<div class="reviewDv">
+						<div class="questionDv reviews">
+							<div class="user-img">
+								<figure>
+									<img src={ReviewImg3} class="img-fluid" />
+								</figure>
+							</div>
+							<div class="detailDv">
+								<div class="header">
+									<h5 class="name">Joeby Ragpa </h5>
+									<p>- 12 April, 2014 at 16:50</p>
+								</div>
+								<p>
+									We possess within us two minds. So far I have written only of
+									the conscious mind. I would now like to introduce you to your
+									second mind, the hidden and mysterious subconscious. Our
+									subconscious mind contains such power and complexity that it
+									literally staggers the imagination.
+								</p>
+								<div class="bottom-bar">
+									<div class="rating">
+										<ul class="stars">
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</li>
+										</ul>
+										<p class="count">3.9</p>
+									</div>
+									{/* <div class="rplyDv">
+										<a href="#">Reply</a>
+									</div> */}
+								</div>
+							</div>
+						</div>
+						{/* <div class="answersDv">
+							<div class="vertical-line"></div>
+							<div class="answer reviews">
+								<div class="user-img">
+									<figure>
+										<img src={ReviewImg2} class="img-fluid" />
+									</figure>
+								</div>
+								<div class="detailDv">
+									<div class="header">
+										<h5 class="name">Joeby Ragpa </h5>
+										<p>- 12 April, 2014 at 16:50</p>
+									</div>
+									<p>
+										We possess within us two minds. So far I have written only
+										of the conscious mind. I would now like to introduce you to
+										your second mind the hidden and mysterious subconscious.
+									</p>
+								</div>
+							</div>
+							<div class="answer reviews">
+								<div class="user-img">
+									<figure>
+										<img src={ReviewImg3} class="img-fluid" />
+									</figure>
+								</div>
+								<div class="detailDv">
+									<div class="header">
+										<h5 class="name">Joeby Ragpa </h5>
+										<p>- 12 April, 2014 at 16:50</p>
+									</div>
+									<p>
+										We possess within us two minds. So far I have written only
+										of the conscious mind. I would now like to introduce you to
+										your
+									</p>
+								</div>
+							</div>
+							<div class="answer reviews">
+								<div class="user-img">
+									<figure>
+										<img src={ReviewImg4} class="img-fluid" />
+									</figure>
+								</div>
+								<div class="detailDv">
+									<div class="header">
+										<h5 class="name">Joeby Ragpa </h5>
+										<p>- 12 April, 2014 at 16:50</p>
+									</div>
+									<p>
+										We possess within us two minds. So far I have written only
+										of the conscious mind. I would now like to introduce you to
+										your second mind,
+									</p>
+								</div>
+							</div>
+						</div> */}
+					</div>
+					<div class="reviewDv">
+						<div class="questionDv reviews">
+							<div class="user-img">
+								<figure>
+									<img src={ReviewImg5} class="img-fluid" />
+								</figure>
+							</div>
+							<div class="detailDv">
+								<div class="header">
+									<h5 class="name">Joeby Ragpa </h5>
+									<p>- 12 April, 2014 at 16:50</p>
+								</div>
+								<p>
+									We possess within us two minds. So far I have written only of
+									the conscious mind. I would now like to introduce you to your
+									second mind, the hidden and mysterious subconscious. Our
+									subconscious mind contains such power and complexity that it
+									literally staggers the imagination.
+								</p>
+								<div class="bottom-bar">
+									<div class="rating">
+										<ul class="stars">
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</li>
+										</ul>
+										<p class="count">3.9</p>
+									</div>
+									{/* <div class="rplyDv">
+										<a href="#">Reply</a>
+									</div> */}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviewDv">
+						<div class="questionDv reviews">
+							<div class="user-img">
+								<figure>
+									<img src={ReviewImg4} class="img-fluid" />
+								</figure>
+							</div>
+							<div class="detailDv">
+								<div class="header">
+									<h5 class="name">Joeby Ragpa </h5>
+									<p>- 12 April, 2014 at 16:50</p>
+								</div>
+								<p>
+									We possess within us two minds. So far I have written only of
+									the conscious mind. I would now like to introduce you to your
+									second mind, the hidden and mysterious subconscious. Our
+									subconscious mind contains such power and complexity that it
+									literally staggers the imagination.
+								</p>
+								<div class="bottom-bar">
+									<div class="rating">
+										<ul class="stars">
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</li>
+											<li>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</li>
+										</ul>
+										<p class="count">3.9</p>
+									</div>
+									{/* <div class="rplyDv">
+										<a href="#">Reply</a>
+									</div> */}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* Reviews Sec End Here */}
 			<BetterBusiness />
 		</>
 	);

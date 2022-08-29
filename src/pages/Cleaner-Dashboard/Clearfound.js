@@ -95,11 +95,11 @@ const Clearfound = () => {
 								<div className="chat-with-cleaner">
 									<Link to="/chat">Chat with cleaner</Link>
 								</div>
-								<div className="acced-proceed">
+								{/* <div className="acced-proceed">
 									<Link to="/Hired">Accept and proceed</Link>
-								</div>
+								</div> */}
 								<div className="reject">
-									<Link to="/searchurgent">Reject and find another</Link>
+									<Link to="/searchurgent">Find other cleaner</Link>
 								</div>
 							</div>
 						</div>

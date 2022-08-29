@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
+import ReactStars from "react-rating-stars-component";
 import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
+import "../../assets/css/cleaner-dashboard.css";
 import { Link } from "react-router-dom";
-import { cleaner, cleaner2, cleaner3 } from "../../constant";
+import { cleaner, cleaner2, cleaner3, cleaner4 } from "../../constant";
 import $ from "jquery";
 
 const Dashboard = () => {
+	const ratingChanged = (newRating) => {
+		console.log(newRating);
+	};
 	const [editprofile, seteditprofile] = useState(false);
 	const showedit = () => {
 		seteditprofile(true);
@@ -15,8 +20,13 @@ const Dashboard = () => {
 	};
 	useEffect(() => {
 		$(".booking-details-wrapper").hide();
-		$("div#home td.ActionName a").click(function () {
-			$(".booking-details-wrapper").show();
+		$("td.ActionName a").click(function () {
+			$(".PendingJob").show();
+			$(".booking-wrapper").hide();
+		});
+
+		$("td.ActionName2 a").click(function () {
+			$(".CompletedJob").show();
 			$(".booking-wrapper").hide();
 		});
 	}, []);
@@ -60,7 +70,7 @@ const Dashboard = () => {
 											</a>
 										</li>
 
-										<li className="nav-item">
+										{/* <li className="nav-item">
 											<Link
 												to="/Makingbooking"
 												className="nav-link"
@@ -73,7 +83,7 @@ const Dashboard = () => {
 											>
 												Make Booking
 											</Link>
-										</li>
+										</li> */}
 										<li className="nav-item">
 											<a
 												className="nav-link"
@@ -101,11 +111,11 @@ const Dashboard = () => {
 											</a>
 										</li>
 
-										<li className="nav-item">
+										{/* <li className="nav-item">
 											<a className="nav-link" href="/InviteFriend">
 												Invite Friend
 											</a>
-										</li>
+										</li> */}
 
 										<li className="nav-item">
 											<a
@@ -120,6 +130,20 @@ const Dashboard = () => {
 												Loyalty Points
 											</a>
 										</li>
+
+										{/* <li className="nav-item">
+											<a
+												className="nav-link"
+												id="pills-reward-tab"
+												data-toggle="pill"
+												href="#pills-rew	ard"
+												role="tab"
+												aria-controls="pills-reward"
+												aria-selected="false"
+											>
+												Reward
+											</a>
+										</li> */}
 
 										<li className="nav-item">
 											<a
@@ -278,25 +302,22 @@ const Dashboard = () => {
 																		</div>
 																	</div>
 
-																	<div className="col-md-6">
+																	{/* <div className="col-md-6">
 																		<div className="form-group">
 																			<span className="only-for-flex">
 																				{" "}
 																				<label for="exampleInputEmail1">
 																					Card Number :
 																				</label>
-																				{/* <input
-																					type="text"
-																					className="form-control"
-																					id="exampleInputEmail1"
-																					aria-describedby="emailHelp"
-																					placeholder="**** **** **** ****"
-																				/> */}
-																					<p className="mb-0 ml-3 mt-2 text-black">**** **** **** **** <span className="update_dashboard">update</span></p>
-																				{/* <Link  to="/">update</Link> */}
+																				<p className="mb-0 ml-3 mt-2 text-black">
+																					**** **** **** ****{" "}
+																					<span className="update_dashboard">
+																						update
+																					</span>
+																				</p>
 																			</span>
 																		</div>
-																	</div>
+																	</div> */}
 
 																	<div className="col-md-6">
 																		<div className="form-group">
@@ -341,7 +362,9 @@ const Dashboard = () => {
 																					aria-describedby="emailHelp"
 																					placeholder="********"
 																				/> */}
-																				<p className="mb-0 ml-5 mt-2 text-black">************</p>
+																				<p className="mb-0 ml-5 mt-2 text-black">
+																					************
+																				</p>
 																			</span>
 																		</div>
 																	</div>
@@ -353,7 +376,11 @@ const Dashboard = () => {
 															<div className="profile-head">
 																<h3>My Profile</h3>
 																<div className="profile-edit save-profile">
-																	<Link className="bt-chngee" onClick={hideedit} to="">
+																	<Link
+																		className="bt-chngee"
+																		onClick={hideedit}
+																		to=""
+																	>
 																		Save
 																	</Link>
 																</div>
@@ -416,7 +443,7 @@ const Dashboard = () => {
 
 																	<div className="col-md-6">
 																		<div className="form-group">
-																		{/* <p className="mb-0 ml-5 mt-2 text-black">**** **** **** ****</p> */}
+																			{/* <p className="mb-0 ml-5 mt-2 text-black">**** **** **** ****</p> */}
 																			<input
 																				placeholder="Card Number"
 																				className="form-control"
@@ -455,7 +482,11 @@ const Dashboard = () => {
 																		<div className="profile-head">
 																			<h3>Security</h3>
 																			<div className="profile-edit save-profile">
-																				<Link className="bt-chngee" onClick={hideedit} to="">
+																				<Link
+																					className="bt-chngee"
+																					onClick={hideedit}
+																					to=""
+																				>
 																					save
 																				</Link>
 																			</div>
@@ -586,7 +617,7 @@ const Dashboard = () => {
 														</div>
 													</div>
 												</div>
-												<div className="cleaner-wrapper">
+												{/* <div className="cleaner-wrapper">
 													<div className="row">
 														<div className="col-lg-12">
 															<div className="content-wrapper">
@@ -775,7 +806,7 @@ const Dashboard = () => {
 															</div>
 														</div>
 													</div>
-												</div>
+												</div> */}
 											</div>
 											<div
 												className="tab-pane fade"
@@ -836,11 +867,11 @@ const Dashboard = () => {
 																					<th className="TotalAmont">
 																						<span>Total Amont</span>
 																					</th>
-																					<th className="Action">
-																						<span>Action</span>
-																					</th>
 																					<th className="Status">
 																						<span>Status</span>
+																					</th>
+																					<th className="Action">
+																						<span>Action</span>
 																					</th>
 																				</tr>
 																			</thead>
@@ -861,16 +892,16 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																					</td>
 																					<td className="ActionName">
 																						<a href="javascript:void(0)">
 																							View Detail
 																						</a>
 																					</td>
-																					<td className="StatusName">
-																						<span className="Accepted">
-																							Accepted
-																						</span>
-																					</td>
 																				</tr>
 																				<tr>
 																					<td className="typeName">
@@ -888,13 +919,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Accepted">
 																							Accepted
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -913,13 +944,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																					</td>
 																					<td className="ActionName">
 																						<a href="#">View Detail</a>
-																					</td>
-																					<td className="StatusName">
-																						<span className="Rejected">
-																							Rejected
-																						</span>
 																					</td>
 																				</tr>
 																				<tr>
@@ -938,13 +969,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Accepted">
 																							Accepted
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -963,13 +994,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																					</td>
 																					<td className="ActionName">
 																						<a href="#">View Detail</a>
-																					</td>
-																					<td className="StatusName">
-																						<span className="Rejected">
-																							Rejected
-																						</span>
 																					</td>
 																				</tr>
 																			</tbody>
@@ -997,11 +1028,11 @@ const Dashboard = () => {
 																					<th className="TotalAmont">
 																						<span>Total Amont</span>
 																					</th>
-																					<th className="Action">
-																						<span>Action</span>
-																					</th>
 																					<th className="Status">
 																						<span>Status</span>
+																					</th>
+																					<th className="Action">
+																						<span>Action</span>
 																					</th>
 																				</tr>
 																			</thead>
@@ -1022,16 +1053,16 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
+																					<td className="StatusName">
+																						<span className="Completed">
+																							Completed
+																						</span>
+																					</td>
+																					<td className="ActionName2">
 																						<a href="javascript:void(0)">
 																							View Detail
 																						</a>
 																					</td>
-																					<td className="StatusName">
-																						<span className="Completed">
-																							Completed
-																						</span>
-																					</td>
 																				</tr>
 																				<tr>
 																					<td className="typeName">
@@ -1049,13 +1080,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Completed">
 																							Completed
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -1074,13 +1105,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Completed">
 																							Completed
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -1099,13 +1130,13 @@ const Dashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Completed">
 																							Completed
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -1123,14 +1154,14 @@ const Dashboard = () => {
 																					</td>
 																					<td className="AmountName">
 																						<span>$300</span>
-																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
 																					</td>
 																					<td className="StatusName">
 																						<span className="Rejected">
 																							Rejected
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																			</tbody>
@@ -1141,13 +1172,13 @@ const Dashboard = () => {
 														</div>
 													</div>
 												</div>
-												<div className="booking-details-wrapper pr-5 mr-5 mt-4 pampam">
+												<div className="booking-details-wrapper pr-5 mr-5 mt-4 PendingJob">
 													<div className="booking-heading-wrapper">
 														<h4>Booking Detailszz</h4>
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
-														<span className="Accepted">Accepted Job</span>
+														<span className="pending">Pending</span>
 													</div>
 													<div className="booker-details-wrapper">
 														<ul>
@@ -1166,11 +1197,110 @@ const Dashboard = () => {
 																</span>
 															</li>
 															<li className="justify-right">
-																<span className="property rght-force1">Date :</span>
-																<span className="value rght-force">12 Jan, 2022</span>
+																<span className="property rght-force1">
+																	Date :
+																</span>
+																<span className="value rght-force">
+																	12 Jan, 2022
+																</span>
 															</li>
 															<li className="justify-right">
-																<span className="property prop-mr-cuss">Time : </span>
+																<span className="property prop-mr-cuss">
+																	Time :{" "}
+																</span>
+																<span className="value">11:00 am</span>
+															</li>
+														</ul>
+													</div>
+													<div className="packages-wrapper">
+														<div className="packages-heading-wrapper">
+															<h4>Package Includes</h4>
+														</div>
+														<div className="packages-list-wrapper">
+															<ul>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Remove belongings from your cabinets and
+																		drawers
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Use a wet paper towel to wipe cabinets out
+																		and clean the outside
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Use an all-purpose cleaner to disinfect the
+																		countertops
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Clean the sink basin, faucet and handles
+																	</span>
+																</li>
+																<li>
+																	<span className="property">Required</span>
+																	<span className="value">
+																		Use an oven cleaner to remove interior grime
+																	</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div className="booking-details-wrapper pr-5 mr-5 mt-4 CompletedJob">
+													<div className="booking-heading-wrapper">
+														<h4>Booking Detailszz</h4>
+													</div>
+													<div className="tag-and-accep-wrapper">
+														<span className="job">Job# AD12</span>
+														<div className="button-group">
+															<button
+																type="button"
+																class="btn btn-primary"
+																data-toggle="modal"
+																data-target="#GiveRating"
+															>
+																Give Rating
+															</button>
+															<span className="Completed">Completed</span>
+														</div>
+													</div>
+													<div className="booker-details-wrapper">
+														<ul>
+															<li>
+																<span className="property">Client Name :</span>
+																<span className="value">Mark James</span>
+															</li>
+															<li>
+																<span className="property">Phone :</span>
+																<span className="value">+1 234 567 890</span>
+															</li>
+															<li>
+																<span className="property">Address :</span>
+																<span className="value">
+																	1234, 5th Street, Lorem ipsum, city, state
+																</span>
+															</li>
+															<li className="justify-right">
+																<span className="property rght-force1">
+																	Date :
+																</span>
+																<span className="value rght-force">
+																	12 Jan, 2022
+																</span>
+															</li>
+															<li className="justify-right">
+																<span className="property prop-mr-cuss">
+																	Time :{" "}
+																</span>
 																<span className="value">11:00 am</span>
 															</li>
 														</ul>
@@ -1252,10 +1382,10 @@ const Dashboard = () => {
 												aria-labelledby="pills-Loyalty-tab"
 											>
 												<div className="row">
-													<div className="col-lg-9">
+													<div className="col-lg-12">
 														<div className="loyal-wrapper">
 															<div className="loyal-heading-wrapper">
-																<h2 className="mt-2">Loyalty Points</h2>
+																<h2 className="mt-2"> </h2>
 															</div>
 															<div className="loyalty-table-wrapper">
 																<div className="table-responsive">
@@ -1263,10 +1393,14 @@ const Dashboard = () => {
 																		<thead>
 																			<tr>
 																				<th className="job">Job Type</th>
-																				<th className="Points">Points</th>
-																				<th className="Reward">
-																					Reward Status
+																				<th className="job">Job Date</th>
+																				<th className="job">Amount</th>
+																				<th className="Points">
+																					Earned Loyality Points
 																				</th>
+																				{/* <th className="Reward">
+																					Reward Status
+																				</th> */}
 																			</tr>
 																		</thead>
 																		<tbody>
@@ -1274,56 +1408,66 @@ const Dashboard = () => {
 																				<td className="cleaing-cate">
 																					Regular Cleaning
 																				</td>
+																				<td className="date">9-04-2022</td>
+																				<td className="amount">$500</td>
 																				<td className="price">$2000</td>
-																				<td className="app">
+																				{/* <td className="app">
 																					<span className="btn Approved">
 																						Approved
 																					</span>
-																				</td>
+																				</td> */}
 																			</tr>
 																			<tr className="row1">
 																				<td className="cleaing-cate">
 																					Urgent Cleaning
 																				</td>
+																				<td className="date">9-04-2022</td>
+																				<td className="amount">$500</td>
 																				<td className="price">$2000</td>
-																				<td className="app">
+																				{/* <td className="app">
 																					<span className="btn Approved">
 																						Approved
 																					</span>
-																				</td>
+																				</td> */}
 																			</tr>
 																			<tr className="row1">
 																				<td className="cleaing-cate">
 																					Regular Cleaning
 																				</td>
+																				<td className="date">9-04-2022</td>
+																				<td className="amount">$500</td>
 																				<td className="price">$2000</td>
-																				<td className="app">
+																				{/* <td className="app">
 																					<span className="btn pending">
 																						Pending
 																					</span>
-																				</td>
+																				</td> */}
 																			</tr>
 																			<tr className="row1">
 																				<td className="cleaing-cate">
 																					Regular Cleaning
 																				</td>
+																				<td className="date">9-04-2022</td>
+																				<td className="amount">$500</td>
 																				<td className="price">$2000</td>
-																				<td className="app">
+																				{/* <td className="app">
 																					<span className="btn Approved">
 																						Approved
 																					</span>
-																				</td>
+																				</td> */}
 																			</tr>
 																			<tr className="row1">
 																				<td className="cleaing-cate">
 																					Urgent Cleaning
 																				</td>
+																				<td className="date">9-04-2022</td>
+																				<td className="amount">$500</td>
 																				<td className="price">$2000</td>
-																				<td className="app">
+																				{/* <td className="app">
 																					<span className="btn pending">
 																						Pending
 																					</span>
-																				</td>
+																				</td> */}
 																			</tr>
 																		</tbody>
 																	</table>
@@ -1347,6 +1491,220 @@ const Dashboard = () => {
 
 											<div
 												className="tab-pane fade"
+												id="pills-reward"
+												role="tabpanel"
+												aria-labelledby="pills-reward-tab"
+											>
+												<div className="rewards-wrapper">
+													<div className="rewards-heading-wrapper">
+														<h5 className="mt-2">Rewards</h5>
+													</div>
+													<div className="employee-rating-wrapper">
+														<div className="img-wrapper">
+															<figure>
+																<img src={cleaner4} alt="" />
+															</figure>
+														</div>
+														<div className="employee-name-rating-wrapper">
+															<h6>John Doe</h6>
+															<ul>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+																<li>
+																	<i className="fa fa-star"></i>
+																</li>
+															</ul>
+														</div>
+														<div className="employee-month-wrapper">
+															<button className="btn">
+																Cleaner of the Month
+															</button>
+														</div>
+													</div>
+												</div>
+												<div className="reward-table-wrapper">
+													<div className="row">
+														<div className="col-lg-9">
+															<div className="table-responsive">
+																<table className="table">
+																	<thead>
+																		<tr>
+																			<th className="S-col">S.No</th>
+																			<th className="Job-col">Job Type</th>
+																			<th className="Rating-col">Rating</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td className="no">AD12</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner} alt="" />
+																					<h6>John Doe</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">DV22</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner3} alt="" />
+																					<h6>Mark Oswlad</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star grey"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">SS33</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner2} alt="" />
+																					<h6>John Doe</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">DV22</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner3} alt="" />
+																					<h6>Mark Oswlad</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star grey"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td className="no">SS33</td>
+																			<td className="img-name">
+																				<div className="i-and-name-wrapper">
+																					<img src={cleaner2} alt="" />
+																					<h6>John Doe</h6>
+																				</div>
+																			</td>
+																			<td className="no">
+																				<div className="rating-wrapper">
+																					<ul>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																						<li>
+																							<i className="fa fa-star"></i>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div
+												className="tab-pane fade"
 												id="pills-Wallet"
 												role="tabpanel"
 												aria-labelledby="pills-Wallet-tab"
@@ -1360,11 +1718,11 @@ const Dashboard = () => {
 															<h2>$420.00</h2>
 															<h5>Current Wallet Balance</h5>
 														</div>
-														<div className="add-money-wrapper">
+														{/* <div className="add-money-wrapper">
 															<button className="btn">
 																Add Money to Wallet
 															</button>
-														</div>
+														</div> */}
 													</div>
 												</div>
 												<div className="transferrred-wrapper">
@@ -1438,6 +1796,43 @@ const Dashboard = () => {
 				</div>
 			</section>
 			{/* End of Dashboard section  */}
+
+			<div
+				className="modal fade"
+				id="GiveRating"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="GiveRatingTitle"
+				aria-hidden="true"
+			>
+				<div className="modal-dialog modal-dialog-centered" role="document">
+					<div className="modal-content">
+						<div className="modal-body">
+							<div className="heading">
+								<h3>Reviews</h3>
+							</div>
+							<form action="">
+								<div className="form-group">
+									<label>Post Your Review</label>
+									<textarea className="form-control"></textarea>
+								</div>
+								<div className="form-group rating-stars">
+									<label>Rating</label>
+									<ReactStars
+										count={5}
+										onChange={ratingChanged}
+										size={24}
+										activeColor="#ffd700"
+									/>
+								</div>
+								<div className="button-group">
+									<button className="btn">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
