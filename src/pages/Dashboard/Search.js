@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import david from "../../assets/img/david.png";
 import kevin from "../../assets/img/kevin.png";
@@ -10,6 +10,9 @@ import "../../assets/css/search.css";
 import BetterBusiness from "../../components/BetterBusiness";
 
 const Search = () => {
+	useEffect(() => {
+		window.scroll(0, 0);
+	}, []);
 	return (
 		<div className="Search_Cleaners1">
 			{/* Seacrh section  */}
@@ -48,7 +51,7 @@ const Search = () => {
 
 								<div className="col-md-6">
 									<div className="search-view-details">
-										<Link to="/">View Detials</Link>
+										<Link to="/clearfound">View Detials</Link>
 									</div>
 								</div>
 							</div>

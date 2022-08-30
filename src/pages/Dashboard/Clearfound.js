@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../assets/css/clearfound.css";
 import { Link } from "react-router-dom";
 import clear from "../../assets/img/clear.png";
@@ -12,6 +12,9 @@ import {
 } from "../../constant";
 
 const Clearfound = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			{/* clear found section  */}

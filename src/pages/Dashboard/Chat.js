@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import chat from "../../assets/css/chat.css";
 import BetterBusiness from "../../components/BetterBusiness";
 import { cleaner, cleaner2, cleaner3, david, msg } from "../../constant";
 
 const Chat = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			{/* Chat section  */}
