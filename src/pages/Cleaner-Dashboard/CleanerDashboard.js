@@ -434,14 +434,14 @@ const CleanerDashboard = () => {
 																		</div>
 																	</div>
 
-																	<div className="col-md-6">
+																	{/* <div className="col-md-6">
 																		<div className="form-group">
 																			<input
 																				placeholder="Card Number"
 																				className="form-control"
 																			/>
 																		</div>
-																	</div>
+																	</div> */}
 
 																	<div className="col-md-6">
 																		<div className="form-group">
@@ -820,11 +820,11 @@ const CleanerDashboard = () => {
 																					<th className="TotalAmont">
 																						<span>Total Amont</span>
 																					</th>
-																					<th className="Action">
-																						<span>Action</span>
-																					</th>
 																					<th className="Status">
 																						<span>Status</span>
+																					</th>
+																					<th className="Action">
+																						<span>Action</span>
 																					</th>
 																				</tr>
 																			</thead>
@@ -845,11 +845,6 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="javascript:void(0)">
-																							View Detail
-																						</a>
-																					</td>
 																					<td className="StatusName">
 																						<span
 																							onClick={booking_page}
@@ -861,61 +856,10 @@ const CleanerDashboard = () => {
 																							Rejected
 																						</span>
 																					</td>
-																				</tr>
-																				<tr>
-																					<td className="typeName">
-																						<span>Regular Cleaning</span>
-																					</td>
-																					<td className="CleanerName">
-																						<div className="cleaner-wrapper">
-																							<img
-																								src={cleaner2}
-																								className="img-fluid"
-																							/>
-																							<h5>John Doe</h5>
-																						</div>
-																					</td>
-																					<td className="AmountName">
-																						<span>$300</span>
-																					</td>
 																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
-																					<td className="StatusName">
-																						<span className="Accepted">
-																							Accepted
-																						</span>
-																						<span className="Rejected">
-																							Rejected
-																						</span>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td className="typeName">
-																						<span>Regular Cleaning</span>
-																					</td>
-																					<td className="CleanerName">
-																						<div className="cleaner-wrapper">
-																							<img
-																								src={cleaner3}
-																								className="img-fluid"
-																							/>
-																							<h5>John Doe</h5>
-																						</div>
-																					</td>
-																					<td className="AmountName">
-																						<span>$300</span>
-																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
-																					<td className="StatusName">
-																						<span className="Accepted">
-																							Accepted
-																						</span>
-																						<span className="Rejected">
-																							Rejected
-																						</span>
+																						<a href="javascript:void(0)">
+																							View Detail
+																						</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -934,9 +878,6 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Accepted">
 																							Accepted
@@ -944,6 +885,9 @@ const CleanerDashboard = () => {
 																						<span className="Rejected">
 																							Rejected
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -962,8 +906,33 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																						<span className="Rejected">
+																							Rejected
+																						</span>
+																					</td>
 																					<td className="ActionName">
 																						<a href="#">View Detail</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="typeName">
+																						<span>Regular Cleaning</span>
+																					</td>
+																					<td className="CleanerName">
+																						<div className="cleaner-wrapper">
+																							<img
+																								src={cleaner2}
+																								className="img-fluid"
+																							/>
+																							<h5>John Doe</h5>
+																						</div>
+																					</td>
+																					<td className="AmountName">
+																						<span>$300</span>
 																					</td>
 																					<td className="StatusName">
 																						<span className="Accepted">
@@ -972,6 +941,37 @@ const CleanerDashboard = () => {
 																						<span className="Rejected">
 																							Rejected
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td className="typeName">
+																						<span>Regular Cleaning</span>
+																					</td>
+																					<td className="CleanerName">
+																						<div className="cleaner-wrapper">
+																							<img
+																								src={cleaner3}
+																								className="img-fluid"
+																							/>
+																							<h5>John Doe</h5>
+																						</div>
+																					</td>
+																					<td className="AmountName">
+																						<span>$300</span>
+																					</td>
+																					<td className="StatusName">
+																						<span className="Accepted">
+																							Accepted
+																						</span>
+																						<span className="Rejected">
+																							Rejected
+																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																			</tbody>
@@ -999,11 +999,11 @@ const CleanerDashboard = () => {
 																					<th className="TotalAmont">
 																						<span>Total Amont</span>
 																					</th>
-																					<th className="Action">
-																						<span>Action</span>
-																					</th>
 																					<th className="Status">
 																						<span>Status</span>
+																					</th>
+																					<th className="Action">
+																						<span>Action</span>
 																					</th>
 																				</tr>
 																			</thead>
@@ -1024,16 +1024,16 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
+																					<td className="StatusName">
+																						<span className="Completed">
+																							Completed
+																						</span>
+																					</td>
 																					<td className="ActionName">
 																						<a href="javascript:void(0)">
 																							View Detail
 																						</a>
 																					</td>
-																					<td className="StatusName">
-																						<span className="Completed">
-																							Completed
-																						</span>
-																					</td>
 																				</tr>
 																				<tr>
 																					<td className="typeName">
@@ -1051,13 +1051,13 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Completed">
 																							Completed
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -1076,13 +1076,13 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Completed">
 																							Completed
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -1101,13 +1101,13 @@ const CleanerDashboard = () => {
 																					<td className="AmountName">
 																						<span>$300</span>
 																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
-																					</td>
 																					<td className="StatusName">
 																						<span className="Completed">
 																							Completed
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																				<tr>
@@ -1125,14 +1125,14 @@ const CleanerDashboard = () => {
 																					</td>
 																					<td className="AmountName">
 																						<span>$300</span>
-																					</td>
-																					<td className="ActionName">
-																						<a href="#">View Detail</a>
 																					</td>
 																					<td className="StatusName">
 																						<span className="Rejected">
 																							Rejected
 																						</span>
+																					</td>
+																					<td className="ActionName">
+																						<a href="#">View Detail</a>
 																					</td>
 																				</tr>
 																			</tbody>
@@ -1533,7 +1533,7 @@ const CleanerDashboard = () => {
 																		</table>
 																	</div>
 																</div>
-																<div className="total-earning-wrappers">
+																{/* <div className="total-earning-wrappers">
 																	<div className="row">
 																		<div className="col-lg-5">
 																			<div className="total-erner-wrapper">
@@ -1550,7 +1550,7 @@ const CleanerDashboard = () => {
 																			</div>
 																		</div>
 																	</div>
-																</div>
+																</div> */}
 															</div>
 															<div
 																class="tab-pane fade"

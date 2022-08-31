@@ -441,15 +441,14 @@ const Dashboard = () => {
 																		</div>
 																	</div>
 
-																	<div className="col-md-6">
+																	{/* <div className="col-md-6">
 																		<div className="form-group">
-																			{/* <p className="mb-0 ml-5 mt-2 text-black">**** **** **** ****</p> */}
 																			<input
 																				placeholder="Card Number"
 																				className="form-control"
 																			/>
 																		</div>
-																	</div>
+																	</div> */}
 
 																	<div className="col-md-6">
 																		<div className="form-group">
@@ -1174,7 +1173,7 @@ const Dashboard = () => {
 												</div>
 												<div className="booking-details-wrapper pr-5 mr-5 mt-4 PendingJob">
 													<div className="booking-heading-wrapper">
-														<h4>Booking Detailszz</h4>
+														<h4>Booking Details</h4>
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
@@ -1183,31 +1182,29 @@ const Dashboard = () => {
 													<div className="booker-details-wrapper">
 														<ul>
 															<li>
-																<span className="property">Client Name :</span>
+																<h4 className="property">Client Name :</h4>
 																<span className="value">Mark James</span>
 															</li>
 															<li>
-																<span className="property">Phone :</span>
+																<h4 className="property">Phone :</h4>
 																<span className="value">+1 234 567 890</span>
 															</li>
 															<li>
-																<span className="property">Address :</span>
+																<h4 className="property">Address :</h4>
 																<span className="value">
 																	1234, 5th Street, Lorem ipsum, city, state
 																</span>
 															</li>
 															<li className="justify-right">
-																<span className="property rght-force1">
-																	Date :
-																</span>
+																<h4 className="property rght-force1">Date :</h4>
 																<span className="value rght-force">
 																	12 Jan, 2022
 																</span>
 															</li>
 															<li className="justify-right">
-																<span className="property prop-mr-cuss">
-																	Time :{" "}
-																</span>
+																<h4 className="property prop-mr-cuss">
+																	Time :
+																</h4>
 																<span className="value">11:00 am</span>
 															</li>
 														</ul>
@@ -1276,31 +1273,29 @@ const Dashboard = () => {
 													<div className="booker-details-wrapper">
 														<ul>
 															<li>
-																<span className="property">Client Name :</span>
+																<h4 className="property">Client Name :</h4>
 																<span className="value">Mark James</span>
 															</li>
 															<li>
-																<span className="property">Phone :</span>
+																<h4 className="property">Phone :</h4>
 																<span className="value">+1 234 567 890</span>
 															</li>
 															<li>
-																<span className="property">Address :</span>
+																<h4 className="property">Address :</h4>
 																<span className="value">
 																	1234, 5th Street, Lorem ipsum, city, state
 																</span>
 															</li>
 															<li className="justify-right">
-																<span className="property rght-force1">
-																	Date :
-																</span>
+																<h4 className="property rght-force1">Date :</h4>
 																<span className="value rght-force">
 																	12 Jan, 2022
 																</span>
 															</li>
 															<li className="justify-right">
-																<span className="property prop-mr-cuss">
+																<h4 className="property prop-mr-cuss">
 																	Time :{" "}
-																</span>
+																</h4>
 																<span className="value">11:00 am</span>
 															</li>
 														</ul>

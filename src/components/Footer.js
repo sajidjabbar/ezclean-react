@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import CancellationPolicy from "../pages/CancellationPolicy/CancellationPolicy";
+import { support } from "../constant";
 
 const Footer = () => {
 	const naviagte = useNavigate();
@@ -28,7 +29,7 @@ const Footer = () => {
 									<li className="list-inline-item">
 										<a href="javascript:void(0);">Manage Booking</a>
 									</li>
-									<li className="list-inline-item">
+									{/* <li className="list-inline-item">
 										<div class="dropdown">
 											<button
 												class="btn btn-secondary dropdown-toggle"
@@ -154,7 +155,7 @@ const Footer = () => {
 												</a>
 											</div>
 										</div>
-									</li>
+									</li> */}
 									<li className="list-inline-item">
 										<a href="javascript:void(0);">Office Cleaning</a>
 									</li>
@@ -189,6 +190,26 @@ const Footer = () => {
 					</div>
 				</div>
 			</footer>
+			<div className="customer-support">
+				<div className="header">
+					<figure>
+						<img src={support} alt="123" className="img-fluid" />
+					</figure>
+					<h4>Customer Support</h4>
+				</div>
+				<div className="chat">
+					<div className="left-side">
+						<p>How can I assist you?</p>
+					</div>
+				</div>
+				<div className="form-group">
+					<input
+						type="text"
+						placeholder="write message"
+						className="form-control"
+					/>
+				</div>
+			</div>
 			<div className="copyright-footer">
 				<p className="copyright color-text-a">
 					Ⓒ 2022 - All Rights Are Reserved.

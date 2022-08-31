@@ -72,7 +72,13 @@
 }
 .job-table tr td:last-child {
 	border-right: 0px;
+	/* display: flex; */
+}
+.booking-table-wrapper tr .StatusName {
 	display: flex;
+}
+.booking-table-wrapper tr th.Status {
+	text-align: center;
 }
 .job-table span.Accepted {
 	background-image: linear-gradient(to bottom, #1d753f, #68a543);

@@ -6,6 +6,7 @@ import make2 from "../../assets/img/make2.png";
 import make3 from "../../assets/img/make3.png";
 import standard from "../../assets/img/standard.png";
 import BetterBusiness from "../../components/BetterBusiness";
+import { check } from "../../constant";
 
 const Standard = () => {
 	useEffect(() => {
@@ -147,61 +148,67 @@ const Standard = () => {
 					<div className="row">
 						<div className="col-md-2">
 							<div className="adds-things">
-								<label for="vehicle1">Dust Plan</label>
-								<input
-									type="checkbox"
-									id="vehicle1"
-									name="vehicle1"
-									value="Bike"
-								/>
-								{/* <div class="form-group">
-                  <label for="html">Dust Plan</label>
-                  <input type="checkbox" id="html" />
-                </div> */}
+								<label class="add-container">
+									Dust Plan
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
 							</div>
 						</div>
 						<div className="col-md-2">
 							<div className="adds-things">
-								<label for="vehicle1">Sponge</label>
-								<input
-									type="checkbox"
-									id="vehicle1"
-									name="vehicle1"
-									value="Bike"
-								/>
+								<label class="add-container">
+									Sponge
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
 							</div>
 						</div>
 						<div className="col-md-2">
 							<div className="adds-things">
-								<label for="vehicle1">Broom</label>
-								<input
-									type="checkbox"
-									id="vehicle1"
-									name="vehicle1"
-									value="Bike"
-								/>
+								<label class="add-container">
+									Broom
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
 							</div>
 						</div>
 						<div className="col-md-2">
 							<div className="adds-things">
-								<label for="vehicle1">Liquid Soap</label>
-								<input
-									type="checkbox"
-									id="vehicle1"
-									name="vehicle1"
-									value="Bike"
-								/>
+								<label class="add-container">
+									Liquid Soap
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
 							</div>
 						</div>
 						<div className="col-md-3">
 							<div className="adds-things">
-								<label for="vehicle1">Write your own</label>
-								<input
-									type="checkbox"
-									id="vehicle1"
-									name="vehicle1"
-									value="Bike"
-								/>
+								<label class="add-container">
+									Write your own
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
 							</div>
 						</div>
 

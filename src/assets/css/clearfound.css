@@ -23,9 +23,10 @@
 }
 .john-text h3 {
 	font-size: 29px;
-	color: #328340;
+	color: #328340 !important;
 	font-family: "Poppins";
-	font-weight: 600;
+	font-weight: 700;
+	line-height: 39px;
 }
 
 .john-stars p {

@@ -11,14 +11,19 @@ import Faq from "../../components/Faq";
 import BetterBusiness from "../../components/BetterBusiness";
 // import betterBussiness from "../../components/BetterBusiness";
 import Slider from "react-slick";
-import blogdetailimg from "../../assets/img/blog-detail-img.png";
-import blog3 from "../../assets/img/blog3.png";
-import blog2 from "../../assets/img/blog2.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { BannnerImg, OfficeImg1, OfficeImg2, OfficeImg3 } from "../../constant";
 
 const Home = () => {
+	const officeSlider = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+	};
 	return (
 		<div className="Home_Page_Content">
 			<Slider>
@@ -27,7 +32,7 @@ const Home = () => {
 						<div className="carousel-item-a">
 							<div className="intro-content display-table">
 								<div className="container">
-									<div className="row">
+									<div className="row align-items-center">
 										<div className="col-lg-6">
 											<div className="intro-body">
 												<h3 className="banner-title mb-2">
@@ -53,7 +58,7 @@ const Home = () => {
 											</div>
 										</div>
 										<div className="col-lg-6">
-											<img className={"img-fluid"} src={BannerImg} />
+											<img className={"img-fluid"} src={BannnerImg} />
 										</div>
 									</div>
 								</div>
@@ -66,7 +71,7 @@ const Home = () => {
 						<div className="carousel-item-a">
 							<div className="intro-content display-table">
 								<div className="container">
-									<div className="row">
+									<div className="row align-items-center">
 										<div className="col-lg-6">
 											<div className="intro-body">
 												<h3 className="banner-title mb-2">
@@ -92,7 +97,7 @@ const Home = () => {
 											</div>
 										</div>
 										<div className="col-lg-6">
-											<img className={"img-fluid"} src={BannerImg} />
+											<img className={"img-fluid"} src={BannnerImg} />
 										</div>
 									</div>
 								</div>
@@ -284,7 +289,7 @@ const Home = () => {
 												<div className="col-md-4">
 													<div className="carousel-caption">
 														<div className="row">
-															<div className="col-sm-9 col-8">
+															<div className="col-sm-12 col-8">
 																<div className="testimonial-separator">
 																	<hr />
 																</div>
@@ -302,7 +307,7 @@ const Home = () => {
 												<div className="col-md-4">
 													<div className="carousel-caption">
 														<div className="row">
-															<div className="col-sm-9 col-8">
+															<div className="col-sm-12 col-8">
 																<div className="testimonial-separator">
 																	<hr />
 																</div>
@@ -321,7 +326,7 @@ const Home = () => {
 												<div className="col-md-4">
 													<div className="carousel-caption">
 														<div className="row">
-															<div className="col-sm-9 col-8">
+															<div className="col-sm-12 col-8">
 																<div className="testimonial-separator">
 																	<hr />
 																</div>
@@ -345,7 +350,7 @@ const Home = () => {
 												<div className="col-md-4">
 													<div className="carousel-caption">
 														<div className="row">
-															<div className="col-sm-9 col-8">
+															<div className="col-sm-12 col-8">
 																<div className="testimonial-separator">
 																	<hr />
 																</div>
@@ -443,7 +448,7 @@ const Home = () => {
 							<div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
 								<h3 className="pricing-title">
 									<span className="ez-yellow-color">
-										"keeping your home or office clean{" "}
+										"keeping your home or office clean
 									</span>
 									can be hard to manage"
 								</h3>
@@ -458,131 +463,69 @@ const Home = () => {
 								</a>
 							</div>
 						</div>
-
-						<div className="col-md-12 mt-2">
-							<div
-								id="carouselExampleControls1"
-								className="carousel slide"
-								data-ride="carousel"
-								data-interval="100000"
-							>
-								<div className="carousel-inner mb-5" role="listbox">
-									<div className="carousel-item active">
-										<div className="bg"></div>
-										<div className="row">
-											<div className="col-md-4">
-												<div className="carousel-caption1">
-													<div className="row">
-														<div className="col-sm-12 col-12">
-															<img
-																className="home-clean-img"
-																src={blogdetailimg}
-																alt="slider"
-															/>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-md-4">
-												<div className="carousel-caption1">
-													<div className="row">
-														<div className="col-sm-12 col-12">
-															<img
-																className="home-clean-img"
-																src={blog3}
-																alt="slider"
-															/>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-md-4">
-												<div className="carousel-caption1">
-													<div className="row">
-														<div className="col-sm-12 col-12">
-															<img
-																className="home-clean-img"
-																src={blog2}
-																alt="slider"
-															/>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="carousel-item">
-										<div className="bg"></div>
-										<div className="row">
-											<div className="col-md-4">
-												<div className="carousel-caption1">
-													<div className="row">
-														<div className="col-sm-12 col-12">
-															<img
-																className="home-clean-img"
-																src={blogdetailimg}
-																alt="slider"
-															/>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-md-4">
-												<div className="carousel-caption1">
-													<div className="row">
-														<div className="col-sm-12 col-12">
-															<img
-																className="home-clean-img"
-																src={blog3}
-																alt="slider"
-															/>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-md-4">
-												<div className="carousel-caption1">
-													<div className="row">
-														<div className="col-sm-12 col-12">
-															<img
-																className="home-clean-img"
-																src={blog2}
-																alt="slider"
-															/>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+						<div className="office-slider">
+							<Slider {...officeSlider}>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg1} alt="" className="img-fluid" />
+									</figure>
 								</div>
-								<a
-									className="carousel-control-prev"
-									href="#carouselExampleControls1"
-									role="button"
-									data-slide="prev"
-								>
-									<span
-										className="carousel-control-prev-icon active"
-										aria-hidden="true"
-									>
-										<i className="fa fa-circle"></i>
-									</span>
-								</a>
-								<a
-									className="carousel-control-next"
-									href="#carouselExampleControls1"
-									role="button"
-									data-slide="next"
-								>
-									<span
-										className="carousel-control-next-icon"
-										aria-hidden="true"
-									>
-										<i className="fa fa-circle"></i>
-									</span>
-								</a>
-							</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg2} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg3} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg1} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg2} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg3} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg1} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg2} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg3} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg1} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg2} alt="" className="img-fluid" />
+									</figure>
+								</div>
+								<div className="img-box">
+									<figure>
+										<img src={OfficeImg3} alt="" className="img-fluid" />
+									</figure>
+								</div>
+							</Slider>
 						</div>
 					</div>
 				</section>

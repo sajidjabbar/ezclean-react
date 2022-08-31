@@ -93,7 +93,7 @@ const Faq = () => {
 							</div>
 						</div>
 						<div className="faq-section">
-							<div className="content">
+							{/* <div className="content">
 								<div
 									className="panel-group"
 									id="accordion"
@@ -471,6 +471,128 @@ const Faq = () => {
 										</div>
 									</div>
 								
+								</div>
+							</div> */}
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h5 class="mb-0">
+											<button
+												class="btn btn-link"
+												data-toggle="collapse"
+												data-target="#collapseOne"
+												aria-expanded="true"
+												aria-controls="collapseOne"
+											>
+												<h5>
+													Whats The Difference Between A Deep Clean And Regular
+													Clean?
+												</h5>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</button>
+										</h5>
+									</div>
+
+									<div
+										id="collapseOne"
+										class="collapse show"
+										aria-labelledby="headingOne"
+										data-parent="#accordion"
+									>
+										<div class="card-body">
+											A deep clean is recommended for all first time cleaning by
+											SPRUSE. It allows us extra time to get all the areas that
+											have been missed during regular cleanings in the past.
+											after the initial
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h5 class="mb-0">
+											<button
+												class="btn btn-link collapsed"
+												data-toggle="collapse"
+												data-target="#collapseTwo"
+												aria-expanded="false"
+												aria-controls="collapseTwo"
+											>
+												<h5>How Do I Update Billing?</h5>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</button>
+										</h5>
+									</div>
+									<div
+										id="collapseTwo"
+										class="collapse"
+										aria-labelledby="headingTwo"
+										data-parent="#accordion"
+									>
+										<div class="card-body">
+											A deep clean is recommended for all first time cleaning by
+											SPRUSE. It allows us extra time to get all the areas that
+											have been missed during regular cleanings in the past.
+											after the initial
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h5 class="mb-0">
+											<button
+												class="btn btn-link collapsed"
+												data-toggle="collapse"
+												data-target="#collapseThree"
+												aria-expanded="false"
+												aria-controls="collapseThree"
+											>
+												<h5>What Day Is My Clean?</h5>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</button>
+										</h5>
+									</div>
+									<div
+										id="collapseThree"
+										class="collapse"
+										aria-labelledby="headingThree"
+										data-parent="#accordion"
+									>
+										<div class="card-body">
+											A deep clean is recommended for all first time cleaning by
+											SPRUSE. It allows us extra time to get all the areas that
+											have been missed during regular cleanings in the past.
+											after the initial
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingFour">
+										<h5 class="mb-0">
+											<button
+												class="btn btn-link collapsed"
+												data-toggle="collapse"
+												data-target="#collapseFour"
+												aria-expanded="false"
+												aria-controls="collapseFour"
+											>
+												<h5>Will The Same Cleaner Come Every-Time?</h5>
+												<i class="fa fa-plus" aria-hidden="true"></i>
+											</button>
+										</h5>
+									</div>
+									<div
+										id="collapseFour"
+										class="collapse"
+										aria-labelledby="headingFour"
+										data-parent="#accordion"
+									>
+										<div class="card-body">
+											A deep clean is recommended for all first time cleaning by
+											SPRUSE. It allows us extra time to get all the areas that
+											have been missed during regular cleanings in the past.
+											after the initial
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

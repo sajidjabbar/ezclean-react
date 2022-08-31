@@ -38,17 +38,23 @@ const JobPayment = () => {
 						</div>
 						<div className="col-lg-6"></div>
 					</div>
-					<div className="row">
+					<div className="row mt-4">
 						<div className="col-lg-6">
 							<div className="job-form-wrapper">
 								<form action="/Thankyou">
 									<div className="form-group">
-										<label htmlFor="Name">Name on card</label>
-										<input
-											type="text"
-											className="form-control"
-											placeholder="Your Name on Card"
-										/>
+										<label class="pay-container">
+											Pay with card
+											<input type="radio" hidden name="PayRadio" />
+											<span class="checkmark">
+												<div className="dot"></div>
+												<input
+													type="text"
+													className="form-control pay-input"
+													placeholder="Your Name on Card"
+												/>
+											</span>
+										</label>
 									</div>
 									<div className="form-group CardNumber row">
 										<div className="col-lg-12">
@@ -83,6 +89,19 @@ const JobPayment = () => {
 											/>
 										</div>
 									</div>
+									<label class="pay-container mt-3">
+										Pay with wallet
+										<input type="radio" hidden name="PayRadio" />
+										<span class="checkmark">
+											<div className="dot"></div>
+											<input
+												type="text"
+												className="form-control pay-input wallet-input"
+												placeholder="Current Balance"
+											/>
+											<span className="price">$420.00</span>
+										</span>
+									</label>
 									<div className="form-group">
 										<button
 											type="submit"

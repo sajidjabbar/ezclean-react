@@ -14,6 +14,13 @@ import ReviewImg2 from "../assets/img/user2.png";
 import ReviewImg3 from "../assets/img/user3.png";
 import ReviewImg4 from "../assets/img/user4.png";
 import ReviewImg5 from "../assets/img/user5.png";
+import BannnerImg from "../assets/img/banner-img1.png";
+import OfficeImg1 from "../assets/img/blog-detail-img.png";
+import OfficeImg2 from "../assets/img/blog3.png";
+import OfficeImg3 from "../assets/img/blog2.png";
+import OfficeImg4 from "../assets/img/about1-img.png";
+import check from "../assets/img/tick.png";
+import support from "../assets/img/support.png";
 
 export {
 	cleaner,
@@ -31,5 +38,12 @@ export {
 	ReviewImg2,
 	ReviewImg3,
 	ReviewImg4,
+	BannnerImg,
 	ReviewImg5,
+	OfficeImg1,
+	OfficeImg2,
+	OfficeImg3,
+	OfficeImg4,
+	check,
+	support,
 };

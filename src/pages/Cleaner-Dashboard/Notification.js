@@ -31,11 +31,11 @@ const Botification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>
@@ -53,11 +53,11 @@ const Botification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>
@@ -67,7 +67,6 @@ const Botification = () => {
 												<img src={cleaner4} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -76,11 +75,11 @@ const Botification = () => {
 										</div>
 										<div className="notofication-btn-wrapper">
 											{/* <a href="#">View Details</a> */}
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>
@@ -90,7 +89,6 @@ const Botification = () => {
 												<img src={cleaner3} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -98,11 +96,11 @@ const Botification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>
@@ -112,7 +110,6 @@ const Botification = () => {
 												<img src={cleaner2} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -120,11 +117,11 @@ const Botification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>
@@ -134,7 +131,6 @@ const Botification = () => {
 												<img src={cleaner4} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -142,11 +138,11 @@ const Botification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>
@@ -156,7 +152,6 @@ const Botification = () => {
 												<img src={cleaner3} alt="" />
 											</div>
 											<div className="profile-content-wrapper">
-												<h6>Employee of the month</h6>
 												<h3>James Knot</h3>
 											</div>
 										</div>
@@ -164,11 +159,11 @@ const Botification = () => {
 											<h4>Job accepted from Cleaner</h4>
 										</div>
 										<div className="notofication-btn-wrapper">
-											<div className="green_dot">
-
-											</div>
+											<div className="green_dot"></div>
 											<div>
-												<span className="font-sml-sml">29 july 10:30am |2021</span>
+												<span className="font-sml-sml">
+													29 july 10:30am |2021
+												</span>
 											</div>
 										</div>
 									</div>

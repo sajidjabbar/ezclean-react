@@ -1,31 +1,32 @@
 .for-pic-hover:hover {
 	background-color: #fee63a;
-	padding: 30px;
-	border-radius: 20px;
+	/* padding: 30px;
+	border-radius: 20px; */
 }
 
 .for-pic-hover {
 	transition: 1s;
 	/* padding: 4px 0px; */
 	cursor: pointer;
+	padding: 20px;
 }
 
 .select-btn button {
 	background-color: #a5a5a5;
 	border: unset;
 	width: 100%;
-	padding: 9px;
+	padding: 11px;
 	border-radius: 40px;
 	color: #ffffff;
+	font-size: 13px;
+	font-weight: 600;
 }
-
 label.selectlabel {
 	font-size: 16px;
 	color: #244638;
 	font-family: "Poppins";
-	font-weight: 500;
+	font-weight: 600;
 }
-
 select#cars {
 	width: 100%;
 	padding: 8px;
@@ -34,20 +35,55 @@ select#cars {
 	color: #ffffff;
 	outline: none;
 	padding: 40px 0p;
-	padding: 8px 30px;
+	padding: 10px 30px;
+	font-size: 13px;
+	font-weight: 500;
 }
-
+.adds-sec .adds-things label.add-container span.checkmark .for-checkbox {
+	width: 22px;
+	height: 22px;
+	background: transparent;
+	border: 2px solid #244638;
+	border-radius: 4px;
+}
 .for-padding-up {
-	padding-top: 50px;
+	padding-top: 20px;
 }
-
+.adds-sec .adds-things label.add-container span.checkmark .for-checkbox {
+	width: 24px;
+	height: 24px;
+	background: transparent;
+	border: 2px solid #244638;
+	border-radius: 4px;
+	line-height: 19px;
+	padding: 0px 3px;
+}
+.adds-sec
+	.adds-things
+	label.add-container
+	input:checked
+	~ span.checkmark
+	.for-checkbox
+	img {
+	opacity: 1;
+}
+.adds-sec .adds-things label.add-container span.checkmark .for-checkbox img {
+	opacity: 0;
+}
+.adds-things label.add-container {
+	display: flex;
+	align-items: center;
+}
+.adds-things label.add-container span.checkmark {
+	margin-left: 10px;
+}
 .standard-head h3 {
 	font-size: 40px;
 	color: #000000;
 	font-family: "Poppins";
-	font-weight: 600;
+	font-weight: 700;
+	line-height: 70px;
 }
-
 .standard-head p {
 	font-size: 12px;
 	color: #777777;
@@ -151,10 +187,9 @@ section.standard-sec {
 	bottom: 20px;
 }
 .dv-charges {
-	text-align: center;
+	text-align: left;
 	padding-top: 0px;
 }
-
 h2.for-left {
 	position: relative;
 	left: 48px;
