@@ -2299,8 +2299,11 @@ a:hover {
 
 .testimonial-author {
 	position: absolute;
-	right: 10px;
-	bottom: 10px;
+	right: 50px;
+	bottom: 15px;
+	font-family: "Poppins";
+	color: #000;
+	font-weight: 600 !important;
 }
 
 /*.testimonial-text:after {*/
@@ -2516,7 +2519,7 @@ footer .credits {
 }
 
 .footer-heading {
-	color: #258d8c;
+	color: #297c3f;
 	font-weight: 600;
 }
 
@@ -2557,7 +2560,7 @@ footer .credits {
 	left: 15px;
 	top: 15px;
 	color: #3d3d3d;
-	border: 1px solid #00a478;
+	border: 1px solid #258d8c;
 	min-height: 175px;
 	padding: 15px;
 	border-radius: 15px;
@@ -2915,6 +2918,7 @@ nav.nav-footer ul.list-inline .list-inline-item {
 	align-items: center;
 	flex-direction: row-reverse;
 	padding-left: 25px;
+	color: #a5a5a5;
 }
 .forgot-link a {
 	font-size: 12px;
@@ -3061,7 +3065,7 @@ nav.nav-footer ul.list-inline .list-inline-item {
 }
 
 .About_Page .abt_sml_yllw {
-	color: #eb9c1e;
+	color: #ee9e03;
 	font-weight: 500;
 }
 
@@ -3121,7 +3125,15 @@ nav.nav-footer ul.list-inline .list-inline-item {
 .Blog_Page .blog_cursor {
 	cursor: pointer;
 }
-
+.Blog_Details .blog-detail1 img.img-fluid {
+	height: 470px;
+	object-fit: cover;
+}
+.Blog_Details .blog-detail img {
+	height: 184px;
+	width: 100%;
+	object-fit: cover;
+}
 .Blog_Details .blog-details-text {
 	box-shadow: 0 0 20px #0000001f;
 	padding: 1rem;
@@ -3205,6 +3217,7 @@ nav.nav-footer ul.list-inline .list-inline-item {
 	font-size: 10px;
 	font-weight: 500;
 	padding: 0 2rem;
+	color: #244638;
 }
 
 .Login .ez-clean-btn-rounded {
@@ -3331,11 +3344,10 @@ nav.nav-footer ul.list-inline .list-inline-item {
 	position: absolute;
 	top: 43px;
 	font-size: 20px;
-	right: 32px;
+	right: 35px;
 	color: white;
 	font-weight: 300;
 }
-
 .Standards input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box;
@@ -3637,7 +3649,7 @@ input[type="radio"] {
 	border-radius: 0;
 }
 .faq-section .card .card-header {
-	padding: 30px 0;
+	padding: 20px 0;
 	margin: 0;
 	background: transparent;
 	border: 0;
@@ -3669,6 +3681,9 @@ input[type="radio"] {
 	font-weight: 500;
 	padding-bottom: 40px;
 }
+.faq-section .card .card-body {
+	padding-top: 0;
+}
 .faq-section
 	.card
 	.card-header
@@ -3699,14 +3714,37 @@ input[type="radio"] {
 	position: fixed;
 	bottom: 30%;
 	right: 40px;
+	transition: 0.6s;
+	transform: translateX(120%);
+}
+.customer-support:hover {
+	transform: unset;
+}
+.customer-support .chat-box {
 	background: #fff;
 	border: 3px solid #1d753f;
 	border-radius: 15px;
 	transition: 0.6s;
-	transform: translateX(90%);
 }
-.customer-support:hover {
-	transform: unset;
+.customer-support .icon figure {
+	background: #5c9d43;
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0;
+}
+.customer-support .icon {
+	position: absolute;
+	background: #fff;
+	top: 0px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 90px;
+	left: -95px;
+	transition: 0.6s;
 }
 .customer-support .header {
 	display: flex;
@@ -3755,7 +3793,7 @@ input[type="radio"] {
 .customer-support .form-group .form-control::placeholder {
 	font-style: italic;
 }
-.customer-support:before {
+.customer-support .chat-box:before {
 	content: "";
 	height: 100px;
 	position: absolute;

@@ -1,7 +1,7 @@
 .section-services h3 {
 	font-size: 34px;
-	font-weight: 600 !important	;
-	color: #000000;
+	font-weight: 600 !important;
+	color: #244638;
 }
 .section-services .ez-clean-btn-border {
 	font-size: 16px;
@@ -13,6 +13,6 @@
 	font-weight: 600;
 	color: #fee63a;
 }
-.signupForm .form-control {
+/* .signupForm .form-control {
 	border: 1px solid #244638;
-}
+} */

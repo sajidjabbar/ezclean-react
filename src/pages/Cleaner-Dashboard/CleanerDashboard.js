@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
 import "../../assets/css/cleaner-dashboard.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { cleaner, cleaner2, cleaner3, cleaner4 } from "../../constant";
 import "react-calendar/dist/Calendar.css";
 import $ from "jquery";
 import Calendar from "react-calendar";
 
 const CleanerDashboard = () => {
+	const navigate = useNavigate();
 	const [value, onChange] = useState(new Date());
 	const [editprofile, seteditprofile] = useState(false);
 	const showedit = () => {
@@ -1308,7 +1309,10 @@ const CleanerDashboard = () => {
 															</ul>
 														</div>
 														<div className="package-btn-wrapper">
-															<button className="btn btn-primary ez-clean-btn-rounded mt-3">
+															<button
+																onClick={() => navigate("/CompleteJob")}
+																className="btn btn-primary ez-clean-btn-rounded mt-3"
+															>
 																Job Completed
 															</button>
 														</div>

@@ -8,7 +8,7 @@
 	transition: 1s;
 	/* padding: 4px 0px; */
 	cursor: pointer;
-	padding: 20px;
+	padding: 12px;
 }
 
 .select-btn button {
@@ -35,9 +35,10 @@ select#cars {
 	color: #ffffff;
 	outline: none;
 	padding: 40px 0p;
-	padding: 10px 30px;
+	padding: 11px 30px;
 	font-size: 13px;
 	font-weight: 500;
+	border: 0;
 }
 .adds-sec .adds-things label.add-container span.checkmark .for-checkbox {
 	width: 22px;

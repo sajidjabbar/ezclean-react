@@ -309,7 +309,7 @@ section.dashboard-sec {
 	margin-bottom: 0;
 }
 .booking-table-wrapper .cleaner-wrapper img {
-	width: 36px;
+	width: 30px;
 }
 .booking-table-wrapper th span {
 	font-weight: 600 !important;
@@ -338,6 +338,7 @@ section.dashboard-sec {
 }
 .booking-table-wrapper tr td:last-child {
 	border-right: 0px solid !important;
+	padding-left: 10px;
 }
 .booking-table-wrapper span.Accepted {
 	background-image: linear-gradient(

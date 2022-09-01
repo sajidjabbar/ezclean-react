@@ -3,6 +3,12 @@
 }
 .customer-sec .search-wrapper input {
 	height: 53px;
+	padding: 0 30px;
+	font-size: 15px;
+}
+.customer-sec .search-wrapper input::placeholder {
+	font-size: 14px;
+	color: #000000;
 }
 .customer-sec .search-wrapper input::placeholder {
 	color: #000000;
@@ -14,7 +20,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 18px 0px;
+	margin: 10px 0px 18px;
 }
 .profile-img-btn-wrapper .profile-img-wrapper {
 	display: flex;
@@ -33,16 +39,24 @@
 	border-radius: 50%;
 }
 .customer-sec .profile-img-btn-wrapper .profile-btn-wrapper .btn {
-	padding: 10px 38px;
+	padding: 10px 65px;
 	margin: 0px 0px 0px 11px;
 	font-size: 14px;
 	font-weight: 600;
 }
 .customer-sec .customer-banner-wrapper {
-	background-image: linear-gradient(to right, #1d753f, #68a543);
-	padding: 55px 70px;
+	background-image: linear-gradient(
+		to left bottom,
+		#1d753f,
+		#308141,
+		#438d42,
+		#559943,
+		#68a543
+	);
+	padding: 35px 70px;
 	margin-top: 40px;
 	position: relative;
+	margin-bottom: 20px;
 }
 .customer-sec .customer-banner-wrapper h3 {
 	color: #fff;
@@ -91,7 +105,7 @@
 	font-weight: 600;
 }
 .help-content-wrapper p {
-	font-size: 16px;
+	font-size: 14px;
 	color: #777777;
 }
 .customer-sec .help-content-wrapper a.btn:hover {

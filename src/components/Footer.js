@@ -191,23 +191,30 @@ const Footer = () => {
 				</div>
 			</footer>
 			<div className="customer-support">
-				<div className="header">
+				<div className="icon">
 					<figure>
 						<img src={support} alt="123" className="img-fluid" />
 					</figure>
-					<h4>Customer Support</h4>
 				</div>
-				<div className="chat">
-					<div className="left-side">
-						<p>How can I assist you?</p>
+				<div className="chat-box">
+					<div className="header">
+						<figure>
+							<img src={support} alt="123" className="img-fluid" />
+						</figure>
+						<h4>Customer Support</h4>
 					</div>
-				</div>
-				<div className="form-group">
-					<input
-						type="text"
-						placeholder="write message"
-						className="form-control"
-					/>
+					<div className="chat">
+						<div className="left-side">
+							<p>How can I assist you?</p>
+						</div>
+					</div>
+					<div className="form-group">
+						<input
+							type="text"
+							placeholder="write message"
+							className="form-control"
+						/>
+					</div>
 				</div>
 			</div>
 			<div className="copyright-footer">

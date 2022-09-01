@@ -164,7 +164,7 @@
 	text-align: left;
 	vertical-align: middle;
 	color: #000000;
-	font-size: 16px;
+	font-size: 14px;
 	border: 0px;
 	border-right: 2px solid #c2c2c2;
 }
@@ -186,8 +186,10 @@
 }
 #pills-Earnings .earning-wrapper .earing-table-wrapper td .type-wrapper h6 {
 	margin-left: 10px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
+	margin-bottom: 0;
+	line-height: 24px;
 }
 .earning-wrapper .earing-table-wrapper th {
 	text-align: left;

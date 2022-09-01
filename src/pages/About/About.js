@@ -121,7 +121,7 @@ const About = () => {
 							<div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
 								<h3 className="pricing-title">
 									<span className="ez-yellow-color">
-										"keeping your home or office clean
+										"keeping your home or office clean &nbsp;
 									</span>
 									can be hard to manage"
 								</h3>

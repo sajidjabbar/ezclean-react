@@ -64,8 +64,8 @@ const Standard = () => {
 							</div>
 
 							<div className="row for-padding-up">
-								<div className="col-md-4">
-									<label className="selectlabel">Venue </label>
+								<div className="col-md-4 text-center">
+									<label className="selectlabel">Venue Type </label>
 									<div className="select-all">
 										<select name="cars" id="cars">
 											<option value="volvo">Select</option>
@@ -76,15 +76,15 @@ const Standard = () => {
 									</div>
 								</div>
 
-								<div className="col-md-4">
+								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bedrooms</label>
 									<div className="select-btn">
 										<button>Double</button>
 									</div>
 								</div>
 
-								<div className="col-md-4">
-									<label className="selectlabel">No. of </label>
+								<div className="col-md-4 text-center">
+									<label className="selectlabel">No. of Bathrooms </label>
 									<div className="select-btn">
 										<button>Triple</button>
 									</div>
