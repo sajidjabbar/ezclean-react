@@ -96,34 +96,36 @@ const CustomerProfile = () => {
 							</div>
 						</div>
 						<div className="col-lg-6">
-							<div className="row">
-								<div className="col-lg-4">
-									<div className="cleaner-wrapper">
-										<figure>
-											<img src={make1} className="img-fluid" alt="" />
-										</figure>
-										<div className="content-wrapper">
-											<h4>Regular Cleaning</h4>
+							<div className="all-cleaner">
+								<div className="row">
+									<div className="col-lg-4">
+										<div className="cleaner-wrapper">
+											<figure>
+												<img src={make1} className="img-fluid" alt="" />
+											</figure>
+											<div className="content-wrapper">
+												<h4>Regular Cleaning</h4>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-lg-4">
-									<div className="cleaner-wrapper">
-										<figure>
-											<img src={make2} className="img-fluid" alt="" />
-										</figure>
-										<div className="content-wrapper">
-											<h4>Deep Cleaning</h4>
+									<div className="col-lg-4">
+										<div className="cleaner-wrapper">
+											<figure>
+												<img src={make2} className="img-fluid" alt="" />
+											</figure>
+											<div className="content-wrapper">
+												<h4>Deep Cleaning</h4>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-lg-4">
-									<div className="cleaner-wrapper">
-										<figure>
-											<img src={make3} className="img-fluid" alt="" />
-										</figure>
-										<div className="content-wrapper">
-											<h4>Move Cleaning</h4>
+									<div className="col-lg-4">
+										<div className="cleaner-wrapper">
+											<figure>
+												<img src={make3} className="img-fluid" alt="" />
+											</figure>
+											<div className="content-wrapper">
+												<h4>Move Cleaning</h4>
+											</div>
 										</div>
 									</div>
 								</div>
