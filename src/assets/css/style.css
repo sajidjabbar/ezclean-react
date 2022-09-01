@@ -3710,12 +3710,13 @@ input[type="radio"] {
 	color: #000;
 }
 .customer-support {
-	width: 18%;
-	position: fixed;
 	bottom: 30%;
+	position: fixed;
 	right: 40px;
-	transition: 0.6s;
 	transform: translateX(120%);
+	transition: 0.6s;
+	width: 18%;
+	z-index: 99;
 }
 .customer-support:hover {
 	transform: unset;
@@ -3737,7 +3738,7 @@ input[type="radio"] {
 }
 .customer-support .icon {
 	position: absolute;
-	background: #fff;
+	background: transparent;
 	top: 0px;
 	height: 100%;
 	display: flex;
