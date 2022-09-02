@@ -1330,7 +1330,7 @@ const CleanerDashboard = () => {
 														<div className="heading-wrapper">
 															<h4 className="mt-2">My Earnings</h4>
 														</div>
-														<div className="earnings-tab-wrapper">
+														{/* <div className="earnings-tab-wrapper">
 															<ul
 																class="nav nav-tabs"
 																id="myTab"
@@ -1376,7 +1376,7 @@ const CleanerDashboard = () => {
 																	</a>
 																</li>
 															</ul>
-														</div>
+														</div> */}
 													</div>
 													<div className="tabs-content-wrapper">
 														<div class="tab-content" id="myTabContent">
