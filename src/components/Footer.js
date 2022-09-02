@@ -15,6 +15,15 @@ const Footer = () => {
 						<div className="col-lg-10">
 							<h4 className="footer-heading">EzClean</h4>
 							<p className="footer-text">A clean home starts with U</p>
+							<h4 className="cleaningDetail">Cleaning Detail</h4>
+							<ul className="cleaning-detail">
+								<li className="list-inline-item">
+									<Link to="/UrgentDetails">Urgent cleaning</Link>
+								</li>
+								<li className="list-inline-item">
+									<Link to="/CleaningDetails">Standard cleaning</Link>
+								</li>
+							</ul>
 							<nav className="nav-footer">
 								<ul className="list-inline">
 									<li className="list-inline-item">

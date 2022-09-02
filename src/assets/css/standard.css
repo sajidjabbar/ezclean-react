@@ -1,11 +1,10 @@
 .for-pic-hover:hover {
-	background-color: #fee63a;
+	/* background-color: #fee63a; */
 	/* padding: 30px;
 	border-radius: 20px; */
 }
 
 .for-pic-hover {
-	transition: 1s;
 	/* padding: 4px 0px; */
 	cursor: pointer;
 	padding: 12px;

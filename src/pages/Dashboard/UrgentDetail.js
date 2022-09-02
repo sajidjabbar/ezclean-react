@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import BetterBusiness from "../../components/BetterBusiness";
 
 const UrgentDetail = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			{/* Urgent ccleaing starts here */}
@@ -274,6 +278,8 @@ const UrgentDetail = () => {
 				</div>
 			</section>
 			{/* Urgent ccleaing Ends here */}
+
+			<BetterBusiness />
 		</>
 	);
 };

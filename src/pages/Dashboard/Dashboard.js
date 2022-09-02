@@ -340,11 +340,11 @@ const Dashboard = () => {
 																	<div className="col-md-12">
 																		<div className="profile-head">
 																			<h3>Security</h3>
-																			<div className="profile-edit">
+																			{/* <div className="profile-edit">
 																				<Link onClick={showedit} to="">
 																					Edit
 																				</Link>
-																			</div>
+																			</div> */}
 																		</div>
 																	</div>
 

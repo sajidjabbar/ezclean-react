@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../assets/css/cleaningdetails.css";
+import BetterBusiness from "../../components/BetterBusiness";
 
 const CleaningDetails = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			{/* Cleaning Details starts here */}
@@ -134,6 +138,8 @@ const CleaningDetails = () => {
 				</div>
 			</section>
 			{/* Cleaning Details ends here */}
+
+			<BetterBusiness />
 		</>
 	);
 };

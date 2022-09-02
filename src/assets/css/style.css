@@ -2866,7 +2866,20 @@ nav.nav-footer ul.list-inline .list-inline-item a {
 	font-size: 14px;
 	font-weight: 600;
 }
-
+footer h4.cleaningDetail {
+	font-size: 20px;
+	color: #378540;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+footer ul.cleaning-detail {
+	margin-bottom: 25px;
+}
+footer ul.cleaning-detail li a {
+	color: #297c3f;
+	font-size: 14px;
+	font-weight: 600;
+}
 nav.nav-footer ul.list-inline .list-inline-item {
 	margin: 0px !important;
 }
@@ -3320,12 +3333,14 @@ nav.nav-footer ul.list-inline .list-inline-item {
 	font-size: 18px !important;
 }
 
-.for-pic-hover:hover {
+.for-pic-hover {
 	border-radius: 10px !important;
 	/* padding: 20px !important;
 	padding-bottom: 10px !important; */
 }
-
+.standard-container input:checked ~ span.checkmark .pic-text.for-pic-hover {
+	background: #fee63a;
+}
 .Standards select#cars {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -3680,6 +3695,8 @@ input[type="radio"] {
 	line-height: 21px;
 	font-weight: 500;
 	padding-bottom: 40px;
+	padding-left: 13px;
+	margin-top: -20px;
 }
 .faq-section .card .card-body {
 	padding-top: 0;
@@ -3691,9 +3708,9 @@ input[type="radio"] {
 	i:before {
 	content: "\f068";
 }
-.faq-section .card:last-child .card-header {
+/* .faq-section .card:last-child .card-header {
 	padding-bottom: 0;
-}
+} */
 .faq-section .card:last-child {
 	border: 0;
 }

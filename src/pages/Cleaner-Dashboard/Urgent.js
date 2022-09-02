@@ -59,31 +59,49 @@ const Urgent = () => {
 								</div>
 							</div>
 
-							<div className="row for-padding-up">
-								<div className="col-md-4 text-center">
-									<label className="selectlabel">Venue Type </label>
-									<div className="select-all">
-										<select name="cars" id="cars">
-											<option value="volvo">Select</option>
-											<option value="saab">Select</option>
-											<option value="opel">Select</option>
-											<option value="audi">Select</option>
-										</select>
-									</div>
+							<div className="row">
+								<div className="col-md-4">
+									<label class="standard-container">
+										<input type="radio" checked hidden name="Standardradio" />
+										<span class="checkmark">
+											<div className="pic-text for-pic-hover">
+												<img className="img-fluid" src={make1}></img>
+												<h5>
+													Regular <br /> Cleaning
+												</h5>
+											</div>
+										</span>
+									</label>
 								</div>
 
-								<div className="col-md-4 text-center">
-									<label className="selectlabel">No. of Bedrooms</label>
-									<div className="select-btn">
-										<button>Double</button>
-									</div>
+								<div className="col-md-4">
+									<label class="standard-container">
+										<input type="radio" hidden name="Standardradio" />
+										<span class="checkmark">
+											<div className="pic-text for-pic-hover">
+												<img className="img-fluid" src={make2}></img>
+												<h5 className="mt-2">
+													Deep <br />
+													Cleaning
+												</h5>
+											</div>
+										</span>
+									</label>
 								</div>
 
-								<div className="col-md-4 text-center">
-									<label className="selectlabel">No. of Bathrooms </label>
-									<div className="select-btn">
-										<button>Triple</button>
-									</div>
+								<div className="col-md-4">
+									<label class="standard-container">
+										<input type="radio" hidden name="Standardradio" />
+										<span class="checkmark">
+											<div className="pic-text for-pic-hover">
+												<img className="img-fluid" src={make3}></img>
+												<h5 className="mt-4">
+													Move <br />
+													Cleaning
+												</h5>
+											</div>
+										</span>
+									</label>
 								</div>
 							</div>
 
