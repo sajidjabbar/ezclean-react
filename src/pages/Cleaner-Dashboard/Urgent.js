@@ -30,32 +30,62 @@ const Urgent = () => {
 
 							<div className="row">
 								<div className="col-md-4">
-									<div className="pic-text for-pic-hover">
-										<img className="img-fluid" src={make1}></img>
-										<h5>
-											Regular <br /> Cleaning
-										</h5>
-									</div>
+									<label class="standard-container">
+										<input
+											hidden
+											type="radio"
+											name="Standardradio"
+											className="form-check-input"
+										/>
+										<span class="checkmark">
+											<div className="pic-text for-pic-hover">
+												<img className="img-fluid" src={make1}></img>
+												<h5>
+													Regular <br /> Cleaning
+												</h5>
+											</div>
+										</span>
+									</label>
 								</div>
 
 								<div className="col-md-4">
-									<div className="pic-text for-pic-hover">
-										<img className="img-fluid" src={make2}></img>
-										<h5>
-											Deep <br />
-											Cleaning
-										</h5>
-									</div>
+									<label class="standard-container">
+										<input
+											hidden
+											type="radio"
+											name="Standardradio"
+											className="form-check-input"
+										/>
+										<span class="checkmark">
+											<div className="pic-text for-pic-hover">
+												<img className="img-fluid" src={make2}></img>
+												<h5 className="mt-2">
+													Deep <br />
+													Cleaning
+												</h5>
+											</div>
+										</span>
+									</label>
 								</div>
 
 								<div className="col-md-4">
-									<div className="pic-text for-pic-hover">
-										<img className="img-fluid" src={make3}></img>
-										<h5>
-											Move <br />
-											Cleaning
-										</h5>
-									</div>
+									<label class="standard-container">
+										<input
+											hidden
+											type="radio"
+											name="Standardradio"
+											className="form-check-input"
+										/>
+										<span class="checkmark">
+											<div className="pic-text for-pic-hover">
+												<img className="img-fluid" src={make3}></img>
+												<h5 className="mt-4">
+													Move <br />
+													Cleaning
+												</h5>
+											</div>
+										</span>
+									</label>
 								</div>
 							</div>
 

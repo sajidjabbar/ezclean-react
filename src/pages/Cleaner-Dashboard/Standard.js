@@ -35,7 +35,12 @@ const Standard = () => {
 							<div className="row">
 								<div className="col-md-4">
 									<label class="standard-container">
-										<input type="radio" checked hidden name="Standardradio" />
+										<input
+											hidden
+											type="radio"
+											name="Standardradio"
+											className="form-check-input"
+										/>
 										<span class="checkmark">
 											<div className="pic-text for-pic-hover">
 												<img className="img-fluid" src={make1}></img>
@@ -49,7 +54,12 @@ const Standard = () => {
 
 								<div className="col-md-4">
 									<label class="standard-container">
-										<input type="radio" hidden name="Standardradio" />
+										<input
+											hidden
+											type="radio"
+											name="Standardradio"
+											className="form-check-input"
+										/>
 										<span class="checkmark">
 											<div className="pic-text for-pic-hover">
 												<img className="img-fluid" src={make2}></img>
@@ -64,7 +74,12 @@ const Standard = () => {
 
 								<div className="col-md-4">
 									<label class="standard-container">
-										<input type="radio" hidden name="Standardradio" />
+										<input
+											hidden
+											type="radio"
+											name="Standardradio"
+											className="form-check-input"
+										/>
 										<span class="checkmark">
 											<div className="pic-text for-pic-hover">
 												<img className="img-fluid" src={make3}></img>
