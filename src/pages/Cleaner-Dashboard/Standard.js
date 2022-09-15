@@ -108,16 +108,18 @@ const Standard = () => {
 
 								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bedrooms</label>
-									<div className="select-btn">
+									<input type="number" className="form-control" />
+									{/* <div className="select-btn">
 										<button>Double</button>
-									</div>
+									</div> */}
 								</div>
 
 								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bathrooms </label>
-									<div className="select-btn">
+									<input type="number" className="form-control" />
+									{/* <div className="select-btn">
 										<button>Triple</button>
-									</div>
+									</div> */}
 								</div>
 							</div>
 
@@ -230,7 +232,7 @@ const Standard = () => {
 							</div>
 						</div>
 
-						<div className="col-md-6">
+						{/* <div className="col-md-6">
 							<div className="form-input">
 								<div class="form-group">
 									<input
@@ -242,7 +244,7 @@ const Standard = () => {
 									/>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

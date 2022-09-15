@@ -87,7 +87,7 @@ section.clear-found-sec {
 
 .chat-with-cleaner a {
 	font-size: 17px;
-	color: #1e763f;
+	color: #fff;
 	font-family: "Poppins";
 	font-weight: 600;
 }
@@ -124,6 +124,7 @@ section.clear-found-sec .row {
 	/* padding: 10px 70px; */
 	border-radius: 80px;
 	width: 70%;
+	background: linear-gradient(to right, #1d753f, #68a543);
 	padding: 10px;
 	margin: 20px auto;
 }

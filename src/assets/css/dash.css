@@ -398,6 +398,18 @@ section.dashboard-sec {
 	margin-top: 35px;
 }
 /* booking css starts here */
+.booking-details-wrapper .booker-details-wrapper ul .chat-btn button.btn {
+	font-weight: 600;
+	padding: 9px 47px;
+	margin-top: 10px;
+	background-image: linear-gradient(to right, #1d753f, #68a543);
+	font-size: 14px;
+	border-radius: 50px;
+	color: #fff;
+}
+.booking-details-wrapper .booker-details-wrapper ul .chat-btn button.btn i {
+	margin-right: 5px;
+}
 .booking-details-wrapper .booking-heading-wrapper h4 {
 	color: #438d41;
 	font-size: 30px;
@@ -456,6 +468,30 @@ section.dashboard-sec {
 	font-size: 20px;
 	font-weight: 600;
 	padding: 7px 23px;
+}
+.booking-details-wrapper .tag-and-accep-wrapper .right-side button.chat {
+	margin-right: 10px;
+	border: 0;
+	background: linear-gradient(
+		to bottom,
+		#1d753f,
+		#308141,
+		#438d42,
+		#559943,
+		#68a543
+	);
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 15px;
+	border-radius: 50px;
+}
+.booking-details-wrapper .tag-and-accep-wrapper .right-side span.accepted {
+	background: #daffd9;
+	color: #368541;
+	font-size: 14px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	font-weight: 500;
 }
 .booking-details-wrapper .booker-details-wrapper ul {
 	padding: 0px;
@@ -857,3 +893,66 @@ section.dashboard-sec {
 	padding: 10px 0;
 }
 /* Give Rating Modal Css End Here */
+
+/* Loyality Css Start Here */
+.loyal-wrapper {
+	max-width: 80%;
+}
+.loyal-wrapper .loyal-heading-wrapper {
+	padding: 0 0 0px 0;
+}
+.loyal-wrapper .title-wrapper {
+	padding-bottom: 30px;
+}
+.loyal-wrapper .title-wrapper h3 {
+	color: #438d41;
+	font-size: 30px;
+	font-weight: 600;
+}
+.loyal-wrapper ul.loyality-wrapper {
+	margin: 0;
+	list-style: none;
+	border: 1px solid #c2c2c2;
+	padding: 10px 30px;
+	border-radius: 10px;
+}
+.loyal-wrapper ul.loyality-wrapper li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.loyal-wrapper ul.loyality-wrapper li {
+	padding: 17px 0;
+	border-bottom: 1px solid #c2c2c291;
+}
+.loyal-wrapper ul.loyality-wrapper li span.txt {
+	font-size: 25px;
+	color: #b5b5b5;
+	font-weight: 500;
+}
+.loyal-wrapper ul.loyality-wrapper li span.points {
+	font-size: 25px;
+	color: #b5b5b5;
+	font-weight: 500;
+}
+.loyal-wrapper ul.loyality-wrapper li:last-child {
+	border: 0;
+}
+.loyal-wrapper .button-group {
+	text-align: end;
+	margin-top: 20px;
+}
+.loyal-wrapper .button-group button.btn.redeem {
+	background: linear-gradient(to right, #1d753f, #68a543);
+	padding: 9px 40px;
+	color: #fff;
+	border-radius: 50px;
+	font-weight: 600;
+}
+.loyal-wrapper ul.loyality-wrapper li.total-points span.txt {
+	color: #244638;
+}
+.loyal-wrapper ul.loyality-wrapper li.total-points span.points {
+	color: #244638;
+}
+/* Loyality Css End Here */

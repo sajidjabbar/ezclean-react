@@ -1,3 +1,9 @@
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
 .profile-all .Card .form-control {
 	padding: 0px;
 	padding-left: 10px;
@@ -40,6 +46,59 @@
 #pills-dashboard .cal-wrapper .react-calendar__tile--active {
 	background: #ffc1c1;
 	color: #fff;
+}
+.cleaning-category {
+	border-top: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+	padding: 20px 0px 25px;
+	margin-top: 40px;
+}
+#EditCleanerDashboard .cleaning-category {
+	border: 0;
+	padding: 0;
+}
+.cleaning-category .content-wrapper h3 {
+	font-size: 24px;
+	color: #438d41;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.cleaning-category .content-wrapper p {
+	color: #244638;
+	font-size: 11px;
+	margin-bottom: 20px;
+}
+.cleaning-category .content-wrapper .button-group .edit {
+	border: 2px solid #1d753f;
+	color: #1d753f;
+	font-weight: 500;
+	padding: 10px 50px;
+	border-radius: 50px;
+	background: transparent;
+}
+.servicesss {
+	display: flex;
+	align-items: flex-start;
+}
+.servicesss .standard-container span.checkmark img.img-fluid {
+	height: 82px;
+	object-fit: cover;
+	width: 82px;
+}
+.servicesss .standard-container span.checkmark .pic-text.for-pic-hover {
+	padding: 10px 10px;
+	border: 1px solid #707070;
+}
+.servicesss
+	.standard-container
+	input:checked
+	~ span.checkmark
+	.pic-text.for-pic-hover {
+	border-color: #fff;
+}
+.servicesss label.standard-container {
+	flex: 1;
+	margin: 0 5px;
 }
 .react-calendar__navigation__label
 	span.react-calendar__navigation__label__labelText--from {
@@ -91,6 +150,7 @@
 	justify-content: center;
 	align-items: center;
 	margin: 0px auto;
+	cursor: pointer;
 }
 .job-table span.Rejected {
 	background-color: #929292;

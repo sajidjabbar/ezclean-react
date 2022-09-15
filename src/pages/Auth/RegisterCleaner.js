@@ -68,6 +68,14 @@ const RegisterCleaner = () => {
 													placeholder="Confirm Password"
 												/>
 											</div>
+											<div className="col-md-12 mt-3">
+												<select className="form-control">
+													<option>Select Cleaning Categories</option>
+													<option>Regular Cleaning</option>
+													<option>Deep Cleaning</option>
+													<option>Move Cleaning</option>
+												</select>
+											</div>
 											<button
 												className="btn btn-primary ez-clean-btn-rounded mt-3 justify-content-center ml-auto mr-auto d-flex"
 												href="javascript:void(0);"

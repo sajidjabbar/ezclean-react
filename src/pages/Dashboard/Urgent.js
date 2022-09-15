@@ -5,6 +5,7 @@ import make3 from "../../assets/img/make3.png";
 import standard from "../../assets/img/standard.png";
 import { Link } from "react-router-dom";
 import BetterBusiness from "../../components/BetterBusiness";
+import { check } from "../../constant";
 
 const Urgent = () => {
 	return (
@@ -105,19 +106,20 @@ const Urgent = () => {
 
 								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bedrooms</label>
-									<div className="select-btn">
+									{/* <div className="select-btn">
 										<button>Double</button>
-									</div>
+									</div> */}
+									<input type="number" className="form-control" />
 								</div>
 
 								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bathrooms </label>
-									<div className="select-btn">
+									{/* <div className="select-btn">
 										<button>Triple</button>
-									</div>
+									</div> */}
+									<input type="number" className="form-control" />
 								</div>
 							</div>
-
 							{/* <form>
 								<div className="row for-padding-up">
 									<div className="col-md-6">
@@ -163,7 +165,96 @@ const Urgent = () => {
 			</section>
 
 			{/* End of Standard section  */}
+			{/* Adds on section  */}
+			<section className="adds-sec">
+				<div className="container">
+					<div className="head-address">
+						<h4>Add-ons</h4>
+					</div>
+					<div className="row">
+						<div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Dust Plan | 20$
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div>
+						<div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Dust Plan | 20$
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div>
+						<div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Broom | 20$
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div>
+						<div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Liquid Soap | 20$
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div>
+						{/* <div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Write your own
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div> */}
 
+						{/* <div className="col-md-6">
+							<div className="form-input">
+								<div class="form-group">
+									<input
+										type="text"
+										class="form-control"
+										id="exampleInputEmail1"
+										aria-describedby="emailHelp"
+										placeholder="Write your own"
+									/>
+								</div>
+							</div>
+						</div> */}
+					</div>
+				</div>
+			</section>
+			{/* End of Adds on section  */}
 			{/* Adds on section  */}
 			{/* <section className="adds-sec">
         <div className="container">

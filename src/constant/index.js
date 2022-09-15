@@ -21,6 +21,9 @@ import OfficeImg3 from "../assets/img/blog2.png";
 import OfficeImg4 from "../assets/img/about1-img.png";
 import check from "../assets/img/tick.png";
 import support from "../assets/img/support.png";
+import ServiceImg1 from "../assets/img/services1.png";
+import ServiceImg2 from "../assets/img/services2.png";
+import ServiceImg3 from "../assets/img/services3.png";
 
 export {
 	cleaner,
@@ -46,4 +49,7 @@ export {
 	OfficeImg4,
 	check,
 	support,
+	ServiceImg1,
+	ServiceImg2,
+	ServiceImg3,
 };

@@ -110,16 +110,15 @@ const Standard = () => {
 
 								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bedrooms</label>
-									<div className="select-btn">
+									{/* <div className="select-btn">
 										<button>Double</button>
-									</div>
+									</div> */}
+									<input type="number" className="form-control" />
 								</div>
 
 								<div className="col-md-4 text-center">
 									<label className="selectlabel">No. of Bathrooms </label>
-									<div className="select-btn">
-										<button>Triple</button>
-									</div>
+									<input type="number" className="form-control" />
 								</div>
 							</div>
 
@@ -176,49 +175,10 @@ const Standard = () => {
 						<h4>Add-ons</h4>
 					</div>
 					<div className="row">
-						<div className="col-md-2">
+						<div className="col-md-3">
 							<div className="adds-things">
 								<label class="add-container">
-									Dust Plan
-									<input type="checkbox" hidden />
-									<span class="checkmark">
-										<div className="for-checkbox">
-											<img src={check} alt="" className="img-fluid" />
-										</div>
-									</span>
-								</label>
-							</div>
-						</div>
-						<div className="col-md-2">
-							<div className="adds-things">
-								<label class="add-container">
-									Sponge
-									<input type="checkbox" hidden />
-									<span class="checkmark">
-										<div className="for-checkbox">
-											<img src={check} alt="" className="img-fluid" />
-										</div>
-									</span>
-								</label>
-							</div>
-						</div>
-						<div className="col-md-2">
-							<div className="adds-things">
-								<label class="add-container">
-									Broom
-									<input type="checkbox" hidden />
-									<span class="checkmark">
-										<div className="for-checkbox">
-											<img src={check} alt="" className="img-fluid" />
-										</div>
-									</span>
-								</label>
-							</div>
-						</div>
-						<div className="col-md-2">
-							<div className="adds-things">
-								<label class="add-container">
-									Liquid Soap
+									Dust Plan | 20$
 									<input type="checkbox" hidden />
 									<span class="checkmark">
 										<div className="for-checkbox">
@@ -231,7 +191,7 @@ const Standard = () => {
 						<div className="col-md-3">
 							<div className="adds-things">
 								<label class="add-container">
-									Write your own
+									Dust Plan | 20$
 									<input type="checkbox" hidden />
 									<span class="checkmark">
 										<div className="for-checkbox">
@@ -241,8 +201,47 @@ const Standard = () => {
 								</label>
 							</div>
 						</div>
+						<div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Broom | 20$
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div>
+						<div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Liquid Soap | 20$
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div>
+						{/* <div className="col-md-3">
+							<div className="adds-things">
+								<label class="add-container">
+									Write your own
+									<input type="checkbox" hidden />
+									<span class="checkmark">
+										<div className="for-checkbox">
+											<img src={check} alt="" className="img-fluid" />
+										</div>
+									</span>
+								</label>
+							</div>
+						</div> */}
 
-						<div className="col-md-6">
+						{/* <div className="col-md-6">
 							<div className="form-input">
 								<div class="form-group">
 									<input
@@ -254,7 +253,7 @@ const Standard = () => {
 									/>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

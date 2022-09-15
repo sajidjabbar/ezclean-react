@@ -83,9 +83,9 @@ const Clearfound = () => {
 										<p>Suit #123, Lorem Ipsum Apartmen</p>
 										<p>5th Street, Lorem ipsum</p>
 										<p>City, State, Zip code</p>
-										<div className="hire-btn">
+										{/* <div className="hire-btn">
 											<Link to="/Hired">Send Hire request</Link>
-										</div>
+										</div> */}
 									</div>
 								</div>
 							</div>
@@ -103,7 +103,7 @@ const Clearfound = () => {
 						<div className="col-md-6">
 							<div className="all-text-center">
 								<div className="chat-with-cleaner">
-									<Link to="/chat">Chat with cleaner</Link>
+									<Link to="/jobPayment">Accept and proceed</Link>
 								</div>
 								{/* <div className="acced-proceed">
 									<Link to="/Hired">Accept and proceed</Link>

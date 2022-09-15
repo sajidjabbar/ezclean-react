@@ -3,12 +3,24 @@ import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
 import "../../assets/css/cleaner-dashboard.css";
 import { Link, Navigate, useNavigate } from "react-router-dom";
-import { cleaner, cleaner2, cleaner3, cleaner4 } from "../../constant";
+import {
+	cleaner,
+	cleaner2,
+	cleaner3,
+	cleaner4,
+	make1,
+	make2,
+	make3,
+	ServiceImg1,
+	ServiceImg2,
+	ServiceImg3,
+} from "../../constant";
 import "react-calendar/dist/Calendar.css";
 import $ from "jquery";
 import Calendar from "react-calendar";
 
 const CleanerDashboard = () => {
+	const [show, setShow] = useState(false);
 	const navigate = useNavigate();
 	const [value, onChange] = useState(new Date());
 	const [editprofile, seteditprofile] = useState(false);
@@ -526,50 +538,143 @@ const CleanerDashboard = () => {
 												role="tabpanel"
 												aria-labelledby="pills-dashboard-tab"
 											>
-												<div className="stats-box-row">
-													<div className="row">
-														<div className="col-lg-4">
-															<div className="stats-box-wrapper">
-																<div className="stats-name-wrapper">
-																	<h4>Total Bookings</h4>
-																</div>
-																<div className="stats-count-wrapper">
-																	<h2>20</h2>
+												<div
+													className={
+														show
+															? "cleaner-dashboard hide"
+															: "cleaner-dashboard"
+													}
+													id="cleanerDashboard"
+												>
+													<div className="stats-box-row">
+														<div className="row">
+															<div className="col-lg-4">
+																<div className="stats-box-wrapper">
+																	<div className="stats-name-wrapper">
+																		<h4>Total Bookings</h4>
+																	</div>
+																	<div className="stats-count-wrapper">
+																		<h2>20</h2>
+																	</div>
 																</div>
 															</div>
-														</div>
-														<div className="col-lg-4">
-															<div className="stats-box-wrapper">
-																<div className="stats-name-wrapper">
-																	<h4>Total Jobs done</h4>
-																</div>
-																<div className="stats-count-wrapper">
-																	<h2>16</h2>
+															<div className="col-lg-4">
+																<div className="stats-box-wrapper">
+																	<div className="stats-name-wrapper">
+																		<h4>Total Jobs done</h4>
+																	</div>
+																	<div className="stats-count-wrapper">
+																		<h2>16</h2>
+																	</div>
 																</div>
 															</div>
-														</div>
-														<div className="col-lg-4">
-															<div className="stats-box-wrapper">
-																<div className="stats-name-wrapper">
-																	<h4>Total Payments</h4>
-																</div>
-																<div className="stats-count-wrapper">
-																	<h2>$ 4800</h2>
+															<div className="col-lg-4">
+																<div className="stats-box-wrapper">
+																	<div className="stats-name-wrapper">
+																		<h4>Total Payments</h4>
+																	</div>
+																	<div className="stats-count-wrapper">
+																		<h2>$ 4800</h2>
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div className="calendar-wrapper">
-													<div className="calendar-heading-wrapper">
-														<h5>Mark off days</h5>
+													<div className="calendar-wrapper">
+														<div className="calendar-heading-wrapper">
+															<h5>Mark off days</h5>
+														</div>
+														<div className="cal-wrapper">
+															<Calendar onChange={onChange} value={value} />
+														</div>
 													</div>
-													<div className="cal-wrapper">
-														<Calendar onChange={onChange} value={value} />
+													<div className="cleaning-category">
+														<div className="row align-items-center">
+															<div className="col-lg-5">
+																<div className="content-wrapper">
+																	<h3>Cleaning Categories</h3>
+																	<p>
+																		It is a long established fact that a reader
+																		will be distracted by the readable content
+																		of a page when looking at its layout.
+																	</p>
+																	<div className="button-group">
+																		<button
+																			className="edit"
+																			onClick={() => setShow(true)}
+																		>
+																			Edit
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div className="col-lg-7">
+																<div className="servicesss">
+																	<label class="standard-container">
+																		<input
+																			hidden
+																			type="checkbox"
+																			name="Standardradio"
+																			className="form-check-input"
+																		/>
+																		<span class="checkmark">
+																			<div className="pic-text for-pic-hover">
+																				<img
+																					className="img-fluid"
+																					src={ServiceImg1}
+																				></img>
+																				<h5>
+																					Regular <br /> Cleaning
+																				</h5>
+																			</div>
+																		</span>
+																	</label>
+																	<label class="standard-container">
+																		<input
+																			hidden
+																			type="checkbox"
+																			name="Standardradio"
+																			className="form-check-input"
+																		/>
+																		<span class="checkmark">
+																			<div className="pic-text for-pic-hover">
+																				<img
+																					className="img-fluid"
+																					src={ServiceImg2}
+																				></img>
+																				<h5>
+																					Deep <br />
+																					Cleaning
+																				</h5>
+																			</div>
+																		</span>
+																	</label>
+																	<label class="standard-container">
+																		<input
+																			hidden
+																			type="checkbox"
+																			name="Standardradio"
+																			className="form-check-input"
+																		/>
+																		<span class="checkmark">
+																			<div className="pic-text for-pic-hover">
+																				<img
+																					className="img-fluid"
+																					src={ServiceImg3}
+																				></img>
+																				<h5>
+																					Move <br />
+																					Cleaning
+																				</h5>
+																			</div>
+																		</span>
+																	</label>
+																</div>
+															</div>
+														</div>
 													</div>
-												</div>
-												<div className="cleaner-wrapper">
-													{/* <div className="row">
+													<div className="cleaner-wrapper">
+														{/* <div className="row">
 														<div className="col-lg-12">
 															<div className="content-wrapper">
 																<h4>Other Cleaners</h4>
@@ -760,6 +865,101 @@ const CleanerDashboard = () => {
 															</div>
 														</div>
 													</div> */}
+													</div>
+												</div>
+												<div
+													className={
+														show
+															? "edit-cleaning-services"
+															: "edit-cleaning-services hide"
+													}
+													id="EditCleanerDashboard"
+												>
+													<div className="cleaning-category">
+														<div className="row align-items-center">
+															<div className="col-lg-5">
+																<div className="content-wrapper">
+																	<h3>Cleaning Categories</h3>
+																	<p>
+																		It is a long established fact that a reader
+																		will be distracted by the readable content
+																		of a page when looking at its layout.
+																	</p>
+																	<div className="button-group">
+																		<button
+																			className="edit"
+																			onClick={() => setShow(false)}
+																		>
+																			Save
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div className="col-lg-7">
+																<div className="servicesss">
+																	<label class="standard-container">
+																		<input
+																			hidden
+																			type="checkbox"
+																			name="Standardradio"
+																			className="form-check-input"
+																		/>
+																		<span class="checkmark">
+																			<div className="pic-text for-pic-hover">
+																				<img
+																					className="img-fluid"
+																					src={ServiceImg1}
+																				></img>
+																				<h5>
+																					Regular <br /> Cleaning
+																				</h5>
+																			</div>
+																		</span>
+																	</label>
+																	<label class="standard-container">
+																		<input
+																			hidden
+																			type="checkbox"
+																			name="Standardradio"
+																			className="form-check-input"
+																		/>
+																		<span class="checkmark">
+																			<div className="pic-text for-pic-hover">
+																				<img
+																					className="img-fluid"
+																					src={ServiceImg2}
+																				></img>
+																				<h5>
+																					Deep <br />
+																					Cleaning
+																				</h5>
+																			</div>
+																		</span>
+																	</label>
+																	<label class="standard-container">
+																		<input
+																			hidden
+																			type="checkbox"
+																			name="Standardradio"
+																			className="form-check-input"
+																		/>
+																		<span class="checkmark">
+																			<div className="pic-text for-pic-hover">
+																				<img
+																					className="img-fluid"
+																					src={ServiceImg3}
+																				></img>
+																				<h5>
+																					Move <br />
+																					Cleaning
+																				</h5>
+																			</div>
+																		</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div
@@ -1224,8 +1424,11 @@ const CleanerDashboard = () => {
 															</ul>
 														</div>
 														<div className="package-btn-wrapper">
-															<button className="btn btn-primary ez-clean-btn-rounded mt-3">
-																Start Job
+															<button
+																onClick={() => navigate("/BookingDetails")}
+																className="btn btn-primary ez-clean-btn-rounded mt-3"
+															>
+																Accept Job
 															</button>
 															<button className="btn btn-primary rejec ez-clean-btn-rounded mt-3">
 																Reject Job

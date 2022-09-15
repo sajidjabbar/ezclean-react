@@ -3225,7 +3225,16 @@ nav.nav-footer ul.list-inline .list-inline-item {
 	font-size: 30px;
 	font-weight: 600;
 }
-
+.section-services form select.form-control {
+	font-size: 11px !important;
+	height: 38px;
+	color: #9f9f9f;
+	box-shadow: none !important;
+	outline: none !important;
+}
+.section-services form select.form-control {
+	appearance: none;
+}
 .Reg_Cleaner .text-center p {
 	font-size: 10px;
 	font-weight: 500;

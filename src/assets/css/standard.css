@@ -73,9 +73,12 @@ select#cars {
 .adds-things label.add-container {
 	display: flex;
 	align-items: center;
+	padding-left: 30px;
 }
 .adds-things label.add-container span.checkmark {
 	margin-left: 10px;
+	position: absolute;
+	left: 0;
 }
 .standard-head h3 {
 	font-size: 40px;
@@ -103,7 +106,7 @@ select#cars {
 	color: #000000;
 	font-family: "Poppins";
 	font-weight: 400;
-	padding-right: 22px;
+	/* padding-right: 22px; */
 }
 
 section.adds-sec {

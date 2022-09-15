@@ -3,7 +3,7 @@ import ReactStars from "react-rating-stars-component";
 import user from "../../assets/img/user.png";
 import "../../assets/css/dash.css";
 import "../../assets/css/cleaner-dashboard.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { cleaner, cleaner2, cleaner3, cleaner4 } from "../../constant";
 import $ from "jquery";
 
@@ -30,6 +30,8 @@ const Dashboard = () => {
 			$(".booking-wrapper").hide();
 		});
 	}, []);
+
+	const navigate = useNavigate();
 	return (
 		<div className="Dashboard_Page">
 			{/* Dashboard  section  */}
@@ -1177,7 +1179,15 @@ const Dashboard = () => {
 													</div>
 													<div className="tag-and-accep-wrapper">
 														<span className="job">Job# AD12</span>
-														<span className="pending">Pending</span>
+														<div className="right-side">
+															<button
+																className="chat"
+																onClick={() => navigate("/chat")}
+															>
+																Chat with Cleaner
+															</button>
+															<span className="accepted">Accepted Job</span>
+														</div>
 													</div>
 													<div className="booker-details-wrapper">
 														<ul>
@@ -1379,96 +1389,41 @@ const Dashboard = () => {
 												<div className="row">
 													<div className="col-lg-12">
 														<div className="loyal-wrapper">
-															<div className="loyal-heading-wrapper">
-																<h2 className="mt-2"> </h2>
-															</div>
 															<div className="loyalty-table-wrapper">
-																<div className="table-responsive">
-																	<table className="table">
-																		<thead>
-																			<tr>
-																				<th className="job">Job Type</th>
-																				<th className="job">Job Date</th>
-																				<th className="job">Amount</th>
-																				<th className="Points">
-																					Earned Loyality Points
-																				</th>
-																				{/* <th className="Reward">
-																					Reward Status
-																				</th> */}
-																			</tr>
-																		</thead>
-																		<tbody>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Regular Cleaning
-																				</td>
-																				<td className="date">9-04-2022</td>
-																				<td className="amount">$500</td>
-																				<td className="price">$2000</td>
-																				{/* <td className="app">
-																					<span className="btn Approved">
-																						Approved
-																					</span>
-																				</td> */}
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Urgent Cleaning
-																				</td>
-																				<td className="date">9-04-2022</td>
-																				<td className="amount">$500</td>
-																				<td className="price">$2000</td>
-																				{/* <td className="app">
-																					<span className="btn Approved">
-																						Approved
-																					</span>
-																				</td> */}
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Regular Cleaning
-																				</td>
-																				<td className="date">9-04-2022</td>
-																				<td className="amount">$500</td>
-																				<td className="price">$2000</td>
-																				{/* <td className="app">
-																					<span className="btn pending">
-																						Pending
-																					</span>
-																				</td> */}
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Regular Cleaning
-																				</td>
-																				<td className="date">9-04-2022</td>
-																				<td className="amount">$500</td>
-																				<td className="price">$2000</td>
-																				{/* <td className="app">
-																					<span className="btn Approved">
-																						Approved
-																					</span>
-																				</td> */}
-																			</tr>
-																			<tr className="row1">
-																				<td className="cleaing-cate">
-																					Urgent Cleaning
-																				</td>
-																				<td className="date">9-04-2022</td>
-																				<td className="amount">$500</td>
-																				<td className="price">$2000</td>
-																				{/* <td className="app">
-																					<span className="btn pending">
-																						Pending
-																					</span>
-																				</td> */}
-																			</tr>
-																		</tbody>
-																	</table>
+																<div className="title-wrapper">
+																	<h3>Loyalty Points</h3>
+																</div>
+																<ul className="loyality-wrapper">
+																	<li>
+																		<span className="txt">
+																			Job Type: Regular Cleaning
+																		</span>
+																		<span className="points">2000 Pts</span>
+																	</li>
+																	<li>
+																		<span className="txt">
+																			Job Type: Regular Cleaning
+																		</span>
+																		<span className="points">2000 Pts</span>
+																	</li>
+																	<li>
+																		<span className="txt">
+																			Job Type: Regular Cleaning
+																		</span>
+																		<span className="points">2000 Pts</span>
+																	</li>
+																	<li className="total-points">
+																		<span className="txt">Total Points</span>
+																		<span className="points">6000 Pts</span>
+																	</li>
+																</ul>
+																<div className="button-group">
+																	<button className="btn redeem">
+																		Redeem Points
+																	</button>
 																</div>
 															</div>
-															<div className="total-redeem-wraappper">
+															{/* <div className="total-redeem-wraappper">
 																<div className="total-points-wrapper">
 																	<h6>Total Points</h6>
 																	<h6>6000</h6>
@@ -1478,7 +1433,7 @@ const Dashboard = () => {
 																		Redeem Points
 																	</button>
 																</div>
-															</div>
+															</div> */}
 														</div>
 													</div>
 												</div>

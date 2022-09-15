@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import "../../assets/css/Booking.css";
 import BetterBusiness from "../../components/BetterBusiness";
 
@@ -6,6 +7,11 @@ const BookingDetails = () => {
 	const completeJob = () => {
 		window.location.href = "/CompleteJob";
 	};
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			{/* Booking details starts here */}
@@ -36,6 +42,17 @@ const BookingDetails = () => {
 											<span className="value">
 												1234, 5th Street, Lorem ipsum, city, state
 											</span>
+										</li>
+										<li>
+											<div className="chat-btn">
+												<button
+													className="btn"
+													onClick={() => navigate("/chat")}
+												>
+													<i class="fa fa-commenting" aria-hidden="true"></i>
+													Chat
+												</button>
+											</div>
 										</li>
 										<li>
 											<span className="property">Date :</span>
