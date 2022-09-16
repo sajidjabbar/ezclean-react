@@ -1402,13 +1402,13 @@ const Dashboard = () => {
 																	</li>
 																	<li>
 																		<span className="txt">
-																			Job Type: Regular Cleaning
+																			Job Type: Deep Cleaning
 																		</span>
 																		<span className="points">2000 Pts</span>
 																	</li>
 																	<li>
 																		<span className="txt">
-																			Job Type: Regular Cleaning
+																			Job Type: Move Cleaning
 																		</span>
 																		<span className="points">2000 Pts</span>
 																	</li>

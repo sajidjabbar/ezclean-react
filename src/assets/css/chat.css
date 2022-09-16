@@ -18,6 +18,8 @@
 	color: #777777;
 	font-family: "Poppins";
 	font-weight: 400;
+	margin-top: 15px;
+	max-width: 80%;
 }
 .lets-talk h4 {
 	font-size: 32px;

@@ -16,16 +16,15 @@ const Chat = () => {
 					<div className="row">
 						<div className="col-lg-6 align-self-center">
 							<div className="confirmation">
-								<h3>Confirmation and Chat</h3>
-								<p>
-									Our three core values match our one mission, delivering the
-									best cleaning experience, trained and trusted cleaners, and
-									environmentally friend
-								</p>
-
+								{/* <h3>Confirmation and Chat</h3> */}
 								<div className="lets-talk">
-									<h4>John Martin</h4>
+									<h4>Mark James</h4>
 									<Link to="/">Lets talk...</Link>
+									<p>
+										Our three core values match our one mission, delivering the
+										best cleaning experience, trained and trusted cleaners, and
+										environmentally friend
+									</p>
 								</div>
 							</div>
 						</div>
@@ -131,9 +130,9 @@ const Chat = () => {
 								</div>
 							</div>
 							<div className="btn-wrapper">
-								<button className="btn btn-primary ez-clean-btn-rounded mt-3">
+								{/* <button className="btn btn-primary ez-clean-btn-rounded mt-3">
 									Send Hire request
-								</button>
+								</button> */}
 								<button className="btn btn-primary ez-clean-btn-rounded mt-3">
 									Back
 								</button>
